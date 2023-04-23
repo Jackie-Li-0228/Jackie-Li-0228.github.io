@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2023/1/3 随笔</title>
-    <url>/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/</url>
-    <content><![CDATA[<p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p>
-<p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p>
-<p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p>
-<p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p>
-<p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022最新Manim安装教程</title>
     <url>/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Manim是一个由3Blue1Brown编写的强大的可视化库，3B1B的视频质量非常高，这与Manim的强大以及作者本人运用的炉火纯青密不可分。</p>
@@ -111,20 +95,19 @@
       </tags>
   </entry>
   <entry>
-    <title>VScode codeLLDB 一直等待问题</title>
-    <url>/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p><a href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb">CodeLLDB - Visual Studio Marketplace</a></p>
-<ol>
-<li>点击Download Extension下载下来vsix包<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/1.png" class></li>
-<li>到vscode里面打开扩展<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/2.png" class></li>
-<li>选择刚才下载的包即可</li>
-</ol>
+    <title>2023/1/3 随笔</title>
+    <url>/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p>
+<p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p>
+<p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p>
+<p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p>
+<p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>
 ]]></content>
       <categories>
-        <category>Vscode合集</category>
+        <category>随笔</category>
       </categories>
       <tags>
-        <tag>Vscode</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
   <entry>
@@ -158,6 +141,23 @@
       </tags>
   </entry>
   <entry>
+    <title>VScode codeLLDB 一直等待问题</title>
+    <url>/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb">CodeLLDB - Visual Studio Marketplace</a></p>
+<ol>
+<li>点击Download Extension下载下来vsix包<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/1.png" class></li>
+<li>到vscode里面打开扩展<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/2.png" class></li>
+<li>选择刚才下载的包即可</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Vscode合集</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于Vmware tools</title>
     <url>/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/</url>
     <content><![CDATA[<h3 id="按钮是灰色怎么办"><a href="#按钮是灰色怎么办" class="headerlink" title="按钮是灰色怎么办"></a>按钮是灰色怎么办</h3><p>按钮是灰色的话可以试试将虚拟机对应的硬盘和软盘都调成使用物理驱动器的自动检测，这样按钮就可以正常使用了</p>
@@ -172,28 +172,6 @@
       <tags>
         <tag>Vmware</tag>
         <tag>Vmware tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo目录详解（用到就补）</title>
-    <url>/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p>
-<p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p>
-<span id="more"></span>
-
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote>
-<p>blog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;head&#x2F;head.swig</p>
-</blockquote>
-<p>在提交站点地图时，需要登录各大搜索引擎的页面管理界面，在提交sitemap之前需要对自己的网站进行验证，其中HTML方法需要在自己的博客页面的&lt;head&gt;下增加其meta代码来验证网站。这时便需要在该文件的开始部分，可以看到有一些meta开头的语句，将搜索引擎提供的meta代码插入到这些meta语句的后面，然后hexo三部曲</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>等几分钟即可用F12在自己的页面代码中看到meta代码已经被成功加入，这时候在搜索引擎的界面点击开始验证即可验证成功。</p>
-]]></content>
-      <categories>
-        <category>Hexo遇到的问题</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>sitemap</tag>
       </tags>
   </entry>
   <entry>
@@ -217,6 +195,28 @@
         <tag>Ubuntu</tag>
         <tag>搜狗</tag>
         <tag>输入法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo目录详解（用到就补）</title>
+    <url>/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p>
+<p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p>
+<span id="more"></span>
+
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote>
+<p>blog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;head&#x2F;head.swig</p>
+</blockquote>
+<p>在提交站点地图时，需要登录各大搜索引擎的页面管理界面，在提交sitemap之前需要对自己的网站进行验证，其中HTML方法需要在自己的博客页面的&lt;head&gt;下增加其meta代码来验证网站。这时便需要在该文件的开始部分，可以看到有一些meta开头的语句，将搜索引擎提供的meta代码插入到这些meta语句的后面，然后hexo三部曲</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>等几分钟即可用F12在自己的页面代码中看到meta代码已经被成功加入，这时候在搜索引擎的界面点击开始验证即可验证成功。</p>
+]]></content>
+      <categories>
+        <category>Hexo遇到的问题</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>sitemap</tag>
       </tags>
   </entry>
   <entry>
