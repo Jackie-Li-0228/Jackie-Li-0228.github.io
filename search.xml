@@ -66,6 +66,22 @@
       </tags>
   </entry>
   <entry>
+    <title>2023/1/3 随笔</title>
+    <url>/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p>
+<p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p>
+<p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p>
+<p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p>
+<p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo图片显示问题</title>
     <url>/2022/12/27/Hexo%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>在Hexo搭建的时候遇到了奇葩的问题，网上的hexo-asset-image也下载了，用Markdown原生的图片引用方式引用，发现主页的预览界面可以正常显示，但是点进文章里面就显示不了了。</p>
@@ -92,171 +108,6 @@
       <tags>
         <tag>Hexo</tag>
         <tag>图片</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2023/1/3 随笔</title>
-    <url>/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/</url>
-    <content><![CDATA[<p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p>
-<p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p>
-<p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p>
-<p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p>
-<p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ros报错汇总</title>
-    <url>/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/</url>
-    <content><![CDATA[<h2 id="写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）"><a href="#写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）" class="headerlink" title="写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）"></a>写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）</h2><p>在搭建ROS的时候，各种工作都安装好了，兴致冲冲地运行roscore，结果出现了以下报错：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 290, in main</span><br><span class="line">    write_pid_file(options.pid_fn, options.core, options.port)</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 112, in write_pid_file</span><br><span class="line">    with open(pid_fn, &quot;w&quot;) as f:</span><br><span class="line">IOError: [Errno 13] Permission denied: &#x27;/home/louisli/.ros/roscore-11311.pid&#x27;</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-
-<p>有Permission denied的话，大概率是权限问题，当时我没有直接修改文件夹的权限，而是直接在对应的目录touch了一个文件roscore-11311.pid。并且给予它权限：<br>在&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F; 下打开terminal：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo touch roscore-11311.pid</span><br><span class="line">sudo chmod 777 roscore-11311.pid</span><br></pre></td></tr></table></figure>
-
-<h2 id="log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”"><a href="#log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”" class="headerlink" title="log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”"></a>log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”</h2><p>解决了上面的问题，我再次兴致冲冲地运行roscore，结果得到：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br><span class="line"></span><br><span class="line">started roslaunch server http://ubuntu:33151/</span><br><span class="line">ros_comm version 1.14.13</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SUMMARY</span><br><span class="line">========</span><br><span class="line"></span><br><span class="line">PARAMETERS</span><br><span class="line"> * /rosdistro: melodic</span><br><span class="line"> * /rosversion: 1.14.13</span><br><span class="line"></span><br><span class="line">NODES</span><br><span class="line"></span><br><span class="line">auto-starting new master</span><br><span class="line">No handlers could be found for logger &quot;roslaunch&quot;</span><br><span class="line">[master] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[master]: started with pid [3018]</span><br><span class="line">ROS_MASTER_URI=http://ubuntu:11311/</span><br><span class="line"></span><br><span class="line">setting /run_id to f37f52b6-de8d-11ed-baa4-000c29fa4201</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3029]</span><br><span class="line">started core service [/rosout]</span><br><span class="line">[rosout-1] process has died [pid 3029, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3037]</span><br><span class="line">[rosout-1] process has died [pid 3037, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3042]</span><br><span class="line">[rosout-1] process has died [pid 3042, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3047]</span><br><span class="line">[rosout-1] process has died [pid 3047, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3052]</span><br><span class="line">[rosout-1] process has died [pid 3052, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3057]</span><br><span class="line">[rosout-1] process has died [pid 3057, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3062]</span><br><span class="line">[rosout-1] process has died [pid 3062, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br></pre></td></tr></table></figure>
-
-<p>可以发现，节点一直在寻找可以使用的pid，但是一直没有找到。</p>
-<p>所以我们关注一下最开头的报错：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br></pre></td></tr></table></figure>
-
-<p>可以发现，这里的问题在于log的路径权限不够，没法创建文件。所以我们如法炮制，还是创建一个文件夹，然后给它权限：</p>
-<p>进入&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;,打开terminal</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir log</span><br><span class="line">sudo chmod 777 ./log</span><br></pre></td></tr></table></figure>
-
-<p>这样再启动roscore便可以了。</p>
-]]></content>
-      <categories>
-        <category>ROS合集</category>
-      </categories>
-      <tags>
-        <tag>ROS</tag>
-        <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VScode codeLLDB 一直等待问题</title>
-    <url>/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<p><a href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb">CodeLLDB - Visual Studio Marketplace</a></p>
-<ol>
-<li>点击Download Extension下载下来vsix包<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/1.png" class></li>
-<li>到vscode里面打开扩展<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/2.png" class></li>
-<li>选择刚才下载的包即可</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Vscode合集</category>
-      </categories>
-      <tags>
-        <tag>Vscode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于Vmware tools</title>
-    <url>/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/</url>
-    <content><![CDATA[<h3 id="按钮是灰色怎么办"><a href="#按钮是灰色怎么办" class="headerlink" title="按钮是灰色怎么办"></a>按钮是灰色怎么办</h3><p>按钮是灰色的话可以试试将虚拟机对应的硬盘和软盘都调成使用物理驱动器的自动检测，这样按钮就可以正常使用了</p>
-<h3 id="VMware-tools-修复"><a href="#VMware-tools-修复" class="headerlink" title="VMware tools 修复"></a>VMware tools 修复</h3><p>如果vmware tools 无法正常使用可以试试这篇文章<a href="https://blog.csdn.net/Bunsennn/article/details/117223002"></a></p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get autoremove open-vm-tools</span><br><span class="line">sudo apt-get install open-vm-tools-desktop</span><br></pre></td></tr></table></figure>
-
-<p>这个管用</p>
-]]></content>
-      <categories>
-        <category>Vmware合集</category>
-      </categories>
-      <tags>
-        <tag>Vmware</tag>
-        <tag>Vmware tools</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装Ubuntu的搜狗拼音</title>
-    <url>/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/</url>
-    <content><![CDATA[<p>十分麻烦哎哟</p>
-<p>在官网搜安装包</p>
-<p>在download里打开终端输入</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i so /tab自动补全</span><br></pre></td></tr></table></figure>
-<p>安装完了以后要去设置里面把框架改为fcitx，然后把别的语言都删掉，就剩下中文</p>
-<p>导致我没有成功的一步是没有安装相关依赖库</p>
-<p>说实话应该能猜出来的 因为之前切换到搜狗拼音已经能看见一个雏形的框了，但是还是没有办法打中文</p>
-<p>然后打开终端输入</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span><br><span class="line">sudo apt install libgsettings-qt1</span><br></pre></td></tr></table></figure>
-<p>再切换输入法输入就好了</p>
-]]></content>
-      <categories>
-        <category>Ubuntu合集</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-        <tag>搜狗</tag>
-        <tag>输入法</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo目录详解（用到就补）</title>
-    <url>/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p>
-<p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p>
-<span id="more"></span>
-
-<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote>
-<p>blog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;head&#x2F;head.swig</p>
-</blockquote>
-<p>在提交站点地图时，需要登录各大搜索引擎的页面管理界面，在提交sitemap之前需要对自己的网站进行验证，其中HTML方法需要在自己的博客页面的&lt;head&gt;下增加其meta代码来验证网站。这时便需要在该文件的开始部分，可以看到有一些meta开头的语句，将搜索引擎提供的meta代码插入到这些meta语句的后面，然后hexo三部曲</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>等几分钟即可用F12在自己的页面代码中看到meta代码已经被成功加入，这时候在搜索引擎的界面点击开始验证即可验证成功。</p>
-]]></content>
-      <categories>
-        <category>Hexo遇到的问题</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-        <tag>sitemap</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>安装软件时报has install-snap change in progress错误</title>
-    <url>/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/</url>
-    <content><![CDATA[<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>原因是因为软件没安装完，又让安装，也有可能是上一次安装卡半路了</p>
-<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol>
-<li><p>在终端里输入snap changes</p>
-</li>
-<li><p>找到对应的snap号</p>
-</li>
-<li><p>输入</p>
-</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo snap abort “snap号”</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>重新安装</li>
-</ol>
-]]></content>
-      <categories>
-        <category>Ubuntu合集</category>
-      </categories>
-      <tags>
-        <tag>Ubuntu</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一篇博客</title>
-    <url>/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<img src="/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/OIP-C.jpg" class>
-<span id="more"></span>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>闲谈/随记</category>
-      </categories>
-      <tags>
-        <tag>test</tag>
       </tags>
   </entry>
   <entry>
@@ -373,6 +224,169 @@
       </categories>
       <tags>
         <tag>Nerf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ros报错汇总</title>
+    <url>/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h2 id="写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）"><a href="#写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）" class="headerlink" title="写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）"></a>写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）</h2><p>在搭建ROS的时候，各种工作都安装好了，兴致冲冲地运行roscore，结果出现了以下报错：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 290, in main</span><br><span class="line">    write_pid_file(options.pid_fn, options.core, options.port)</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 112, in write_pid_file</span><br><span class="line">    with open(pid_fn, &quot;w&quot;) as f:</span><br><span class="line">IOError: [Errno 13] Permission denied: &#x27;/home/louisli/.ros/roscore-11311.pid&#x27;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<p>有Permission denied的话，大概率是权限问题，当时我没有直接修改文件夹的权限，而是直接在对应的目录touch了一个文件roscore-11311.pid。并且给予它权限：<br>在&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F; 下打开terminal：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo touch roscore-11311.pid</span><br><span class="line">sudo chmod 777 roscore-11311.pid</span><br></pre></td></tr></table></figure>
+
+<h2 id="log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”"><a href="#log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”" class="headerlink" title="log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”"></a>log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”</h2><p>解决了上面的问题，我再次兴致冲冲地运行roscore，结果得到：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br><span class="line"></span><br><span class="line">started roslaunch server http://ubuntu:33151/</span><br><span class="line">ros_comm version 1.14.13</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SUMMARY</span><br><span class="line">========</span><br><span class="line"></span><br><span class="line">PARAMETERS</span><br><span class="line"> * /rosdistro: melodic</span><br><span class="line"> * /rosversion: 1.14.13</span><br><span class="line"></span><br><span class="line">NODES</span><br><span class="line"></span><br><span class="line">auto-starting new master</span><br><span class="line">No handlers could be found for logger &quot;roslaunch&quot;</span><br><span class="line">[master] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[master]: started with pid [3018]</span><br><span class="line">ROS_MASTER_URI=http://ubuntu:11311/</span><br><span class="line"></span><br><span class="line">setting /run_id to f37f52b6-de8d-11ed-baa4-000c29fa4201</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3029]</span><br><span class="line">started core service [/rosout]</span><br><span class="line">[rosout-1] process has died [pid 3029, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3037]</span><br><span class="line">[rosout-1] process has died [pid 3037, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3042]</span><br><span class="line">[rosout-1] process has died [pid 3042, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3047]</span><br><span class="line">[rosout-1] process has died [pid 3047, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3052]</span><br><span class="line">[rosout-1] process has died [pid 3052, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3057]</span><br><span class="line">[rosout-1] process has died [pid 3057, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3062]</span><br><span class="line">[rosout-1] process has died [pid 3062, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br></pre></td></tr></table></figure>
+
+<p>可以发现，节点一直在寻找可以使用的pid，但是一直没有找到。</p>
+<p>所以我们关注一下最开头的报错：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br></pre></td></tr></table></figure>
+
+<p>可以发现，这里的问题在于log的路径权限不够，没法创建文件。所以我们如法炮制，还是创建一个文件夹，然后给它权限：</p>
+<p>进入&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;,打开terminal</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir log</span><br><span class="line">sudo chmod 777 ./log</span><br></pre></td></tr></table></figure>
+
+<p>这样再启动roscore便可以了。</p>
+]]></content>
+      <categories>
+        <category>ROS合集</category>
+      </categories>
+      <tags>
+        <tag>ROS</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo目录详解（用到就补）</title>
+    <url>/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p>
+<p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p>
+<span id="more"></span>
+
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote>
+<p>blog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;head&#x2F;head.swig</p>
+</blockquote>
+<p>在提交站点地图时，需要登录各大搜索引擎的页面管理界面，在提交sitemap之前需要对自己的网站进行验证，其中HTML方法需要在自己的博客页面的&lt;head&gt;下增加其meta代码来验证网站。这时便需要在该文件的开始部分，可以看到有一些meta开头的语句，将搜索引擎提供的meta代码插入到这些meta语句的后面，然后hexo三部曲</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>等几分钟即可用F12在自己的页面代码中看到meta代码已经被成功加入，这时候在搜索引擎的界面点击开始验证即可验证成功。</p>
+]]></content>
+      <categories>
+        <category>Hexo遇到的问题</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+        <tag>sitemap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VScode codeLLDB 一直等待问题</title>
+    <url>/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb">CodeLLDB - Visual Studio Marketplace</a></p>
+<ol>
+<li>点击Download Extension下载下来vsix包<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/1.png" class></li>
+<li>到vscode里面打开扩展<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/2.png" class></li>
+<li>选择刚才下载的包即可</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Vscode合集</category>
+      </categories>
+      <tags>
+        <tag>Vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Vmware tools</title>
+    <url>/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/</url>
+    <content><![CDATA[<h3 id="按钮是灰色怎么办"><a href="#按钮是灰色怎么办" class="headerlink" title="按钮是灰色怎么办"></a>按钮是灰色怎么办</h3><p>按钮是灰色的话可以试试将虚拟机对应的硬盘和软盘都调成使用物理驱动器的自动检测，这样按钮就可以正常使用了</p>
+<h3 id="VMware-tools-修复"><a href="#VMware-tools-修复" class="headerlink" title="VMware tools 修复"></a>VMware tools 修复</h3><p>如果vmware tools 无法正常使用可以试试这篇文章<a href="https://blog.csdn.net/Bunsennn/article/details/117223002"></a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get autoremove open-vm-tools</span><br><span class="line">sudo apt-get install open-vm-tools-desktop</span><br></pre></td></tr></table></figure>
+
+<p>这个管用</p>
+]]></content>
+      <categories>
+        <category>Vmware合集</category>
+      </categories>
+      <tags>
+        <tag>Vmware</tag>
+        <tag>Vmware tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Ubuntu的搜狗拼音</title>
+    <url>/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/</url>
+    <content><![CDATA[<p>十分麻烦哎哟</p>
+<p>在官网搜安装包</p>
+<p>在download里打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i so /tab自动补全</span><br></pre></td></tr></table></figure>
+<p>安装完了以后要去设置里面把框架改为fcitx，然后把别的语言都删掉，就剩下中文</p>
+<p>导致我没有成功的一步是没有安装相关依赖库</p>
+<p>说实话应该能猜出来的 因为之前切换到搜狗拼音已经能看见一个雏形的框了，但是还是没有办法打中文</p>
+<p>然后打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span><br><span class="line">sudo apt install libgsettings-qt1</span><br></pre></td></tr></table></figure>
+<p>再切换输入法输入就好了</p>
+]]></content>
+      <categories>
+        <category>Ubuntu合集</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>搜狗</tag>
+        <tag>输入法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇博客</title>
+    <url>/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<img src="/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/OIP-C.jpg" class>
+<span id="more"></span>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>闲谈/随记</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装软件时报has install-snap change in progress错误</title>
+    <url>/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>原因是因为软件没安装完，又让安装，也有可能是上一次安装卡半路了</p>
+<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol>
+<li><p>在终端里输入snap changes</p>
+</li>
+<li><p>找到对应的snap号</p>
+</li>
+<li><p>输入</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo snap abort “snap号”</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>重新安装</li>
+</ol>
+]]></content>
+      <categories>
+        <category>Ubuntu合集</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇博客</title>
+    <url>/2022/12/27/%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>测试</p>
+<span id="more"></span>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>闲谈/随记</category>
+      </categories>
+      <tags>
+        <tag>test</tag>
       </tags>
   </entry>
 </search>
