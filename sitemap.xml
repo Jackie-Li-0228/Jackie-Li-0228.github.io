@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jackie-li-0228.github.io/2022/12/28/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83/</loc>
+    <loc>http://jackie-li-0228.github.io/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/</loc>
     
-    <lastmod>2023-10-04</lastmod>
+    <lastmod>2023-10-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -155,13 +155,6 @@
 
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2023-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://jackie-li-0228.github.io/tags/Manim/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -170,6 +163,13 @@
   
   <url>
     <loc>http://jackie-li-0228.github.io/tags/LaTeX/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://jackie-li-0228.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -190,13 +190,6 @@
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/Nerf/</loc>
-    <lastmod>2023-10-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://jackie-li-0228.github.io/tags/ROS/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -211,14 +204,14 @@
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/Vscode/</loc>
+    <loc>http://jackie-li-0228.github.io/tags/Nerf/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/sitemap/</loc>
+    <loc>http://jackie-li-0228.github.io/tags/Vscode/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -233,6 +226,13 @@
   
   <url>
     <loc>http://jackie-li-0228.github.io/tags/Vmware-tools/</loc>
+    <lastmod>2023-10-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://jackie-li-0228.github.io/tags/sitemap/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -269,14 +269,14 @@
 
   
   <url>
-    <loc>http://jackie-li-0228.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>http://jackie-li-0228.github.io/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <loc>http://jackie-li-0228.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2023-10-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
