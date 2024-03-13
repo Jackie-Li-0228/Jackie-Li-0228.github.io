@@ -176,13 +176,6 @@
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/Vscode/</loc>
-    <lastmod>2024-03-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://jackie-li-0228.github.io/tags/Hexo/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -218,14 +211,14 @@
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/sitemap/</loc>
+    <loc>http://jackie-li-0228.github.io/tags/Vscode/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/test/</loc>
+    <loc>http://jackie-li-0228.github.io/tags/sitemap/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -246,6 +239,13 @@
   </url>
   
   <url>
+    <loc>http://jackie-li-0228.github.io/tags/gazebo/</loc>
+    <lastmod>2024-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://jackie-li-0228.github.io/tags/%E6%90%9C%E7%8B%97/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -260,7 +260,7 @@
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/tags/gazebo/</loc>
+    <loc>http://jackie-li-0228.github.io/tags/test/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -283,13 +283,6 @@
   </url>
   
   <url>
-    <loc>http://jackie-li-0228.github.io/categories/Vscode%E5%90%88%E9%9B%86/</loc>
-    <lastmod>2024-03-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://jackie-li-0228.github.io/categories/Hexo%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -304,6 +297,20 @@
   </url>
   
   <url>
+    <loc>http://jackie-li-0228.github.io/categories/Vscode%E5%90%88%E9%9B%86/</loc>
+    <lastmod>2024-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://jackie-li-0228.github.io/categories/Vmware%E5%90%88%E9%9B%86/</loc>
+    <lastmod>2024-03-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://jackie-li-0228.github.io/categories/Ubuntu%E5%90%88%E9%9B%86/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -312,13 +319,6 @@
   
   <url>
     <loc>http://jackie-li-0228.github.io/categories/%E9%97%B2%E8%B0%88-%E9%9A%8F%E8%AE%B0/</loc>
-    <lastmod>2024-03-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://jackie-li-0228.github.io/categories/Vmware%E5%90%88%E9%9B%86/</loc>
     <lastmod>2024-03-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
