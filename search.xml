@@ -297,25 +297,6 @@
       </tags>
   </entry>
   <entry>
-    <title>关于防止gazebo 134崩溃（针对VMware环境下）</title>
-    <url>/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/</url>
-    <content><![CDATA[<p>在跑gazebo的时候出现了报134错误代码崩溃的情况，上网搜索了很多方法，最终来整理一下管用的：</p>
-<p>第一个办法就是将虚拟机的加速3D图形关掉，这个方法可以，但是gazebo会变的贼慢。。。故不推荐。</p>
-<p>第二个办法就是在执行roslaunch之前先执行</p>
-<pre><code class="bash">export SVGA_VGPU10=0
-</code></pre>
-<p>引用这个代码会告诉系统尝试合适的OpenGL版本。但是至于对于问题有没有合适的版本，这个就要看情况，不过一般来说都是有合适的版本。</p>
-<p>总之，本人测试的结果是使用这个方法丝滑解决。</p>
-]]></content>
-      <categories>
-        <category>ROS合集</category>
-      </categories>
-      <tags>
-        <tag>ROS</tag>
-        <tag>gazebo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>关于Vmware tools</title>
     <url>/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/</url>
     <content><![CDATA[<h3 id="按钮是灰色怎么办"><a href="#按钮是灰色怎么办" class="headerlink" title="按钮是灰色怎么办"></a>按钮是灰色怎么办</h3><p>按钮是灰色的话可以试试将虚拟机对应的硬盘和软盘都调成使用物理驱动器的自动检测，这样按钮就可以正常使用了</p>
@@ -393,6 +374,38 @@
       </categories>
       <tags>
         <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu键盘错位（@变成“”，~波浪线打不出来）</title>
+    <url>/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/</url>
+    <content><![CDATA[<p>在安装了搜狗输入法后出现了键盘布局错位的问题，@号和“”号位置互换，波浪线无法打出来。解决方法如下：</p>
+<p>只需要打开fcitx配置工具，然后在输入法设置中将英文键盘布局放到搜狗输入法的键盘布局下面即可。</p>
+]]></content>
+      <categories>
+        <category>Ubuntu合集</category>
+      </categories>
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于防止gazebo 134崩溃（针对VMware环境下）</title>
+    <url>/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89%20-%20%E5%89%AF%E6%9C%AC/</url>
+    <content><![CDATA[<p>在跑gazebo的时候出现了报134错误代码崩溃的情况，上网搜索了很多方法，最终来整理一下管用的：</p>
+<p>第一个办法就是将虚拟机的加速3D图形关掉，这个方法可以，但是gazebo会变的贼慢。。。故不推荐。</p>
+<p>第二个办法就是在执行roslaunch之前先执行</p>
+<pre><code class="bash">export SVGA_VGPU10=0
+</code></pre>
+<p>引用这个代码会告诉系统尝试合适的OpenGL版本。但是至于对于问题有没有合适的版本，这个就要看情况，不过一般来说都是有合适的版本。</p>
+<p>总之，本人测试的结果是使用这个方法丝滑解决。</p>
+]]></content>
+      <categories>
+        <category>ROS合集</category>
+      </categories>
+      <tags>
+        <tag>ROS</tag>
+        <tag>gazebo</tag>
       </tags>
   </entry>
 </search>
