@@ -442,4 +442,41 @@
         <tag>机器学习</tag>
       </tags>
   </entry>
+  <entry>
+    <title>使用Shim实现在命令行中快捷启动应用程序</title>
+    <url>/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="使用Shim工具快捷启动应用程序"><a href="#使用Shim工具快捷启动应用程序" class="headerlink" title="使用Shim工具快捷启动应用程序"></a>使用Shim工具快捷启动应用程序</h1><p>想要使用命令行来快捷启动应用程序？但是又不想一个一个把每个软件的安装目录添加进Path，并且还要记住程序原本的名称，非常麻烦。把程序的快捷方式都放到一个统一的Path中注册的文件夹的方法？确实可以使用命令行启动，也可以自定义名字，但每次启动还需要加上<code>.lnk</code>的后缀才可以识别，依然非常鸡肋。</p>
+<p>今天要介绍的是一种更为简便的方法，只需要使用一款Scoop的配套小工具——<strong>Shim</strong>。</p>
+<span id="more"></span>
+
+<p>如果你还不知道什么是Scoop，可以参考这篇文章：<a href="https://blog.csdn.net/qq_43741794/article/details/113079959">Scoop介绍与初体验</a>。不过那不是这篇文章的重点。</p>
+<p>Shim的GitHub仓库地址是<a href="https://github.com/ScoopInstaller/Shim">https://github.com/ScoopInstaller/Shim</a>，但这个地址的最新版本是1.1.0，实际上Scoop配套版本的shim组件已经是3.1.1版本，功能更加完善。这里放一个最新版本的下载链接：<a href="https://wwo.lanzouj.com/iSlsA23150mj">Shim 3.1.1 下载链接 密码：b3v9</a>.</p>
+<h2 id="如何使用Shim创建应用程序的“快捷方式”"><a href="#如何使用Shim创建应用程序的“快捷方式”" class="headerlink" title="如何使用Shim创建应用程序的“快捷方式”"></a>如何使用Shim创建应用程序的“快捷方式”</h2><p>之所以用引号标注“快捷方式”，是因为这里创建的是一个<code>.exe</code>的可执行文件，而不是<code>.lnk</code>的快捷方式。</p>
+<h3 id="创建步骤："><a href="#创建步骤：" class="headerlink" title="创建步骤："></a>创建步骤：</h3><ol>
+<li><p><strong>创建一个shim文件</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">New-Item</span> <span class="literal">-Path</span> ./XXX.shim <span class="literal">-Value</span> <span class="string">&#x27;path = &quot;C:\PATH\TO\EXE\XXX.exe&quot;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>这行命令创建一个shim文件，里面存放要打开的应用程序的地址。请将<code>PATH\TO\EXE</code>部分替换为实际应用程序的路径，将<code>XXX</code>替换为应用程序的名称。</p>
+</li>
+<li><p><strong>将shim程序复制到当前目录并重命名</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Copy-Item</span> <span class="literal">-Path</span> .\PATH\TO\SHIM\shim.exe <span class="literal">-Destination</span> .\XXX.exe</span><br></pre></td></tr></table></figure>
+
+<p>这行命令将shim程序复制过来放在当前目录下，并修改名称为<code>XXX.exe</code>。请将<code>PATH\TO\SHIM</code>部分替换为实际shim程序的路径。</p>
+</li>
+<li><p><strong>运行应用程序</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\XXX.exe</span><br></pre></td></tr></table></figure>
+
+<p>执行这行命令就可以启动应用程序了。</p>
+</li>
+</ol>
+<h3 id="随时使用命令行打开这些程序"><a href="#随时使用命令行打开这些程序" class="headerlink" title="随时使用命令行打开这些程序"></a>随时使用命令行打开这些程序</h3><p>如果你希望随时可以通过命令行打开应用程序，可以将当前文件夹添加至Path，这样就可以全局识别这些应用程序的名称了。</p>
+<p>实际上，这个程序的原理也很简单，感兴趣的朋友可以自己实现着玩一下。</p>
+]]></content>
+      <categories>
+        <category>玩机技巧</category>
+      </categories>
+      <tags>
+        <tag>Shim</tag>
+      </tags>
+  </entry>
 </search>
