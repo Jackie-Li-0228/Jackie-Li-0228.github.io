@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="baidu-site-verification" content="code-BKQ11PUFAK" />
+<meta name="msvalidate.01" content="4E36CDD054E3AC2D3B7FBC477D77ABFC" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-bounce.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jackie-li-0228.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":25,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":"falsed","scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+  <meta name="description" content="最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。 压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。 本程序功能：  生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。 使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。 可以添加测试数据集并观察使用筛选后的分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="压缩近邻法的可视化Python实现">
+<meta property="og:url" content="http://jackie-li-0228.github.io/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/index.html">
+<meta property="og:site_name" content="JackieLi的小屋">
+<meta property="og:description" content="最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。 压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。 本程序功能：  生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。 使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。 可以添加测试数据集并观察使用筛选后的分">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-06-29T03:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-29T03:08:11.822Z">
+<meta property="article:author" content="JackieLi">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="模式识别">
+<meta property="article:tag" content="机器学习">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://jackie-li-0228.github.io/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>压缩近邻法的可视化Python实现 | JackieLi的小屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JackieLi的小屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">进来看看！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          压缩近邻法的可视化Python实现
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-06-29 11:00:00 / 修改时间：11:08:11" itemprop="dateCreated datePublished" datetime="2024-06-29T11:00:00+08:00">2024-06-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" class="post-meta-item leancloud_visitors" data-flag-title="压缩近邻法的可视化Python实现" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: true;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。</p>
+<p>压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。</p>
+<p>本程序功能：</p>
+<ol>
+<li>生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。</li>
+<li>使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。</li>
+<li>可以添加测试数据集并观察使用筛选后的分类点集在K-近邻法中对于不同K取值的分类效果。</li>
+</ol>
+<span id="more"></span>
+
+<p>构建过程如下：</p>
+<p>首先设原数据集为$D$，算法尝试构建分类集$S$,使得$S$中的点在最近邻算法下可以对$D$进行分类。</p>
+<p>$S$的构建过程如下:</p>
+<ol>
+<li>从$D$中随机选取一个点加入$S$。</li>
+<li>使用最近邻算法对$D$中的点进行分类，将所有分类错误的点归为错误集$E$。</li>
+<li>从$E$中随机选取一个点加入$S$。(此步骤也可以使用其他策略，这里使用随机选择)</li>
+<li>重复2-3步骤，直到$E$为空。这时$S$就是我们要找的分类集。</li>
+</ol>
+<p>以下为代码实现：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> matplotlib.widgets <span class="keyword">import</span> Button, Slider</span><br><span class="line"><span class="keyword">from</span> matplotlib.backends.backend_tkagg <span class="keyword">import</span> FigureCanvasTkAgg</span><br><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> simpledialog</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line">mpl.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;Microsoft YaHei&#x27;</span>] <span class="comment"># 指定默认字体：解决plot不能显示中文问题</span></span><br><span class="line">mpl.rcParams[<span class="string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="literal">False</span> <span class="comment"># 解决保存图像是负号&#x27;-&#x27;显示为方块的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassifierVisualizer</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, n_points=<span class="number">100</span></span>):</span><br><span class="line">        self.n_points = n_points</span><br><span class="line">        self.generate_data()</span><br><span class="line">        self.S = <span class="built_in">set</span>()</span><br><span class="line">        self.setup_plot()</span><br><span class="line">        self.test_mode = <span class="literal">False</span></span><br><span class="line">        self.k = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">generate_data</span>(<span class="params">self</span>):</span><br><span class="line">        self.X = np.random.uniform(-<span class="number">5</span>, <span class="number">5</span>, (self.n_points, <span class="number">2</span>))</span><br><span class="line">        self.y = (self.X[:, <span class="number">1</span>] &gt; np.sin(self.X[:, <span class="number">0</span>])).astype(<span class="built_in">int</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">setup_plot</span>(<span class="params">self</span>):</span><br><span class="line">        self.fig = plt.figure(figsize=(<span class="number">15</span>, <span class="number">6</span>))</span><br><span class="line">        self.ax1 = self.fig.add_axes([<span class="number">0.05</span>, <span class="number">0.15</span>, <span class="number">0.4</span>, <span class="number">0.75</span>])</span><br><span class="line">        self.ax2 = self.fig.add_axes([<span class="number">0.55</span>, <span class="number">0.15</span>, <span class="number">0.4</span>, <span class="number">0.75</span>])</span><br><span class="line">        self.fig.suptitle(<span class="string">&#x27;分类可视化&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 原始数据图</span></span><br><span class="line">        self.scatter2 = self.ax2.scatter(self.X[:, <span class="number">0</span>], self.X[:, <span class="number">1</span>], c=self.y, cmap=<span class="string">&#x27;coolwarm&#x27;</span>)</span><br><span class="line">        self.ax2.set_title(<span class="string">&#x27;原始数据&#x27;</span>)</span><br><span class="line">        x = np.linspace(-<span class="number">6</span>, <span class="number">6</span>, <span class="number">100</span>)</span><br><span class="line">        self.sine2, = self.ax2.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">        self.ax2.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax2.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 当前分类图</span></span><br><span class="line">        self.scatter1 = self.ax1.scatter(self.X[:, <span class="number">0</span>], self.X[:, <span class="number">1</span>], c=<span class="string">&#x27;gray&#x27;</span>)</span><br><span class="line">        self.s_scatter1 = self.ax1.scatter([], [], c=<span class="string">&#x27;orange&#x27;</span>, s=<span class="number">100</span>)</span><br><span class="line">        self.ax1.set_title(<span class="string">&#x27;当前分类&#x27;</span>)</span><br><span class="line">        self.ax1.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax1.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.sine1, = self.ax1.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 添加按钮</span></span><br><span class="line">        self.ax_button = plt.axes([<span class="number">0.81</span>, <span class="number">0.02</span>, <span class="number">0.1</span>, <span class="number">0.075</span>])</span><br><span class="line">        self.button = Button(self.ax_button, <span class="string">&#x27;下一步&#x27;</span>)</span><br><span class="line">        self.button.on_clicked(self.step)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 添加K值滑动条</span></span><br><span class="line">        self.ax_slider = plt.axes([<span class="number">0.55</span>, <span class="number">0.05</span>, <span class="number">0.3</span>, <span class="number">0.03</span>])</span><br><span class="line">        self.k_slider = Slider(self.ax_slider, <span class="string">&#x27;K值&#x27;</span>, <span class="number">1</span>, <span class="number">10</span>, valinit=<span class="number">1</span>, valstep=<span class="number">1</span>)</span><br><span class="line">        self.k_slider.on_changed(self.update_k)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_k</span>(<span class="params">self, val</span>):</span><br><span class="line">        self.k = <span class="built_in">int</span>(val)</span><br><span class="line">        <span class="keyword">if</span> self.test_mode:</span><br><span class="line">            self.update_test_classification()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">nearest_neighbors</span>(<span class="params">self, point, k</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.S:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        distances = np.<span class="built_in">sum</span>((self.X[<span class="built_in">list</span>(self.S)] - point)**<span class="number">2</span>, axis=<span class="number">1</span>)</span><br><span class="line">        k = <span class="built_in">min</span>(k, <span class="built_in">len</span>(self.S))</span><br><span class="line">        nearest_indices = np.argsort(distances)[:k]</span><br><span class="line">        nearest_labels = [self.y[<span class="built_in">list</span>(self.S)[i]] <span class="keyword">for</span> i <span class="keyword">in</span> nearest_indices]</span><br><span class="line">        <span class="keyword">return</span> np.mean(nearest_labels) &gt; <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">step</span>(<span class="params">self, event</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.test_mode:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> self.S:</span><br><span class="line">                self.S.add(np.random.choice(self.n_points))</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                W = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(self.n_points) <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> self.S <span class="keyword">and</span> </span><br><span class="line">                     self.nearest_neighbors(self.X[i], self.k) != self.y[i]]</span><br><span class="line">                <span class="keyword">if</span> W:</span><br><span class="line">                    self.S.add(np.random.choice(W))</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    self.prompt_test_mode()</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">            predictions = np.array([self.nearest_neighbors(x, self.k) <span class="keyword">for</span> x <span class="keyword">in</span> self.X])</span><br><span class="line">            colors = np.where(predictions, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">            self.scatter1.set_facecolors(colors)</span><br><span class="line">            </span><br><span class="line">            s_points = self.X[<span class="built_in">list</span>(self.S)]</span><br><span class="line">            self.s_scatter1.set_offsets(s_points)</span><br><span class="line">            </span><br><span class="line">            self.ax1.set_title(<span class="string">f&#x27;当前分类 (S集合大小: <span class="subst">&#123;<span class="built_in">len</span>(self.S)&#125;</span>)&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.get_test_points()</span><br><span class="line"></span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">prompt_test_mode</span>(<span class="params">self</span>):</span><br><span class="line">        self.test_mode = <span class="literal">True</span></span><br><span class="line">        self.ax2.clear()</span><br><span class="line">        self.ax2.set_title(<span class="string">&#x27;测试分类&#x27;</span>)</span><br><span class="line">        self.ax2.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax2.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        x = np.linspace(-<span class="number">6</span>, <span class="number">6</span>, <span class="number">100</span>)</span><br><span class="line">        self.sine2, = self.ax2.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">        self.scatter2 = self.ax2.scatter([], [])</span><br><span class="line">        self.s_scatter2 = self.ax2.scatter([], [], c=<span class="string">&#x27;orange&#x27;</span>, s=<span class="number">100</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 隐藏&quot;下一步&quot;按钮</span></span><br><span class="line">        self.button.ax.set_visible(<span class="literal">False</span>)</span><br><span class="line">        </span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line">        self.get_test_points()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_test_points</span>(<span class="params">self</span>):</span><br><span class="line">        root = tk.Tk()</span><br><span class="line">        root.withdraw()  <span class="comment"># 隐藏主窗口</span></span><br><span class="line"></span><br><span class="line">        n_test = simpledialog.askinteger(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入测试点的数量:&quot;</span>, parent=root, minvalue=<span class="number">1</span>, maxvalue=<span class="number">1000</span>)</span><br><span class="line">        x_range = simpledialog.askstring(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入x坐标范围 (min max):&quot;</span>, parent=root)</span><br><span class="line">        y_range = simpledialog.askstring(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入y坐标范围 (min max):&quot;</span>, parent=root)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> n_test <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> x_range <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> y_range <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">        x_min, x_max = <span class="built_in">map</span>(<span class="built_in">float</span>, x_range.split())</span><br><span class="line">        y_min, y_max = <span class="built_in">map</span>(<span class="built_in">float</span>, y_range.split())</span><br><span class="line"></span><br><span class="line">        x_range = <span class="built_in">max</span>(<span class="built_in">abs</span>(x_min), <span class="built_in">abs</span>(x_max), <span class="number">6</span>)</span><br><span class="line">        y_range = <span class="built_in">max</span>(<span class="built_in">abs</span>(y_min), <span class="built_in">abs</span>(y_max), <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line">        self.ax2.set_xlim(-x_range, x_range)</span><br><span class="line">        self.ax2.set_ylim(-y_range, y_range)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 更新sin(x)函数的显示范围</span></span><br><span class="line">        x = np.linspace(-x_range, x_range, <span class="number">1000</span>)</span><br><span class="line">        self.sine2.set_data(x, np.sin(x))</span><br><span class="line"></span><br><span class="line">        self.X_test = np.random.uniform(low=[x_min, y_min], high=[x_max, y_max], size=(n_test, <span class="number">2</span>))</span><br><span class="line">        self.update_test_classification()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_test_classification</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 显示原始数据</span></span><br><span class="line">        self.scatter2.set_offsets(self.X)</span><br><span class="line">        self.scatter2.set_facecolors(np.where(self.y, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>))</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 显示S集合的点</span></span><br><span class="line">        s_points = self.X[<span class="built_in">list</span>(self.S)]</span><br><span class="line">        self.s_scatter2.set_offsets(s_points)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 显示并分类测试点</span></span><br><span class="line">        predictions = np.array([self.nearest_neighbors(x, self.k) <span class="keyword">for</span> x <span class="keyword">in</span> self.X_test])</span><br><span class="line">        colors = np.where(predictions, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">        test_scatter = self.ax2.scatter(self.X_test[:, <span class="number">0</span>], self.X_test[:, <span class="number">1</span>], c=colors, marker=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        self.ax2.set_title(<span class="string">f&#x27;测试分类 (K=<span class="subst">&#123;self.k&#125;</span>)&#x27;</span>)</span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">run</span>(<span class="params">self</span>):</span><br><span class="line">        plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建并运行可视化器</span></span><br><span class="line">visualizer = ClassifierVisualizer()</span><br><span class="line">visualizer.run()</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>JackieLi
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://jackie-li-0228.github.io/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" title="压缩近邻法的可视化Python实现">http://jackie-li-0228.github.io/2024/06/29/压缩近邻法的可视化Python实现/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB/" rel="tag"># 模式识别</a>
+              <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" rel="tag"># 机器学习</a>
+          </div>
+
+        
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/" rel="prev" title="Ubuntu键盘错位（@变成“”，~波浪线打不出来）">
+      <i class="fa fa-chevron-left"></i> Ubuntu键盘错位（@变成“”，~波浪线打不出来）
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">JackieLi</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+      
+
+      
+
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JackieLi</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">20k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">18 分钟</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div><script color="0,0,0" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: true;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: true;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='' opacity='0.5' zIndex='-1' count='200' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'S2OKu8IlsXEYdwHHCF4muTBQ-gzGzoHsz',
+      appKey     : 'f9Nyqb7IpFUBg18LaSN1a1V7',
+      placeholder: "浅发一条",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '15' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
+</html>

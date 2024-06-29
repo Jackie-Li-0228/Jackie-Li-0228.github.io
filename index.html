@@ -216,6 +216,123 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" class="post-title-link" itemprop="url">压缩近邻法的可视化Python实现</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2024-06-29 11:00:00 / 修改时间：11:08:11" itemprop="dateCreated datePublished" datetime="2024-06-29T11:00:00+08:00">2024-06-29</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" class="post-meta-item leancloud_visitors" data-flag-title="压缩近邻法的可视化Python实现" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。</p>
+<p>压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。</p>
+<p>本程序功能：</p>
+<ol>
+<li>生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。</li>
+<li>使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。</li>
+<li>可以添加测试数据集并观察使用筛选后的分类点集在K-近邻法中对于不同K取值的分类效果。</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1232,122 +1349,6 @@
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/" class="post-title-link" itemprop="url">安装软件时报has install-snap change in progress错误</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2022-12-27 22:30:59 / 修改时间：22:43:18" itemprop="dateCreated datePublished" datetime="2022-12-27T22:30:59+08:00">2022-12-27</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Ubuntu%E5%90%88%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">Ubuntu合集</span></a>
-                </span>
-            </span>
-
-          
-            <span id="/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/" class="post-meta-item leancloud_visitors" data-flag-title="安装软件时报has install-snap change in progress错误" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>94</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>原因是因为软件没安装完，又让安装，也有可能是上一次安装卡半路了</p>
-<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol>
-<li><p>在终端里输入snap changes</p>
-</li>
-<li><p>找到对应的snap号</p>
-</li>
-<li><p>输入</p>
-</li>
-</ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap abort “snap号”</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>重新安装</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1417,20 +1418,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-count">14</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">19</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1476,12 +1477,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">14k</span>
+    <span title="站点总字数">20k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">13 分钟</span>
+    <span title="站点阅读时长">18 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div><script color="0,0,0" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
