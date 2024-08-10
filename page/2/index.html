@@ -216,6 +216,118 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/" class="post-title-link" itemprop="url">安装Ubuntu的搜狗拼音</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-12-27 22:39:52 / 修改时间：22:41:53" itemprop="dateCreated datePublished" datetime="2022-12-27T22:39:52+08:00">2022-12-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu%E5%90%88%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">Ubuntu合集</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/" class="post-meta-item leancloud_visitors" data-flag-title="安装Ubuntu的搜狗拼音" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>279</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>十分麻烦哎哟</p>
+<p>在官网搜安装包</p>
+<p>在download里打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i so /tab自动补全</span><br></pre></td></tr></table></figure>
+<p>安装完了以后要去设置里面把框架改为fcitx，然后把别的语言都删掉，就剩下中文</p>
+<p>导致我没有成功的一步是没有安装相关依赖库</p>
+<p>说实话应该能猜出来的 因为之前切换到搜狗拼音已经能看见一个雏形的框了，但是还是没有办法打中文</p>
+<p>然后打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span><br><span class="line">sudo apt install libgsettings-qt1</span><br></pre></td></tr></table></figure>
+<p>再切换输入法输入就好了</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -840,20 +952,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-count">22</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -899,7 +1011,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">20k</span>
+    <span title="站点总字数">21k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
