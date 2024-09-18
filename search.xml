@@ -1,429 +1,547 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>解决Win10/Win11字体静止时模糊，鼠标移动到字体上后或者移动字体时恢复正常的问题</title>
-      <link href="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/"/>
-      <url>/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p>最近一段时间，在某些应用程序中会出现字体显示不正常，窗口内界面显示有残影等奇怪问题。虽然问题出现了很久，但是一直没有着手解决，直到今天实在无法忍受遂寻求解决方法。</p><span id="more"></span><h2 id="详细筛查过程（赶时间的朋友可以直接到最后一节）"><a href="#详细筛查过程（赶时间的朋友可以直接到最后一节）" class="headerlink" title="详细筛查过程（赶时间的朋友可以直接到最后一节）"></a>详细筛查过程（赶时间的朋友可以直接到最后一节）</h2><p>首先检查了系统的显示设置，调整了<strong>缩放值设置</strong>。但是我的缩放一直是系统推荐的150%，所以没有更改此处。</p><p>然后突然想起自己之前曾经使用过<strong>Macwiz</strong>调整过电脑的字体渲染方式，于是又去检查了一下Macwiz的设置。但实际上由于显示效果不好，我只是简单尝试了一下这款应用之后便关闭了相应服务。不过还是重新到<strong>设置-个性化-字体-相关设置-调整ClearType文本</strong>中尝试重新调整一下渲染细节，但是没有什么效果。</p><p>然后便是想到自己之前为了游戏显示性能曾经胡乱调整过<strong>Nvidia Control Panel</strong>里面<strong>管理3D设置</strong>选项卡中的设置：</p><img src="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/nvidia.png" class><p><strong>尝试重置了里面的相关设置，并重启。</strong></p><p>再打开后，问题成功解决！</p><h2 id="简要总结……"><a href="#简要总结……" class="headerlink" title="简要总结……"></a>简要总结……</h2><ul><li>首先检查<strong>显示设置-缩放值设置</strong>，将其和<strong>分辨率</strong>调整到合适状态（大部分情况下是废话）</li><li>然后想想自己有没有开启某些字体渲染有关的插件或者应用，有的话，去看看里面的设置是否可能会引起兼容性问题</li><li>尝试调整<strong>设置-个性化-字体-相关设置-调整ClearType文本</strong>，看看调整字体渲染细节后会不会有什么变化</li><li>最后尝试调整自己显卡相关的设置（本人用的是N卡，所以就去找<strong>Nvidia Contorl Panel</strong>里面的<strong>管理3D设置</strong>）</li><li>最后，重启！（推荐把上面的步骤挨个做一下之后重启）</li></ul><p>祝你成功解决！</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>2023/1/3 随笔</title>
+    <url>/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/</url>
+    <content><![CDATA[<p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p>
+<p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p>
+<p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p>
+<p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p>
+<p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>
+]]></content>
       <categories>
-          
-          <category> 疑难杂症 </category>
-          
+        <category>随笔</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Windows </tag>
-            
-            <tag> Nvidia </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用Shim实现在命令行中快捷启动应用程序</title>
-      <link href="/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/"/>
-      <url>/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="使用Shim工具快捷启动应用程序"><a href="#使用Shim工具快捷启动应用程序" class="headerlink" title="使用Shim工具快捷启动应用程序"></a>使用Shim工具快捷启动应用程序</h1><p>想要使用命令行来快捷启动应用程序？但是又不想一个一个把每个软件的安装目录添加进Path，并且还要记住程序原本的名称，非常麻烦。把程序的快捷方式都放到一个统一的Path中注册的文件夹的方法？确实可以使用命令行启动，也可以自定义名字，但每次启动还需要加上<code>.lnk</code>的后缀才可以识别，依然非常鸡肋。</p><p>今天要介绍的是一种更为简便的方法，只需要使用一款Scoop的配套小工具——<strong>Shim</strong>。</p><span id="more"></span><p>如果你还不知道什么是Scoop，可以参考这篇文章：<a href="https://blog.csdn.net/qq_43741794/article/details/113079959">Scoop介绍与初体验</a>。不过那不是这篇文章的重点。</p><p>Shim的GitHub仓库地址是<a href="https://github.com/ScoopInstaller/Shim">https://github.com/ScoopInstaller/Shim</a>，但这个地址的最新版本是1.1.0，实际上Scoop配套版本的shim组件已经是3.1.1版本，功能更加完善。这里放一个最新版本的下载链接：<a href="https://wwo.lanzouj.com/iSlsA23150mj">Shim 3.1.1 下载链接 密码：b3v9</a>.</p><h2 id="如何使用Shim创建应用程序的“快捷方式”"><a href="#如何使用Shim创建应用程序的“快捷方式”" class="headerlink" title="如何使用Shim创建应用程序的“快捷方式”"></a>如何使用Shim创建应用程序的“快捷方式”</h2><p>之所以用引号标注“快捷方式”，是因为这里创建的是一个<code>.exe</code>的可执行文件，而不是<code>.lnk</code>的快捷方式。</p><h3 id="创建步骤："><a href="#创建步骤：" class="headerlink" title="创建步骤："></a>创建步骤：</h3><ol><li><p><strong>创建一个shim文件</strong></p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">New-Item</span> <span class="literal">-Path</span> ./XXX.shim <span class="literal">-Value</span> <span class="string">&#x27;path = &quot;C:\PATH\TO\EXE\XXX.exe&quot;&#x27;</span></span><br></pre></td></tr></table></figure><p>这行命令创建一个shim文件，里面存放要打开的应用程序的地址。请将<code>PATH\TO\EXE</code>部分替换为实际应用程序的路径，将<code>XXX</code>替换为应用程序的名称。</p></li><li><p><strong>将shim程序复制到当前目录并重命名</strong></p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Copy-Item</span> <span class="literal">-Path</span> .\PATH\TO\SHIM\shim.exe <span class="literal">-Destination</span> .\XXX.exe</span><br></pre></td></tr></table></figure><p>这行命令将shim程序复制过来放在当前目录下，并修改名称为<code>XXX.exe</code>。请将<code>PATH\TO\SHIM</code>部分替换为实际shim程序的路径。</p></li><li><p><strong>运行应用程序</strong></p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.\XXX.exe</span><br></pre></td></tr></table></figure><p>执行这行命令就可以启动应用程序了。</p></li></ol><h3 id="随时使用命令行打开这些程序"><a href="#随时使用命令行打开这些程序" class="headerlink" title="随时使用命令行打开这些程序"></a>随时使用命令行打开这些程序</h3><p>如果你希望随时可以通过命令行打开应用程序，可以将当前文件夹添加至Path，这样就可以全局识别这些应用程序的名称了。</p><p>实际上，这个程序的原理也很简单，感兴趣的朋友可以自己实现着玩一下。</p>]]></content>
-      
-      
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022最新Manim安装教程</title>
+    <url>/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Manim是一个由3Blue1Brown编写的强大的可视化库，3B1B的视频质量非常高，这与Manim的强大以及作者本人运用的炉火纯青密不可分。</p>
+<p>大家可以看一看3B1B本人在B站的视频来欣赏一下大佬的风范。<a href="https://space.bilibili.com/88461692?spm_id_from=333.337.0.0">3Blue1Brown的B站主页</a></p>
+<p>关于Manim的安装教程网上有一些，但有些博客或教程已经过老，里面的一些内容已经不适用，还有的内容写的并不足够详细。在安装过程中，这些问题将会让安装者十分头痛（我就是），这便有了这篇文章。希望大家可以学习交流。</p>
+<span id="more"></span>
+
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>Manim在Github上是开源的，懂得如何使用的话可以直接点击下面链接</p>
+<p><a href="https://github.com/3b1b/manim">3b1b&#x2F;manim</a></p>
+<p>下面开始安装。</p>
+<p>首先我们需要这些软件，LaTeX的支持工具（这里使用MiKTeX），Python，FFmpeg，SoX，Cairo。</p>
+<h3 id="MiKTeX"><a href="#MiKTeX" class="headerlink" title="MiKTeX"></a>MiKTeX</h3><p>官网下载链接<a href="https://miktex.org/download">在此</a>，但是亲测十分缓慢，而且还容易出现无法获取资源的下载问题。</p>
+<p>我的方法是在网上找到了安装包资源进行安装。</p>
+<p><a href="https://pan.baidu.com/s/1Yn58N1757I4yr5-YZYeV6Q?pwd=1234">点击这里下载</a>（提取码1234）下载下来安装包</p>
+<p>进去首先要选download miktex，选complete miktex，然后后面的源就选第一个就行，然后下载要下一会，下载好再打开安装包，点install miktex就行了。</p>
+<p>或者在<a href="https://www.pcsoft.com.cn/iopdfbhjl/200447?module=soft&t=website">这个链接</a>直接下载完整版的安装包，不用下载了，直接一路默认安装过去就行，记得记安装路径。</p>
+<p>然后要添加一下Path，打开MiKTeX\miktex\bin\x64，将这个地址添加到环境变量的path里面。</p>
+<p>然后在cmd里面输入latex，出现<img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/cmd1.png" class>即为安装成功。</p>
+<h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p>这个就不介绍了吧，网上教程多如云，也没啥问题的，注意添加Path就行。</p>
+<h3 id="FFmpeg"><a href="#FFmpeg" class="headerlink" title="FFmpeg"></a>FFmpeg</h3><p>这个软件网上的教程很多是几年前的，官网现在已经不一样了。</p>
+<p>打开官网<a href="http://ffmpeg.org/download.html">FFmpeg官网</a></p>
+<img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/ffmpeg.png" class>
+
+<p>点击Windows builds from gyan.dev</p>
+<img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/ffmpeg2.png" class>
+
+<p>点击latest git master branch build里面的ffmpeg-git-full.7z</p>
+<p>下载下来解压到合适的位置，将里面的bin文件夹添加到Path即可。</p>
+<h3 id="SoX"><a href="#SoX" class="headerlink" title="SoX"></a>SoX</h3><p>打开网址<a href="https://sourceforge.net/projects/sox/files/sox/">SoX-sourceforge</a></p>
+<p>点download latest version,安装即可，记住安装路径。</p>
+<p>然后将安装路径的路径添加到Path里面，记得添加紧邻着各个文件的路径，就比如我是Sox&#x2F;sox-14-4-2的下面有一堆文件，就要添加到sox-14-4-2这里而不是只到Sox这里。</p>
+<h3 id="Pycairo"><a href="#Pycairo" class="headerlink" title="Pycairo"></a>Pycairo</h3><p>点击官网<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo">Pycairo官网</a></p>
+<img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/pycairo.png" class>
+
+<p>看到一堆怎么选择呢？这里需要大家的python安装了wheel，如果没有的话打开cmd运行以下代码安装wheel：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install wheel</span><br></pre></td></tr></table></figure>
+
+<p>如果说不认识pip这个指令那是你还没有把python的scripts目录加到path里面去</p>
+<p>然后运行</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip debug --verbose</span><br></pre></td></tr></table></figure>
+
+<p>就可以看到当前所有支持的whl的种类，然后去官网里面挑可以安装的下载下来，然后在下载的whl文件目录打开终端，输入：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install xxx.whl (自己改,可以按tab自动补全)</span><br></pre></td></tr></table></figure>
+
+<p>回车提示成功安装即可</p>
+<h3 id="Manim"><a href="#Manim" class="headerlink" title="Manim"></a>Manim</h3><p>终于！下面开始安装Manim！</p>
+<p>win+r 输入cmd并打开，输入以下代码：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install manim</span><br><span class="line">python3 manim.py example_scenes.py SquareToCircle -pl</span><br></pre></td></tr></table></figure>
+
+<p>请注意，有的人可能需要使用python而不是python3来运行最后一行代码。</p>
+<p>我在运行时报了错，发现还需要安装manimgl的依赖。</p>
+<p>于是win+r cmd，输入</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install manimgl</span><br></pre></td></tr></table></figure>
+
+<p>安装完成后便可以顺利运行了</p>
+]]></content>
       <categories>
-          
-          <category> 玩机技巧 </category>
-          
+        <category>安装教程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Shim </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>压缩近邻法的可视化Python实现</title>
-      <link href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/"/>
-      <url>/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/</url>
-      
-        <content type="html"><![CDATA[<p>最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。</p><p>压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。</p><p>本程序功能：</p><ol><li>生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。</li><li>使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。</li><li>可以添加测试数据集并观察使用筛选后的分类点集在K-近邻法中对于不同K取值的分类效果。</li></ol><span id="more"></span><p>构建过程如下：</p><p>首先设原数据集为$D$，算法尝试构建分类集$S$,使得$S$中的点在最近邻算法下可以对$D$进行分类。</p><p>$S$的构建过程如下:</p><ol><li>从$D$中随机选取一个点加入$S$。</li><li>使用最近邻算法对$D$中的点进行分类，将所有分类错误的点归为错误集$E$。</li><li>从$E$中随机选取一个点加入$S$。(此步骤也可以使用其他策略，这里使用随机选择)</li><li>重复2-3步骤，直到$E$为空。这时$S$就是我们要找的分类集。</li></ol><p>以下为代码实现：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> matplotlib.widgets <span class="keyword">import</span> Button, Slider</span><br><span class="line"><span class="keyword">from</span> matplotlib.backends.backend_tkagg <span class="keyword">import</span> FigureCanvasTkAgg</span><br><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> simpledialog</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line">mpl.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;Microsoft YaHei&#x27;</span>] <span class="comment"># 指定默认字体：解决plot不能显示中文问题</span></span><br><span class="line">mpl.rcParams[<span class="string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="literal">False</span> <span class="comment"># 解决保存图像是负号&#x27;-&#x27;显示为方块的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassifierVisualizer</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, n_points=<span class="number">100</span></span>):</span><br><span class="line">        self.n_points = n_points</span><br><span class="line">        self.generate_data()</span><br><span class="line">        self.S = <span class="built_in">set</span>()</span><br><span class="line">        self.setup_plot()</span><br><span class="line">        self.test_mode = <span class="literal">False</span></span><br><span class="line">        self.k = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">generate_data</span>(<span class="params">self</span>):</span><br><span class="line">        self.X = np.random.uniform(-<span class="number">5</span>, <span class="number">5</span>, (self.n_points, <span class="number">2</span>))</span><br><span class="line">        self.y = (self.X[:, <span class="number">1</span>] &gt; np.sin(self.X[:, <span class="number">0</span>])).astype(<span class="built_in">int</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">setup_plot</span>(<span class="params">self</span>):</span><br><span class="line">        self.fig = plt.figure(figsize=(<span class="number">15</span>, <span class="number">6</span>))</span><br><span class="line">        self.ax1 = self.fig.add_axes([<span class="number">0.05</span>, <span class="number">0.15</span>, <span class="number">0.4</span>, <span class="number">0.75</span>])</span><br><span class="line">        self.ax2 = self.fig.add_axes([<span class="number">0.55</span>, <span class="number">0.15</span>, <span class="number">0.4</span>, <span class="number">0.75</span>])</span><br><span class="line">        self.fig.suptitle(<span class="string">&#x27;分类可视化&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 原始数据图</span></span><br><span class="line">        self.scatter2 = self.ax2.scatter(self.X[:, <span class="number">0</span>], self.X[:, <span class="number">1</span>], c=self.y, cmap=<span class="string">&#x27;coolwarm&#x27;</span>)</span><br><span class="line">        self.ax2.set_title(<span class="string">&#x27;原始数据&#x27;</span>)</span><br><span class="line">        x = np.linspace(-<span class="number">6</span>, <span class="number">6</span>, <span class="number">100</span>)</span><br><span class="line">        self.sine2, = self.ax2.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">        self.ax2.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax2.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 当前分类图</span></span><br><span class="line">        self.scatter1 = self.ax1.scatter(self.X[:, <span class="number">0</span>], self.X[:, <span class="number">1</span>], c=<span class="string">&#x27;gray&#x27;</span>)</span><br><span class="line">        self.s_scatter1 = self.ax1.scatter([], [], c=<span class="string">&#x27;orange&#x27;</span>, s=<span class="number">100</span>)</span><br><span class="line">        self.ax1.set_title(<span class="string">&#x27;当前分类&#x27;</span>)</span><br><span class="line">        self.ax1.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax1.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.sine1, = self.ax1.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 添加按钮</span></span><br><span class="line">        self.ax_button = plt.axes([<span class="number">0.81</span>, <span class="number">0.02</span>, <span class="number">0.1</span>, <span class="number">0.075</span>])</span><br><span class="line">        self.button = Button(self.ax_button, <span class="string">&#x27;下一步&#x27;</span>)</span><br><span class="line">        self.button.on_clicked(self.step)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 添加K值滑动条</span></span><br><span class="line">        self.ax_slider = plt.axes([<span class="number">0.55</span>, <span class="number">0.05</span>, <span class="number">0.3</span>, <span class="number">0.03</span>])</span><br><span class="line">        self.k_slider = Slider(self.ax_slider, <span class="string">&#x27;K值&#x27;</span>, <span class="number">1</span>, <span class="number">10</span>, valinit=<span class="number">1</span>, valstep=<span class="number">1</span>)</span><br><span class="line">        self.k_slider.on_changed(self.update_k)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_k</span>(<span class="params">self, val</span>):</span><br><span class="line">        self.k = <span class="built_in">int</span>(val)</span><br><span class="line">        <span class="keyword">if</span> self.test_mode:</span><br><span class="line">            self.update_test_classification()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">nearest_neighbors</span>(<span class="params">self, point, k</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.S:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        distances = np.<span class="built_in">sum</span>((self.X[<span class="built_in">list</span>(self.S)] - point)**<span class="number">2</span>, axis=<span class="number">1</span>)</span><br><span class="line">        k = <span class="built_in">min</span>(k, <span class="built_in">len</span>(self.S))</span><br><span class="line">        nearest_indices = np.argsort(distances)[:k]</span><br><span class="line">        nearest_labels = [self.y[<span class="built_in">list</span>(self.S)[i]] <span class="keyword">for</span> i <span class="keyword">in</span> nearest_indices]</span><br><span class="line">        <span class="keyword">return</span> np.mean(nearest_labels) &gt; <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">step</span>(<span class="params">self, event</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.test_mode:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> self.S:</span><br><span class="line">                self.S.add(np.random.choice(self.n_points))</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                W = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(self.n_points) <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> self.S <span class="keyword">and</span> </span><br><span class="line">                     self.nearest_neighbors(self.X[i], self.k) != self.y[i]]</span><br><span class="line">                <span class="keyword">if</span> W:</span><br><span class="line">                    self.S.add(np.random.choice(W))</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    self.prompt_test_mode()</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">            predictions = np.array([self.nearest_neighbors(x, self.k) <span class="keyword">for</span> x <span class="keyword">in</span> self.X])</span><br><span class="line">            colors = np.where(predictions, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">            self.scatter1.set_facecolors(colors)</span><br><span class="line">            </span><br><span class="line">            s_points = self.X[<span class="built_in">list</span>(self.S)]</span><br><span class="line">            self.s_scatter1.set_offsets(s_points)</span><br><span class="line">            </span><br><span class="line">            self.ax1.set_title(<span class="string">f&#x27;当前分类 (S集合大小: <span class="subst">&#123;<span class="built_in">len</span>(self.S)&#125;</span>)&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.get_test_points()</span><br><span class="line"></span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">prompt_test_mode</span>(<span class="params">self</span>):</span><br><span class="line">        self.test_mode = <span class="literal">True</span></span><br><span class="line">        self.ax2.clear()</span><br><span class="line">        self.ax2.set_title(<span class="string">&#x27;测试分类&#x27;</span>)</span><br><span class="line">        self.ax2.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax2.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        x = np.linspace(-<span class="number">6</span>, <span class="number">6</span>, <span class="number">100</span>)</span><br><span class="line">        self.sine2, = self.ax2.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">        self.scatter2 = self.ax2.scatter([], [])</span><br><span class="line">        self.s_scatter2 = self.ax2.scatter([], [], c=<span class="string">&#x27;orange&#x27;</span>, s=<span class="number">100</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 隐藏&quot;下一步&quot;按钮</span></span><br><span class="line">        self.button.ax.set_visible(<span class="literal">False</span>)</span><br><span class="line">        </span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line">        self.get_test_points()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_test_points</span>(<span class="params">self</span>):</span><br><span class="line">        root = tk.Tk()</span><br><span class="line">        root.withdraw()  <span class="comment"># 隐藏主窗口</span></span><br><span class="line"></span><br><span class="line">        n_test = simpledialog.askinteger(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入测试点的数量:&quot;</span>, parent=root, minvalue=<span class="number">1</span>, maxvalue=<span class="number">1000</span>)</span><br><span class="line">        x_range = simpledialog.askstring(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入x坐标范围 (min max):&quot;</span>, parent=root)</span><br><span class="line">        y_range = simpledialog.askstring(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入y坐标范围 (min max):&quot;</span>, parent=root)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> n_test <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> x_range <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> y_range <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">        x_min, x_max = <span class="built_in">map</span>(<span class="built_in">float</span>, x_range.split())</span><br><span class="line">        y_min, y_max = <span class="built_in">map</span>(<span class="built_in">float</span>, y_range.split())</span><br><span class="line"></span><br><span class="line">        x_range = <span class="built_in">max</span>(<span class="built_in">abs</span>(x_min), <span class="built_in">abs</span>(x_max), <span class="number">6</span>)</span><br><span class="line">        y_range = <span class="built_in">max</span>(<span class="built_in">abs</span>(y_min), <span class="built_in">abs</span>(y_max), <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line">        self.ax2.set_xlim(-x_range, x_range)</span><br><span class="line">        self.ax2.set_ylim(-y_range, y_range)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 更新sin(x)函数的显示范围</span></span><br><span class="line">        x = np.linspace(-x_range, x_range, <span class="number">1000</span>)</span><br><span class="line">        self.sine2.set_data(x, np.sin(x))</span><br><span class="line"></span><br><span class="line">        self.X_test = np.random.uniform(low=[x_min, y_min], high=[x_max, y_max], size=(n_test, <span class="number">2</span>))</span><br><span class="line">        self.update_test_classification()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_test_classification</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 显示原始数据</span></span><br><span class="line">        self.scatter2.set_offsets(self.X)</span><br><span class="line">        self.scatter2.set_facecolors(np.where(self.y, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>))</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 显示S集合的点</span></span><br><span class="line">        s_points = self.X[<span class="built_in">list</span>(self.S)]</span><br><span class="line">        self.s_scatter2.set_offsets(s_points)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 显示并分类测试点</span></span><br><span class="line">        predictions = np.array([self.nearest_neighbors(x, self.k) <span class="keyword">for</span> x <span class="keyword">in</span> self.X_test])</span><br><span class="line">        colors = np.where(predictions, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">        test_scatter = self.ax2.scatter(self.X_test[:, <span class="number">0</span>], self.X_test[:, <span class="number">1</span>], c=colors, marker=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        self.ax2.set_title(<span class="string">f&#x27;测试分类 (K=<span class="subst">&#123;self.k&#125;</span>)&#x27;</span>)</span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">run</span>(<span class="params">self</span>):</span><br><span class="line">        plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建并运行可视化器</span></span><br><span class="line">visualizer = ClassifierVisualizer()</span><br><span class="line">visualizer.run()</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>Manim</tag>
+        <tag>LaTeX</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo图片显示问题</title>
+    <url>/2022/12/27/Hexo%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>在Hexo搭建的时候遇到了奇葩的问题，网上的hexo-asset-image也下载了，用Markdown原生的图片引用方式引用，发现主页的预览界面可以正常显示，但是点进文章里面就显示不了了。</p>
+<p>而在用了asset文件夹的方式之后，（在页面同目录下创建一个同名文件夹放图片），结果令人哭笑不得————变成了页面内正常显示，主页无法显示了。</p>
+<span id="more"></span>
+<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>笔者对Hexo了解不深，如果有类似经历的或者懂得hexo主页和文章渲染时具体原理的大佬可以在评论区交流一下</p>
+<h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>首先还是需要安装hexo-asset-image插件的，在hexo博客的根目录文件夹打开<strong>git bash</strong>，输入</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+<p>或者</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure>
+
+<p>在<a href="https://blog.csdn.net/Aelous_dp/article/details/107643344">Hexo图片相关 - 文章显示、主页显示、修改fancybox</a>一文中，作者提到自带的asset-image有bug，可以尝试在根目录中找到node_modules下的hexo-asset-image文件夹，修改index.js如下：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> cheerio = <span class="built_in">require</span>(<span class="string">&quot;cheerio&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getPosition</span>(<span class="params">str, m, i</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> str.<span class="title function_">split</span>(m, i).<span class="title function_">join</span>(m).<span class="property">length</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> version = <span class="title class_">String</span>(hexo.<span class="property">version</span>).<span class="title function_">split</span>(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&quot;after_post_render&quot;</span>, <span class="keyword">function</span> (<span class="params">data</span>) &#123;</span><br><span class="line"><span class="keyword">var</span> config = hexo.<span class="property">config</span>;</span><br><span class="line"><span class="keyword">if</span> (config.<span class="property">post_asset_folder</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> link = data.<span class="property">permalink</span>;</span><br><span class="line">    <span class="keyword">if</span> (version.<span class="property">length</span> &gt; <span class="number">0</span> &amp;&amp; <span class="title class_">Number</span>(version[<span class="number">0</span>]) == <span class="number">3</span>)</span><br><span class="line">    <span class="keyword">var</span> beginPos = <span class="title function_">getPosition</span>(link, <span class="string">&quot;/&quot;</span>, <span class="number">1</span>) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">var</span> beginPos = <span class="title function_">getPosition</span>(link, <span class="string">&quot;/&quot;</span>, <span class="number">3</span>) + <span class="number">1</span>;</span><br><span class="line">    <span class="comment">// In hexo 3.1.1, the permalink of &quot;about&quot; page is like &quot;.../about/index.html&quot;.</span></span><br><span class="line">    <span class="keyword">var</span> endPos = link.<span class="title function_">lastIndexOf</span>(<span class="string">&quot;/&quot;</span>) + <span class="number">1</span>;</span><br><span class="line">    link = link.<span class="title function_">substring</span>(beginPos, endPos);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> toprocess = [<span class="string">&quot;excerpt&quot;</span>, <span class="string">&quot;more&quot;</span>, <span class="string">&quot;content&quot;</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; toprocess.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> key = toprocess[i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> $ = cheerio.<span class="title function_">load</span>(data[key], &#123;</span><br><span class="line">        <span class="attr">ignoreWhitespace</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">xmlMode</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">lowerCaseTags</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">decodeEntities</span>: <span class="literal">false</span>,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    $(<span class="string">&quot;img&quot;</span>).<span class="title function_">each</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> ($(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&quot;src&quot;</span>)) &#123;</span><br><span class="line">        <span class="comment">// For windows style path, we replace &#x27;\&#x27; to &#x27;/&#x27;.</span></span><br><span class="line">        <span class="keyword">var</span> src = $(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&quot;src&quot;</span>).<span class="title function_">replace</span>(<span class="string">&quot;\\&quot;</span>, <span class="string">&quot;/&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="regexp">/http[s]*.*|\/\/.*/</span>.<span class="title function_">test</span>(src) &amp;&amp; !<span class="regexp">/^\s*\//</span>.<span class="title function_">test</span>(src)) &#123;</span><br><span class="line">            <span class="comment">// For &quot;about&quot; page, the first part of &quot;src&quot; can&#x27;t be removed.</span></span><br><span class="line">            <span class="comment">// In addition, to support multi-level local directory.</span></span><br><span class="line">            <span class="keyword">var</span> linkArray = link.<span class="title function_">split</span>(<span class="string">&quot;/&quot;</span>).<span class="title function_">filter</span>(<span class="keyword">function</span> (<span class="params">elem</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> elem != <span class="string">&quot;&quot;</span>;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="keyword">var</span> srcArray = src.<span class="title function_">split</span>(<span class="string">&quot;/&quot;</span>).<span class="title function_">filter</span>(<span class="keyword">function</span> (<span class="params">elem</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> elem != <span class="string">&quot;&quot;</span> &amp;&amp; elem != <span class="string">&quot;.&quot;</span>;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="keyword">if</span> (srcArray.<span class="property">length</span> &gt; <span class="number">1</span>) srcArray.<span class="title function_">shift</span>();</span><br><span class="line">            src = srcArray.<span class="title function_">join</span>(<span class="string">&quot;/&quot;</span>);</span><br><span class="line">            $(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&quot;src&quot;</span>, config.<span class="property">root</span> + link + src);</span><br><span class="line">            <span class="variable language_">console</span>.<span class="property">info</span> &amp;&amp;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;update link as:--&gt;&quot;</span> + config.<span class="property">root</span> + link + src);</span><br><span class="line">        &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="property">info</span> &amp;&amp; <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;no src attr, skipped...&quot;</span>);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="property">info</span> &amp;&amp; <span class="variable language_">console</span>.<span class="title function_">info</span>($(<span class="variable language_">this</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    data[key] = $.<span class="title function_">html</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>在hexo的_config.yml中将post_asset_folder设置为true，以后使用hexo new命令来创建网页的时候就能在source&#x2F;.post文件夹下（与网页的index文件在一起）看见一个同名的文件夹，将需要的图片全部放到这个文件夹中。</p>
+<p>（像我一样半路才开始打开post_asset_folder的也可以选择自己创建一个同名文件夹）</p>
+<p>之后在网页文件中使用</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;% asset_img 只用修改这里.jpg %&#125;</span><br></pre></td></tr></table></figure>
+<p>方式来引用即可实现主页和文章部分均能成功显示图片。</p>
+]]></content>
       <categories>
-          
-          <category> 机器学习 </category>
-          
+        <category>Hexo遇到的问题</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Python </tag>
-            
-            <tag> 模式识别 </tag>
-            
-            <tag> 机器学习 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ubuntu键盘错位（@变成“”，~波浪线打不出来）</title>
-      <link href="/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/"/>
-      <url>/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<p>在安装了搜狗输入法后出现了键盘布局错位的问题，@号和“”号位置互换，波浪线无法打出来。解决方法如下：</p><p>只需要打开fcitx配置工具，然后在输入法设置中将英文键盘布局放到搜狗输入法的键盘布局下面即可。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Hexo</tag>
+        <tag>图片</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>VScode codeLLDB 一直等待问题</title>
+    <url>/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p><a href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb">CodeLLDB - Visual Studio Marketplace</a></p>
+<ol>
+<li>点击Download Extension下载下来vsix包<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/1.png" class></li>
+<li>到vscode里面打开扩展<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/2.png" class></li>
+<li>选择刚才下载的包即可</li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> Ubuntu合集 </category>
-          
+        <category>Vscode合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于防止gazebo 134崩溃（针对VMware环境下）</title>
-      <link href="/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/"/>
-      <url>/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<p>在跑gazebo的时候出现了报134错误代码崩溃的情况，上网搜索了很多方法，最终来整理一下管用的：</p><p>第一个办法就是将虚拟机的加速3D图形关掉，这个方法可以，但是gazebo会变的贼慢。。。故不推荐。</p><p>第二个办法就是在执行roslaunch之前先执行</p><pre><code class="bash">export SVGA_VGPU10=0</code></pre><p>引用这个代码会告诉系统尝试合适的OpenGL版本。但是至于对于问题有没有合适的版本，这个就要看情况，不过一般来说都是有合适的版本。</p><p>总之，本人测试的结果是使用这个方法丝滑解决。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NerfStudio安装说明</title>
+    <url>/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</url>
+    <content><![CDATA[<p>集合了各方信息和安装经验总结如下：</p>
+<span id="more"></span>
+
+<h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>首先要安装Git，git的官网如下<a href="https://git-scm.com/download/win">Git官网</a>，去里面下载“64-bit Git for Windows Setup”安装即可，安装可一路默认。</p>
+<p>在此说明一下，安装完以后开始菜单里面会出现一个叫做git bash的东西，这个就是类似于cmd的shell（你可以理解为输代码的地方），只不过cmd是windows上面的，git bash是用来处理git有关工作的。以后的文章中如果看到类似于：$ ~ 开头的命令，基本都是在git bash下运行的。例如：</p>
+<blockquote>
+<p>$ git clone </p>
+</blockquote>
+<p><strong>复制代码的时候请复制 $ 之后的部分！</strong></p>
+<h2 id="VS2022"><a href="#VS2022" class="headerlink" title="VS2022"></a>VS2022</h2><p>然后是安装VS2022，激活码群里发过一个Enterprise版本的。在安装VS组件的时候确保选中了C++ Build Tools（一般是默认的）<br>这个必须在安装CUDA之前安装。</p>
+<h2 id="CUDA"><a href="#CUDA" class="headerlink" title="CUDA"></a>CUDA</h2><p>你需要安装和你的Nvidia显卡对应的CUDA版本，首先在cmd中输入nvidia-smi.exe，弹出的窗口的右上角便有CUDA Version：xxx，记住这个版本号。</p>
+<p>然后前往这个网站<a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA下载</a>，下载你对应型号的软件安装。</p>
+<p>然后会出现这个界面：</p>
+<img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/CUDA1.jpg" class>
+
+<p>按照对应的选择即可。</p>
+<p>更具体的安装教程可以参见<a href="https://blog.csdn.net/jhsignal/article/details/111401628">这一篇文章</a>，看到安装CuDNN之前就行。</p>
+<h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><p>去<a href="https://www.python.org/downloads/">这个网站</a>直接点黄色按钮下载最新版python即可，不是最新版也可以升级一下，都可，<strong>最好升级到python3.8以上</strong>。因为Python2已经停止更新了，而且后面的步骤有的需要python版本到3.8以上。具体的查看版本的方式只需在命令行中输入</p>
+<blockquote>
+<p>python</p>
+</blockquote>
+<p>即可看到python的版本。</p>
+<p><strong>安装的时候记得点击Add Python 3.8 to PATH.</strong></p>
+<img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/Python.jpg" class>
+
+<h2 id="安装conda"><a href="#安装conda" class="headerlink" title="安装conda"></a>安装conda</h2><p>去<a href="https://www.anaconda.com/download/">Anaconda的官网，点击这里</a>下载Anaconda。</p>
+<p>如果上面的官网速度太慢，你可以去<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">清华的镜像下载站</a>下载如下图所示的版本。</p>
+<img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/anaconda.jpg" class>
+
+<p><strong>下载完毕后需要你先卸载掉自己的Python</strong>（前面装的就当练习了），卸载的方式可以在控制面板的程序与功能里面找到卸载程序，然后卸载你安装过的Python版本。Anaconda会自动帮你安装好python3.10以及一些需要的包，以后应该就不需要装了。</p>
+<p>然后打开Anaconda的下载包，点I Agree，All users，在最后页面三个选项全选，然后点Install。</p>
+<p>最后在cmd中输入</p>
+<blockquote>
+<p>conda –version</p>
+</blockquote>
+<p>如果弹出了conda + 版本号则安装成功。</p>
+<h2 id="创建NerfStudio环境"><a href="#创建NerfStudio环境" class="headerlink" title="创建NerfStudio环境"></a>创建NerfStudio环境</h2><p>首先确保你的python版本大于3.8，然后在cmd中输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">conda create --name nerfstudio -y python=3.8</span><br><span class="line">conda activate nerfstudio</span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>
+
+<p><em>为确保顺利进行，最好一行一行运行。</em></p>
+<h2 id="下载其他依赖"><a href="#下载其他依赖" class="headerlink" title="下载其他依赖"></a>下载其他依赖</h2><h3 id="安装Pytorch和tinycudann"><a href="#安装Pytorch和tinycudann" class="headerlink" title="安装Pytorch和tinycudann"></a>安装Pytorch和tinycudann</h3><p>如果你的电脑之前装了错误版本的Pytorch和tinycudann，在重新下载前，你需要卸载之前的版本：<br>在cmd中运行：</p>
+<blockquote>
+<p>pip uninstall torch torchvision functorch tinycudann</p>
+</blockquote>
+<p>然后在cmd中运行：</p>
+<blockquote>
+<p>pip install torch&#x3D;&#x3D;2.0.1+cu117 torchvision&#x3D;&#x3D;0.15.2+cu117 –extra-index-url <a href="https://download.pytorch.org/whl/cu117">https://download.pytorch.org/whl/cu117</a></p>
+</blockquote>
+<p><strong>注意，上面代码中的117要换成你的CUDA的型号的缩写，比如11.7-&gt;117,11.6-&gt;116,11.8-&gt;118</strong></p>
+<p>这样的话可以一步安装完Pytorch和tinycudann，然后在输入这行命令来安装pytorch和tinycudann的链接器：</p>
+<blockquote>
+<p>pip install ninja git+<a href="https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch">https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch</a></p>
+</blockquote>
+<p><strong>如果你发现上面的pip命令卡住了，这说明你需要科学上网。</strong></p>
+<p><em>（所以科学上网还是需要的）</em></p>
+<h2 id="安装NerfStudio"><a href="#安装NerfStudio" class="headerlink" title="安装NerfStudio"></a>安装NerfStudio</h2><p>两条路，第一条：</p>
+<h3 id="从pip安装"><a href="#从pip安装" class="headerlink" title="从pip安装"></a>从pip安装</h3><p>只需要在cmd中输入</p>
+<blockquote>
+<p>pip install nerfstudio</p>
+</blockquote>
+<p>即可。</p>
+<h3 id="从git上下载最新版本（推荐）"><a href="#从git上下载最新版本（推荐）" class="headerlink" title="从git上下载最新版本（推荐）"></a>从git上下载最新版本（推荐）</h3><p>在<strong>bash</strong>中输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:nerfstudio-project/nerfstudio.git</span><br><span class="line"><span class="built_in">cd</span> nerfstudio</span><br><span class="line">pip install --upgrade pip setuptools</span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
+
+<p><em>为确保顺利进行，最好一行一行运行。</em></p>
+<h2 id="安装其他组件"><a href="#安装其他组件" class="headerlink" title="安装其他组件"></a>安装其他组件</h2><h3 id="NerfStudio相关"><a href="#NerfStudio相关" class="headerlink" title="NerfStudio相关"></a>NerfStudio相关</h3><h4 id="Tab补全"><a href="#Tab补全" class="headerlink" title="Tab补全"></a>Tab补全</h4><p><strong>bash</strong>中输入</p>
+<blockquote>
+<p>ns-install-cli</p>
+</blockquote>
+<p><em>之后在bash中输入的我有的会提醒，或者有的会直接像下面这样：</em></p>
+<blockquote>
+<p>$ ns-install-cli</p>
+</blockquote>
+<p><strong>复制的时候请复制$之后的部分</strong></p>
+<h4 id="开发包"><a href="#开发包" class="headerlink" title="开发包"></a>开发包</h4><p>cmd：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">pip install -e .[dev]</span><br><span class="line">pip install -e .[docs]</span><br></pre></td></tr></table></figure>
+
+<h4 id="ffmpeg"><a href="#ffmpeg" class="headerlink" title="ffmpeg"></a>ffmpeg</h4><blockquote>
+<p>conda install -c conda-forge ffmpeg</p>
+</blockquote>
+<h4 id="colmap"><a href="#colmap" class="headerlink" title="colmap"></a>colmap</h4><blockquote>
+<p>conda install -c conda-forge colmap</p>
+</blockquote>
+<blockquote>
+<p>conda install -c conda-forge mpir</p>
+</blockquote>
+<h2 id="开始训练模型吧！"><a href="#开始训练模型吧！" class="headerlink" title="开始训练模型吧！"></a>开始训练模型吧！</h2><p>到这一步，你已经完成了所有安装的过程，接下来就可以开始训练模型了！</p>
+<p>可以通过代码下载数据集 <strong>（推荐）</strong>，例如：</p>
+<p><strong>bash</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 下载测试数据集:</span></span><br><span class="line">ns-download-data nerfstudio --capture-name=person</span><br></pre></td></tr></table></figure>
+
+<p>或者去官网下载<a href="https://data.nerf.studio/nerfstudio/">官方数据集</a>，然后在本地的某个地方新建一个文件夹，（例如叫Nerf），然后在里面创建文件夹data，在里面再创建文件夹nerfstudio <strong>不能错字</strong></p>
+<p>然后把数据解压缩到nerfstudio文件夹中，解压完的目录应该长这样：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Nerf</span><br><span class="line">    data</span><br><span class="line">        nerfstudio</span><br><span class="line">            person（或者其他数据集的名字）</span><br><span class="line">                ...</span><br></pre></td></tr></table></figure>
+
+<p>然后，回到Nerf文件夹，右键点击Git bash here，在此处打开git bash窗口，输入</p>
+<blockquote>
+<p>ns-train nerfacto –data data&#x2F;nerfstudio&#x2F;person</p>
+</blockquote>
+<h3 id="通过网页版viewer查看当前训练进度"><a href="#通过网页版viewer查看当前训练进度" class="headerlink" title="通过网页版viewer查看当前训练进度"></a>通过网页版viewer查看当前训练进度</h3><p>如果不出意外的话，你应该能看到：</p>
+<img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/train.jpg" class>
+
+<p>里面可以看到当前的迭代步数，进度百分比，每轮迭代所需时间等等信息。</p>
+<p>还可以看到一行绿字，那个链接就是网页版预览的链接，按住Ctrl然后左键单击网址即可打开网页预览版。</p>
+<p><em>（但是如果你不打开网页版就没事，一打开一会训练就会报错停止，那可能是环境还存在问题，那就老老实实等待训练完成再点进去看吧）</em></p>
+]]></content>
       <categories>
-          
-          <category> ROS合集 </category>
-          
+        <category>安装教程</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> ROS </tag>
-            
-            <tag> gazebo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>NerfStudio安装说明</title>
-      <link href="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/"/>
-      <url>/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</url>
-      
-        <content type="html"><![CDATA[<p>集合了各方信息和安装经验总结如下：</p><span id="more"></span><h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><p>首先要安装Git，git的官网如下<a href="https://git-scm.com/download/win">Git官网</a>，去里面下载“64-bit Git for Windows Setup”安装即可，安装可一路默认。</p><p>在此说明一下，安装完以后开始菜单里面会出现一个叫做git bash的东西，这个就是类似于cmd的shell（你可以理解为输代码的地方），只不过cmd是windows上面的，git bash是用来处理git有关工作的。以后的文章中如果看到类似于：$ ~ 开头的命令，基本都是在git bash下运行的。例如：</p><blockquote><p>$ git clone </p></blockquote><p><strong>复制代码的时候请复制 $ 之后的部分！</strong></p><h2 id="VS2022"><a href="#VS2022" class="headerlink" title="VS2022"></a>VS2022</h2><p>然后是安装VS2022，激活码群里发过一个Enterprise版本的。在安装VS组件的时候确保选中了C++ Build Tools（一般是默认的）<br>这个必须在安装CUDA之前安装。</p><h2 id="CUDA"><a href="#CUDA" class="headerlink" title="CUDA"></a>CUDA</h2><p>你需要安装和你的Nvidia显卡对应的CUDA版本，首先在cmd中输入nvidia-smi.exe，弹出的窗口的右上角便有CUDA Version：xxx，记住这个版本号。</p><p>然后前往这个网站<a href="https://developer.nvidia.com/cuda-toolkit-archive">CUDA下载</a>，下载你对应型号的软件安装。</p><p>然后会出现这个界面：</p><img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/CUDA1.jpg" class><p>按照对应的选择即可。</p><p>更具体的安装教程可以参见<a href="https://blog.csdn.net/jhsignal/article/details/111401628">这一篇文章</a>，看到安装CuDNN之前就行。</p><h2 id="安装python"><a href="#安装python" class="headerlink" title="安装python"></a>安装python</h2><p>去<a href="https://www.python.org/downloads/">这个网站</a>直接点黄色按钮下载最新版python即可，不是最新版也可以升级一下，都可，<strong>最好升级到python3.8以上</strong>。因为Python2已经停止更新了，而且后面的步骤有的需要python版本到3.8以上。具体的查看版本的方式只需在命令行中输入</p><blockquote><p>python</p></blockquote><p>即可看到python的版本。</p><p><strong>安装的时候记得点击Add Python 3.8 to PATH.</strong></p><img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/Python.jpg" class><h2 id="安装conda"><a href="#安装conda" class="headerlink" title="安装conda"></a>安装conda</h2><p>去<a href="https://www.anaconda.com/download/">Anaconda的官网，点击这里</a>下载Anaconda。</p><p>如果上面的官网速度太慢，你可以去<a href="https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">清华的镜像下载站</a>下载如下图所示的版本。</p><img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/anaconda.jpg" class><p><strong>下载完毕后需要你先卸载掉自己的Python</strong>（前面装的就当练习了），卸载的方式可以在控制面板的程序与功能里面找到卸载程序，然后卸载你安装过的Python版本。Anaconda会自动帮你安装好python3.10以及一些需要的包，以后应该就不需要装了。</p><p>然后打开Anaconda的下载包，点I Agree，All users，在最后页面三个选项全选，然后点Install。</p><p>最后在cmd中输入</p><blockquote><p>conda –version</p></blockquote><p>如果弹出了conda + 版本号则安装成功。</p><h2 id="创建NerfStudio环境"><a href="#创建NerfStudio环境" class="headerlink" title="创建NerfStudio环境"></a>创建NerfStudio环境</h2><p>首先确保你的python版本大于3.8，然后在cmd中输入：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">conda create --name nerfstudio -y python=3.8</span><br><span class="line">conda activate nerfstudio</span><br><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure><p><em>为确保顺利进行，最好一行一行运行。</em></p><h2 id="下载其他依赖"><a href="#下载其他依赖" class="headerlink" title="下载其他依赖"></a>下载其他依赖</h2><h3 id="安装Pytorch和tinycudann"><a href="#安装Pytorch和tinycudann" class="headerlink" title="安装Pytorch和tinycudann"></a>安装Pytorch和tinycudann</h3><p>如果你的电脑之前装了错误版本的Pytorch和tinycudann，在重新下载前，你需要卸载之前的版本：<br>在cmd中运行：</p><blockquote><p>pip uninstall torch torchvision functorch tinycudann</p></blockquote><p>然后在cmd中运行：</p><blockquote><p>pip install torch&#x3D;&#x3D;2.0.1+cu117 torchvision&#x3D;&#x3D;0.15.2+cu117 –extra-index-url <a href="https://download.pytorch.org/whl/cu117">https://download.pytorch.org/whl/cu117</a></p></blockquote><p><strong>注意，上面代码中的117要换成你的CUDA的型号的缩写，比如11.7-&gt;117,11.6-&gt;116,11.8-&gt;118</strong></p><p>这样的话可以一步安装完Pytorch和tinycudann，然后在输入这行命令来安装pytorch和tinycudann的链接器：</p><blockquote><p>pip install ninja git+<a href="https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch">https://github.com/NVlabs/tiny-cuda-nn/#subdirectory=bindings/torch</a></p></blockquote><p><strong>如果你发现上面的pip命令卡住了，这说明你需要科学上网。</strong></p><p><em>（所以科学上网还是需要的）</em></p><h2 id="安装NerfStudio"><a href="#安装NerfStudio" class="headerlink" title="安装NerfStudio"></a>安装NerfStudio</h2><p>两条路，第一条：</p><h3 id="从pip安装"><a href="#从pip安装" class="headerlink" title="从pip安装"></a>从pip安装</h3><p>只需要在cmd中输入</p><blockquote><p>pip install nerfstudio</p></blockquote><p>即可。</p><h3 id="从git上下载最新版本（推荐）"><a href="#从git上下载最新版本（推荐）" class="headerlink" title="从git上下载最新版本（推荐）"></a>从git上下载最新版本（推荐）</h3><p>在<strong>bash</strong>中输入</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:nerfstudio-project/nerfstudio.git</span><br><span class="line"><span class="built_in">cd</span> nerfstudio</span><br><span class="line">pip install --upgrade pip setuptools</span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure><p><em>为确保顺利进行，最好一行一行运行。</em></p><h2 id="安装其他组件"><a href="#安装其他组件" class="headerlink" title="安装其他组件"></a>安装其他组件</h2><h3 id="NerfStudio相关"><a href="#NerfStudio相关" class="headerlink" title="NerfStudio相关"></a>NerfStudio相关</h3><h4 id="Tab补全"><a href="#Tab补全" class="headerlink" title="Tab补全"></a>Tab补全</h4><p><strong>bash</strong>中输入</p><blockquote><p>ns-install-cli</p></blockquote><p><em>之后在bash中输入的我有的会提醒，或者有的会直接像下面这样：</em></p><blockquote><p>$ ns-install-cli</p></blockquote><p><strong>复制的时候请复制$之后的部分</strong></p><h4 id="开发包"><a href="#开发包" class="headerlink" title="开发包"></a>开发包</h4><p>cmd：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install -e .[dev]</span><br><span class="line">pip install -e .[docs]</span><br></pre></td></tr></table></figure><h4 id="ffmpeg"><a href="#ffmpeg" class="headerlink" title="ffmpeg"></a>ffmpeg</h4><blockquote><p>conda install -c conda-forge ffmpeg</p></blockquote><h4 id="colmap"><a href="#colmap" class="headerlink" title="colmap"></a>colmap</h4><blockquote><p>conda install -c conda-forge colmap</p></blockquote><blockquote><p>conda install -c conda-forge mpir</p></blockquote><h2 id="开始训练模型吧！"><a href="#开始训练模型吧！" class="headerlink" title="开始训练模型吧！"></a>开始训练模型吧！</h2><p>到这一步，你已经完成了所有安装的过程，接下来就可以开始训练模型了！</p><p>可以通过代码下载数据集 <strong>（推荐）</strong>，例如：</p><p><strong>bash</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载测试数据集:</span></span><br><span class="line">ns-download-data nerfstudio --capture-name=person</span><br></pre></td></tr></table></figure><p>或者去官网下载<a href="https://data.nerf.studio/nerfstudio/">官方数据集</a>，然后在本地的某个地方新建一个文件夹，（例如叫Nerf），然后在里面创建文件夹data，在里面再创建文件夹nerfstudio <strong>不能错字</strong></p><p>然后把数据解压缩到nerfstudio文件夹中，解压完的目录应该长这样：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Nerf</span><br><span class="line">    data</span><br><span class="line">        nerfstudio</span><br><span class="line">            person（或者其他数据集的名字）</span><br><span class="line">                ...</span><br></pre></td></tr></table></figure><p>然后，回到Nerf文件夹，右键点击Git bash here，在此处打开git bash窗口，输入</p><blockquote><p>ns-train nerfacto –data data&#x2F;nerfstudio&#x2F;person</p></blockquote><h3 id="通过网页版viewer查看当前训练进度"><a href="#通过网页版viewer查看当前训练进度" class="headerlink" title="通过网页版viewer查看当前训练进度"></a>通过网页版viewer查看当前训练进度</h3><p>如果不出意外的话，你应该能看到：</p><img src="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/train.jpg" class><p>里面可以看到当前的迭代步数，进度百分比，每轮迭代所需时间等等信息。</p><p>还可以看到一行绿字，那个链接就是网页版预览的链接，按住Ctrl然后左键单击网址即可打开网页预览版。</p><p><em>（但是如果你不打开网页版就没事，一打开一会训练就会报错停止，那可能是环境还存在问题，那就老老实实等待训练完成再点进去看吧）</em></p>]]></content>
-      
-      
+      <tags>
+        <tag>Nerf</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ros报错汇总</title>
+    <url>/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h2 id="写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）"><a href="#写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）" class="headerlink" title="写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）"></a>写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）</h2><p>在搭建ROS的时候，各种工作都安装好了，兴致冲冲地运行roscore，结果出现了以下报错：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 290, in main</span><br><span class="line">    write_pid_file(options.pid_fn, options.core, options.port)</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 112, in write_pid_file</span><br><span class="line">    with open(pid_fn, &quot;w&quot;) as f:</span><br><span class="line">IOError: [Errno 13] Permission denied: &#x27;/home/louisli/.ros/roscore-11311.pid&#x27;</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+
+<p>有Permission denied的话，大概率是权限问题，当时我没有直接修改文件夹的权限，而是直接在对应的目录touch了一个文件roscore-11311.pid。并且给予它权限：<br>在&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F; 下打开terminal：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo touch roscore-11311.pid</span><br><span class="line">sudo chmod 777 roscore-11311.pid</span><br></pre></td></tr></table></figure>
+
+<h2 id="log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”"><a href="#log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”" class="headerlink" title="log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”"></a>log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”</h2><p>解决了上面的问题，我再次兴致冲冲地运行roscore，结果得到：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br><span class="line"></span><br><span class="line">started roslaunch server http://ubuntu:33151/</span><br><span class="line">ros_comm version 1.14.13</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SUMMARY</span><br><span class="line">========</span><br><span class="line"></span><br><span class="line">PARAMETERS</span><br><span class="line"> * /rosdistro: melodic</span><br><span class="line"> * /rosversion: 1.14.13</span><br><span class="line"></span><br><span class="line">NODES</span><br><span class="line"></span><br><span class="line">auto-starting new master</span><br><span class="line">No handlers could be found for logger &quot;roslaunch&quot;</span><br><span class="line">[master] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[master]: started with pid [3018]</span><br><span class="line">ROS_MASTER_URI=http://ubuntu:11311/</span><br><span class="line"></span><br><span class="line">setting /run_id to f37f52b6-de8d-11ed-baa4-000c29fa4201</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3029]</span><br><span class="line">started core service [/rosout]</span><br><span class="line">[rosout-1] process has died [pid 3029, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3037]</span><br><span class="line">[rosout-1] process has died [pid 3037, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3042]</span><br><span class="line">[rosout-1] process has died [pid 3042, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3047]</span><br><span class="line">[rosout-1] process has died [pid 3047, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3052]</span><br><span class="line">[rosout-1] process has died [pid 3052, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3057]</span><br><span class="line">[rosout-1] process has died [pid 3057, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3062]</span><br><span class="line">[rosout-1] process has died [pid 3062, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br></pre></td></tr></table></figure>
+
+<p>可以发现，节点一直在寻找可以使用的pid，但是一直没有找到。</p>
+<p>所以我们关注一下最开头的报错：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br></pre></td></tr></table></figure>
+
+<p>可以发现，这里的问题在于log的路径权限不够，没法创建文件。所以我们如法炮制，还是创建一个文件夹，然后给它权限：</p>
+<p>进入&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;,打开terminal</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir log</span><br><span class="line">sudo chmod 777 ./log</span><br></pre></td></tr></table></figure>
+
+<p>这样再启动roscore便可以了。</p>
+]]></content>
       <categories>
-          
-          <category> 安装教程 </category>
-          
+        <category>ROS合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Nerf </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Ros报错汇总</title>
-      <link href="/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/"/>
-      <url>/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/</url>
-      
-        <content type="html"><![CDATA[<h2 id="写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）"><a href="#写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）" class="headerlink" title="写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）"></a>写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）</h2><p>在搭建ROS的时候，各种工作都安装好了，兴致冲冲地运行roscore，结果出现了以下报错：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 290, in main</span><br><span class="line">    write_pid_file(options.pid_fn, options.core, options.port)</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 112, in write_pid_file</span><br><span class="line">    with open(pid_fn, &quot;w&quot;) as f:</span><br><span class="line">IOError: [Errno 13] Permission denied: &#x27;/home/louisli/.ros/roscore-11311.pid&#x27;</span><br></pre></td></tr></table></figure><span id="more"></span><p>有Permission denied的话，大概率是权限问题，当时我没有直接修改文件夹的权限，而是直接在对应的目录touch了一个文件roscore-11311.pid。并且给予它权限：<br>在&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F; 下打开terminal：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo touch roscore-11311.pid</span><br><span class="line">sudo chmod 777 roscore-11311.pid</span><br></pre></td></tr></table></figure><h2 id="log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”"><a href="#log文件夹写入权限不够”WARNING-cannot-create-log-directory-x2F-home-x2F-louisli-x2F-ros-x2F-log-x2F-f37f52b6-de8d-11ed-baa4-000c29fa4201-Please-set-ROS-LOG-DIR-to-a-writable-location-”" class="headerlink" title="log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”"></a>log文件夹写入权限不够”WARNING: cannot create log directory [&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;log&#x2F;f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.”</h2><p>解决了上面的问题，我再次兴致冲冲地运行roscore，结果得到：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br><span class="line"></span><br><span class="line">started roslaunch server http://ubuntu:33151/</span><br><span class="line">ros_comm version 1.14.13</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">SUMMARY</span><br><span class="line">========</span><br><span class="line"></span><br><span class="line">PARAMETERS</span><br><span class="line"> * /rosdistro: melodic</span><br><span class="line"> * /rosversion: 1.14.13</span><br><span class="line"></span><br><span class="line">NODES</span><br><span class="line"></span><br><span class="line">auto-starting new master</span><br><span class="line">No handlers could be found for logger &quot;roslaunch&quot;</span><br><span class="line">[master] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[master]: started with pid [3018]</span><br><span class="line">ROS_MASTER_URI=http://ubuntu:11311/</span><br><span class="line"></span><br><span class="line">setting /run_id to f37f52b6-de8d-11ed-baa4-000c29fa4201</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3029]</span><br><span class="line">started core service [/rosout]</span><br><span class="line">[rosout-1] process has died [pid 3029, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3037]</span><br><span class="line">[rosout-1] process has died [pid 3037, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3042]</span><br><span class="line">[rosout-1] process has died [pid 3042, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3047]</span><br><span class="line">[rosout-1] process has died [pid 3047, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3052]</span><br><span class="line">[rosout-1] process has died [pid 3052, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3057]</span><br><span class="line">[rosout-1] process has died [pid 3057, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br><span class="line">process[rosout-1]: started with pid [3062]</span><br><span class="line">[rosout-1] process has died [pid 3062, exit code -6, cmd /opt/ros/melodic/lib/rosout/rosout __name:=rosout].</span><br><span class="line">[rosout-1] restarting process</span><br><span class="line">[rosout-1] ERROR: unable to configure logging [unable to create directory for log file [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201].</span><br><span class="line">Please check permissions.]</span><br></pre></td></tr></table></figure><p>可以发现，节点一直在寻找可以使用的pid，但是一直没有找到。</p><p>所以我们关注一下最开头的报错：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">WARNING: cannot create log directory [/home/louisli/.ros/log/f37f52b6-de8d-11ed-baa4-000c29fa4201]. Please set ROS_LOG_DIR to a writable location.</span><br><span class="line">Checking log directory for disk usage. This may take a while.</span><br><span class="line">Press Ctrl-C to interrupt</span><br><span class="line">/usr/bin/du: cannot access &#x27;/home/louisli/.ros/log&#x27;: No such file or directory</span><br></pre></td></tr></table></figure><p>可以发现，这里的问题在于log的路径权限不够，没法创建文件。所以我们如法炮制，还是创建一个文件夹，然后给它权限：</p><p>进入&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;,打开terminal</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir log</span><br><span class="line">sudo chmod 777 ./log</span><br></pre></td></tr></table></figure><p>这样再启动roscore便可以了。</p>]]></content>
-      
-      
+      <tags>
+        <tag>ROS</tag>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo目录详解（用到就补）</title>
+    <url>/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p>
+<p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p>
+<span id="more"></span>
+
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote>
+<p>blog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;head&#x2F;head.swig</p>
+</blockquote>
+<p>在提交站点地图时，需要登录各大搜索引擎的页面管理界面，在提交sitemap之前需要对自己的网站进行验证，其中HTML方法需要在自己的博客页面的&lt;head&gt;下增加其meta代码来验证网站。这时便需要在该文件的开始部分，可以看到有一些meta开头的语句，将搜索引擎提供的meta代码插入到这些meta语句的后面，然后hexo三部曲</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>等几分钟即可用F12在自己的页面代码中看到meta代码已经被成功加入，这时候在搜索引擎的界面点击开始验证即可验证成功。</p>
+]]></content>
       <categories>
-          
-          <category> ROS合集 </category>
-          
+        <category>Hexo遇到的问题</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> ROS </tag>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2023/1/3 随笔</title>
-      <link href="/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/"/>
-      <url>/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/</url>
-      
-        <content type="html"><![CDATA[<p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p><p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p><p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p><p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p><p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Hexo</tag>
+        <tag>sitemap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于Vmware tools</title>
+    <url>/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/</url>
+    <content><![CDATA[<h3 id="按钮是灰色怎么办"><a href="#按钮是灰色怎么办" class="headerlink" title="按钮是灰色怎么办"></a>按钮是灰色怎么办</h3><p>按钮是灰色的话可以试试将虚拟机对应的硬盘和软盘都调成使用物理驱动器的自动检测，这样按钮就可以正常使用了</p>
+<h3 id="VMware-tools-修复"><a href="#VMware-tools-修复" class="headerlink" title="VMware tools 修复"></a>VMware tools 修复</h3><p>如果vmware tools 无法正常使用可以试试这篇文章<a href="https://blog.csdn.net/Bunsennn/article/details/117223002"></a></p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get autoremove open-vm-tools</span><br><span class="line">sudo apt-get install open-vm-tools-desktop</span><br></pre></td></tr></table></figure>
+
+<p>这个管用，关机重启之后就能行了</p>
+<p>另外，如果发现只能复制文字不能复制文件或者文件夹，一方面原因是可以试一下不要直接复制到桌面，尝试复制到一个新建的文件夹或者是用资源管理器打开的文件夹；另一方面可以在刚开机要输密码的界面找到一个齿轮的设置按钮，在里面找到Ubuntu on Xorg,这个模式下复制文件和文件夹的功能会正常。</p>
+]]></content>
       <categories>
-          
-          <category> 随笔 </category>
-          
+        <category>Vmware合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 随笔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo目录详解（用到就补）</title>
-      <link href="/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/"/>
-      <url>/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/</url>
-      
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p><p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p><span id="more"></span><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><blockquote><p>blog&#x2F;themes&#x2F;next&#x2F;layout&#x2F;_partials&#x2F;head&#x2F;head.swig</p></blockquote><p>在提交站点地图时，需要登录各大搜索引擎的页面管理界面，在提交sitemap之前需要对自己的网站进行验证，其中HTML方法需要在自己的博客页面的&lt;head&gt;下增加其meta代码来验证网站。这时便需要在该文件的开始部分，可以看到有一些meta开头的语句，将搜索引擎提供的meta代码插入到这些meta语句的后面，然后hexo三部曲</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>等几分钟即可用F12在自己的页面代码中看到meta代码已经被成功加入，这时候在搜索引擎的界面点击开始验证即可验证成功。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Vmware</tag>
+        <tag>Vmware tools</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Ubuntu的搜狗拼音</title>
+    <url>/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/</url>
+    <content><![CDATA[<p>十分麻烦哎哟</p>
+<p>在官网搜安装包</p>
+<p>在download里打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo dpkg -i so /tab自动补全</span><br></pre></td></tr></table></figure>
+<p>安装完了以后要去设置里面把框架改为fcitx，然后把别的语言都删掉，就剩下中文</p>
+<p>导致我没有成功的一步是没有安装相关依赖库</p>
+<p>说实话应该能猜出来的 因为之前切换到搜狗拼音已经能看见一个雏形的框了，但是还是没有办法打中文</p>
+<p>然后打开终端输入</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span><br><span class="line">sudo apt install libgsettings-qt1</span><br></pre></td></tr></table></figure>
+<p>再切换输入法输入就好了</p>
+]]></content>
       <categories>
-          
-          <category> Hexo遇到的问题 </category>
-          
+        <category>Ubuntu合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> sitemap </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2022最新Manim安装教程</title>
-      <link href="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"/>
-      <url>/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
-      
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Manim是一个由3Blue1Brown编写的强大的可视化库，3B1B的视频质量非常高，这与Manim的强大以及作者本人运用的炉火纯青密不可分。</p><p>大家可以看一看3B1B本人在B站的视频来欣赏一下大佬的风范。<a href="https://space.bilibili.com/88461692?spm_id_from=333.337.0.0">3Blue1Brown的B站主页</a></p><p>关于Manim的安装教程网上有一些，但有些博客或教程已经过老，里面的一些内容已经不适用，还有的内容写的并不足够详细。在安装过程中，这些问题将会让安装者十分头痛（我就是），这便有了这篇文章。希望大家可以学习交流。</p><span id="more"></span><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>Manim在Github上是开源的，懂得如何使用的话可以直接点击下面链接</p><p><a href="https://github.com/3b1b/manim">3b1b&#x2F;manim</a></p><p>下面开始安装。</p><p>首先我们需要这些软件，LaTeX的支持工具（这里使用MiKTeX），Python，FFmpeg，SoX，Cairo。</p><h3 id="MiKTeX"><a href="#MiKTeX" class="headerlink" title="MiKTeX"></a>MiKTeX</h3><p>官网下载链接<a href="https://miktex.org/download">在此</a>，但是亲测十分缓慢，而且还容易出现无法获取资源的下载问题。</p><p>我的方法是在网上找到了安装包资源进行安装。</p><p><a href="https://pan.baidu.com/s/1Yn58N1757I4yr5-YZYeV6Q?pwd=1234">点击这里下载</a>（提取码1234）下载下来安装包</p><p>进去首先要选download miktex，选complete miktex，然后后面的源就选第一个就行，然后下载要下一会，下载好再打开安装包，点install miktex就行了。</p><p>或者在<a href="https://www.pcsoft.com.cn/iopdfbhjl/200447?module=soft&t=website">这个链接</a>直接下载完整版的安装包，不用下载了，直接一路默认安装过去就行，记得记安装路径。</p><p>然后要添加一下Path，打开MiKTeX\miktex\bin\x64，将这个地址添加到环境变量的path里面。</p><p>然后在cmd里面输入latex，出现<img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/cmd1.png" class>即为安装成功。</p><h3 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h3><p>这个就不介绍了吧，网上教程多如云，也没啥问题的，注意添加Path就行。</p><h3 id="FFmpeg"><a href="#FFmpeg" class="headerlink" title="FFmpeg"></a>FFmpeg</h3><p>这个软件网上的教程很多是几年前的，官网现在已经不一样了。</p><p>打开官网<a href="http://ffmpeg.org/download.html">FFmpeg官网</a></p><img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/ffmpeg.png" class><p>点击Windows builds from gyan.dev</p><img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/ffmpeg2.png" class><p>点击latest git master branch build里面的ffmpeg-git-full.7z</p><p>下载下来解压到合适的位置，将里面的bin文件夹添加到Path即可。</p><h3 id="SoX"><a href="#SoX" class="headerlink" title="SoX"></a>SoX</h3><p>打开网址<a href="https://sourceforge.net/projects/sox/files/sox/">SoX-sourceforge</a></p><p>点download latest version,安装即可，记住安装路径。</p><p>然后将安装路径的路径添加到Path里面，记得添加紧邻着各个文件的路径，就比如我是Sox&#x2F;sox-14-4-2的下面有一堆文件，就要添加到sox-14-4-2这里而不是只到Sox这里。</p><h3 id="Pycairo"><a href="#Pycairo" class="headerlink" title="Pycairo"></a>Pycairo</h3><p>点击官网<a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo">Pycairo官网</a></p><img src="/2022/12/28/2022%E6%9C%80%E6%96%B0Manim%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/pycairo.png" class><p>看到一堆怎么选择呢？这里需要大家的python安装了wheel，如果没有的话打开cmd运行以下代码安装wheel：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install wheel</span><br></pre></td></tr></table></figure><p>如果说不认识pip这个指令那是你还没有把python的scripts目录加到path里面去</p><p>然后运行</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip debug --verbose</span><br></pre></td></tr></table></figure><p>就可以看到当前所有支持的whl的种类，然后去官网里面挑可以安装的下载下来，然后在下载的whl文件目录打开终端，输入：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install xxx.whl (自己改,可以按tab自动补全)</span><br></pre></td></tr></table></figure><p>回车提示成功安装即可</p><h3 id="Manim"><a href="#Manim" class="headerlink" title="Manim"></a>Manim</h3><p>终于！下面开始安装Manim！</p><p>win+r 输入cmd并打开，输入以下代码：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install manim</span><br><span class="line">python3 manim.py example_scenes.py SquareToCircle -pl</span><br></pre></td></tr></table></figure><p>请注意，有的人可能需要使用python而不是python3来运行最后一行代码。</p><p>我在运行时报了错，发现还需要安装manimgl的依赖。</p><p>于是win+r cmd，输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install manimgl</span><br></pre></td></tr></table></figure><p>安装完成后便可以顺利运行了</p>]]></content>
-      
-      
+      <tags>
+        <tag>Ubuntu</tag>
+        <tag>搜狗</tag>
+        <tag>输入法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装软件时报has install-snap change in progress错误</title>
+    <url>/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/</url>
+    <content><![CDATA[<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>原因是因为软件没安装完，又让安装，也有可能是上一次安装卡半路了</p>
+<h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol>
+<li><p>在终端里输入snap changes</p>
+</li>
+<li><p>找到对应的snap号</p>
+</li>
+<li><p>输入</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo snap abort “snap号”</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>重新安装</li>
+</ol>
+]]></content>
       <categories>
-          
-          <category> 安装教程 </category>
-          
+        <category>Ubuntu合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Manim </tag>
-            
-            <tag> LaTeX </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>安装Ubuntu的搜狗拼音</title>
-      <link href="/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/"/>
-      <url>/2022/12/27/%E5%AE%89%E8%A3%85Ubuntu%E7%9A%84%E6%90%9C%E7%8B%97%E6%8B%BC%E9%9F%B3/</url>
-      
-        <content type="html"><![CDATA[<p>十分麻烦哎哟</p><p>在官网搜安装包</p><p>在download里打开终端输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dpkg -i so /tab自动补全</span><br></pre></td></tr></table></figure><p>安装完了以后要去设置里面把框架改为fcitx，然后把别的语言都删掉，就剩下中文</p><p>导致我没有成功的一步是没有安装相关依赖库</p><p>说实话应该能猜出来的 因为之前切换到搜狗拼音已经能看见一个雏形的框了，但是还是没有办法打中文</p><p>然后打开终端输入</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install libqt5qml5 libqt5quick5 libqt5quickwidgets5 qml-module-qtquick2</span><br><span class="line">sudo apt install libgsettings-qt1</span><br></pre></td></tr></table></figure><p>再切换输入法输入就好了</p>]]></content>
-      
-      
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一篇博客</title>
+    <url>/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<img src="/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/OIP-C.jpg" class>
+<span id="more"></span>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+]]></content>
       <categories>
-          
-          <category> Ubuntu合集 </category>
-          
+        <category>闲谈/随记</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-            <tag> 搜狗 </tag>
-            
-            <tag> 输入法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>VScode codeLLDB 一直等待问题</title>
-      <link href="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/"/>
-      <url>/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb">CodeLLDB - Visual Studio Marketplace</a></p><ol><li>点击Download Extension下载下来vsix包<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/1.png" class></li><li>到vscode里面打开扩展<img src="/2022/12/27/VScode-codeLLDB-%E4%B8%80%E7%9B%B4%E7%AD%89%E5%BE%85%E9%97%AE%E9%A2%98/2.png" class></li><li>选择刚才下载的包即可</li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu键盘错位（@变成“”，~波浪线打不出来）</title>
+    <url>/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/</url>
+    <content><![CDATA[<p>在安装了搜狗输入法后出现了键盘布局错位的问题，@号和“”号位置互换，波浪线无法打出来。解决方法如下：</p>
+<p>只需要打开fcitx配置工具，然后在输入法设置中将英文键盘布局放到搜狗输入法的键盘布局下面即可。</p>
+]]></content>
       <categories>
-          
-          <category> Vscode合集 </category>
-          
+        <category>Ubuntu合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Vscode </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>安装软件时报has install-snap change in progress错误</title>
-      <link href="/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/"/>
-      <url>/2022/12/27/%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6%E6%97%B6%E6%8A%A5has-install-snap-change-in-progress%E9%94%99%E8%AF%AF/</url>
-      
-        <content type="html"><![CDATA[<h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>原因是因为软件没安装完，又让安装，也有可能是上一次安装卡半路了</p><h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol><li><p>在终端里输入snap changes</p></li><li><p>找到对应的snap号</p></li><li><p>输入</p></li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo snap abort “snap号”</span><br></pre></td></tr></table></figure><ol start="4"><li>重新安装</li></ol>]]></content>
-      
-      
+      <tags>
+        <tag>Ubuntu</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>关于防止gazebo 134崩溃（针对VMware环境下）</title>
+    <url>/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/</url>
+    <content><![CDATA[<p>在跑gazebo的时候出现了报134错误代码崩溃的情况，上网搜索了很多方法，最终来整理一下管用的：</p>
+<p>第一个办法就是将虚拟机的加速3D图形关掉，这个方法可以，但是gazebo会变的贼慢。。。故不推荐。</p>
+<p>第二个办法就是在执行roslaunch之前先执行</p>
+<pre><code class="bash">export SVGA_VGPU10=0
+</code></pre>
+<p>引用这个代码会告诉系统尝试合适的OpenGL版本。但是至于对于问题有没有合适的版本，这个就要看情况，不过一般来说都是有合适的版本。</p>
+<p>总之，本人测试的结果是使用这个方法丝滑解决。</p>
+]]></content>
       <categories>
-          
-          <category> Ubuntu合集 </category>
-          
+        <category>ROS合集</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Ubuntu </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于Vmware tools</title>
-      <link href="/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/"/>
-      <url>/2022/12/27/%E5%85%B3%E4%BA%8EVMware%20tools/</url>
-      
-        <content type="html"><![CDATA[<h3 id="按钮是灰色怎么办"><a href="#按钮是灰色怎么办" class="headerlink" title="按钮是灰色怎么办"></a>按钮是灰色怎么办</h3><p>按钮是灰色的话可以试试将虚拟机对应的硬盘和软盘都调成使用物理驱动器的自动检测，这样按钮就可以正常使用了</p><h3 id="VMware-tools-修复"><a href="#VMware-tools-修复" class="headerlink" title="VMware tools 修复"></a>VMware tools 修复</h3><p>如果vmware tools 无法正常使用可以试试这篇文章<a href="https://blog.csdn.net/Bunsennn/article/details/117223002"></a></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get autoremove open-vm-tools</span><br><span class="line">sudo apt-get install open-vm-tools-desktop</span><br></pre></td></tr></table></figure><p>这个管用，关机重启之后就能行了</p><p>另外，如果发现只能复制文字不能复制文件或者文件夹，一方面原因是可以试一下不要直接复制到桌面，尝试复制到一个新建的文件夹或者是用资源管理器打开的文件夹；另一方面可以在刚开机要输密码的界面找到一个齿轮的设置按钮，在里面找到Ubuntu on Xorg,这个模式下复制文件和文件夹的功能会正常。</p>]]></content>
-      
-      
+      <tags>
+        <tag>ROS</tag>
+        <tag>gazebo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>压缩近邻法的可视化Python实现</title>
+    <url>/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/</url>
+    <content><![CDATA[<p>最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。</p>
+<p>压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。</p>
+<p>本程序功能：</p>
+<ol>
+<li>生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。</li>
+<li>使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。</li>
+<li>可以添加测试数据集并观察使用筛选后的分类点集在K-近邻法中对于不同K取值的分类效果。</li>
+</ol>
+<span id="more"></span>
+
+<p>构建过程如下：</p>
+<p>首先设原数据集为$D$，算法尝试构建分类集$S$,使得$S$中的点在最近邻算法下可以对$D$进行分类。</p>
+<p>$S$的构建过程如下:</p>
+<ol>
+<li>从$D$中随机选取一个点加入$S$。</li>
+<li>使用最近邻算法对$D$中的点进行分类，将所有分类错误的点归为错误集$E$。</li>
+<li>从$E$中随机选取一个点加入$S$。(此步骤也可以使用其他策略，这里使用随机选择)</li>
+<li>重复2-3步骤，直到$E$为空。这时$S$就是我们要找的分类集。</li>
+</ol>
+<p>以下为代码实现：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> matplotlib.widgets <span class="keyword">import</span> Button, Slider</span><br><span class="line"><span class="keyword">from</span> matplotlib.backends.backend_tkagg <span class="keyword">import</span> FigureCanvasTkAgg</span><br><span class="line"><span class="keyword">import</span> tkinter <span class="keyword">as</span> tk</span><br><span class="line"><span class="keyword">from</span> tkinter <span class="keyword">import</span> simpledialog</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line">mpl.rcParams[<span class="string">&#x27;font.sans-serif&#x27;</span>] = [<span class="string">&#x27;Microsoft YaHei&#x27;</span>] <span class="comment"># 指定默认字体：解决plot不能显示中文问题</span></span><br><span class="line">mpl.rcParams[<span class="string">&#x27;axes.unicode_minus&#x27;</span>] = <span class="literal">False</span> <span class="comment"># 解决保存图像是负号&#x27;-&#x27;显示为方块的问题</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ClassifierVisualizer</span>:</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">__init__</span>(<span class="params">self, n_points=<span class="number">100</span></span>):</span><br><span class="line">        self.n_points = n_points</span><br><span class="line">        self.generate_data()</span><br><span class="line">        self.S = <span class="built_in">set</span>()</span><br><span class="line">        self.setup_plot()</span><br><span class="line">        self.test_mode = <span class="literal">False</span></span><br><span class="line">        self.k = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">generate_data</span>(<span class="params">self</span>):</span><br><span class="line">        self.X = np.random.uniform(-<span class="number">5</span>, <span class="number">5</span>, (self.n_points, <span class="number">2</span>))</span><br><span class="line">        self.y = (self.X[:, <span class="number">1</span>] &gt; np.sin(self.X[:, <span class="number">0</span>])).astype(<span class="built_in">int</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">setup_plot</span>(<span class="params">self</span>):</span><br><span class="line">        self.fig = plt.figure(figsize=(<span class="number">15</span>, <span class="number">6</span>))</span><br><span class="line">        self.ax1 = self.fig.add_axes([<span class="number">0.05</span>, <span class="number">0.15</span>, <span class="number">0.4</span>, <span class="number">0.75</span>])</span><br><span class="line">        self.ax2 = self.fig.add_axes([<span class="number">0.55</span>, <span class="number">0.15</span>, <span class="number">0.4</span>, <span class="number">0.75</span>])</span><br><span class="line">        self.fig.suptitle(<span class="string">&#x27;分类可视化&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 原始数据图</span></span><br><span class="line">        self.scatter2 = self.ax2.scatter(self.X[:, <span class="number">0</span>], self.X[:, <span class="number">1</span>], c=self.y, cmap=<span class="string">&#x27;coolwarm&#x27;</span>)</span><br><span class="line">        self.ax2.set_title(<span class="string">&#x27;原始数据&#x27;</span>)</span><br><span class="line">        x = np.linspace(-<span class="number">6</span>, <span class="number">6</span>, <span class="number">100</span>)</span><br><span class="line">        self.sine2, = self.ax2.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">        self.ax2.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax2.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 当前分类图</span></span><br><span class="line">        self.scatter1 = self.ax1.scatter(self.X[:, <span class="number">0</span>], self.X[:, <span class="number">1</span>], c=<span class="string">&#x27;gray&#x27;</span>)</span><br><span class="line">        self.s_scatter1 = self.ax1.scatter([], [], c=<span class="string">&#x27;orange&#x27;</span>, s=<span class="number">100</span>)</span><br><span class="line">        self.ax1.set_title(<span class="string">&#x27;当前分类&#x27;</span>)</span><br><span class="line">        self.ax1.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax1.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.sine1, = self.ax1.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 添加按钮</span></span><br><span class="line">        self.ax_button = plt.axes([<span class="number">0.81</span>, <span class="number">0.02</span>, <span class="number">0.1</span>, <span class="number">0.075</span>])</span><br><span class="line">        self.button = Button(self.ax_button, <span class="string">&#x27;下一步&#x27;</span>)</span><br><span class="line">        self.button.on_clicked(self.step)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 添加K值滑动条</span></span><br><span class="line">        self.ax_slider = plt.axes([<span class="number">0.55</span>, <span class="number">0.05</span>, <span class="number">0.3</span>, <span class="number">0.03</span>])</span><br><span class="line">        self.k_slider = Slider(self.ax_slider, <span class="string">&#x27;K值&#x27;</span>, <span class="number">1</span>, <span class="number">10</span>, valinit=<span class="number">1</span>, valstep=<span class="number">1</span>)</span><br><span class="line">        self.k_slider.on_changed(self.update_k)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_k</span>(<span class="params">self, val</span>):</span><br><span class="line">        self.k = <span class="built_in">int</span>(val)</span><br><span class="line">        <span class="keyword">if</span> self.test_mode:</span><br><span class="line">            self.update_test_classification()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">nearest_neighbors</span>(<span class="params">self, point, k</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.S:</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">        distances = np.<span class="built_in">sum</span>((self.X[<span class="built_in">list</span>(self.S)] - point)**<span class="number">2</span>, axis=<span class="number">1</span>)</span><br><span class="line">        k = <span class="built_in">min</span>(k, <span class="built_in">len</span>(self.S))</span><br><span class="line">        nearest_indices = np.argsort(distances)[:k]</span><br><span class="line">        nearest_labels = [self.y[<span class="built_in">list</span>(self.S)[i]] <span class="keyword">for</span> i <span class="keyword">in</span> nearest_indices]</span><br><span class="line">        <span class="keyword">return</span> np.mean(nearest_labels) &gt; <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">step</span>(<span class="params">self, event</span>):</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> self.test_mode:</span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> self.S:</span><br><span class="line">                self.S.add(np.random.choice(self.n_points))</span><br><span class="line">            <span class="keyword">else</span>:</span><br><span class="line">                W = [i <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(self.n_points) <span class="keyword">if</span> i <span class="keyword">not</span> <span class="keyword">in</span> self.S <span class="keyword">and</span> </span><br><span class="line">                     self.nearest_neighbors(self.X[i], self.k) != self.y[i]]</span><br><span class="line">                <span class="keyword">if</span> W:</span><br><span class="line">                    self.S.add(np.random.choice(W))</span><br><span class="line">                <span class="keyword">else</span>:</span><br><span class="line">                    self.prompt_test_mode()</span><br><span class="line">                    <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">            predictions = np.array([self.nearest_neighbors(x, self.k) <span class="keyword">for</span> x <span class="keyword">in</span> self.X])</span><br><span class="line">            colors = np.where(predictions, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">            self.scatter1.set_facecolors(colors)</span><br><span class="line">            </span><br><span class="line">            s_points = self.X[<span class="built_in">list</span>(self.S)]</span><br><span class="line">            self.s_scatter1.set_offsets(s_points)</span><br><span class="line">            </span><br><span class="line">            self.ax1.set_title(<span class="string">f&#x27;当前分类 (S集合大小: <span class="subst">&#123;<span class="built_in">len</span>(self.S)&#125;</span>)&#x27;</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            self.get_test_points()</span><br><span class="line"></span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">prompt_test_mode</span>(<span class="params">self</span>):</span><br><span class="line">        self.test_mode = <span class="literal">True</span></span><br><span class="line">        self.ax2.clear()</span><br><span class="line">        self.ax2.set_title(<span class="string">&#x27;测试分类&#x27;</span>)</span><br><span class="line">        self.ax2.set_xlim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        self.ax2.set_ylim(-<span class="number">6</span>, <span class="number">6</span>)</span><br><span class="line">        x = np.linspace(-<span class="number">6</span>, <span class="number">6</span>, <span class="number">100</span>)</span><br><span class="line">        self.sine2, = self.ax2.plot(x, np.sin(x), <span class="string">&#x27;g-&#x27;</span>, lw=<span class="number">2</span>)</span><br><span class="line">        self.scatter2 = self.ax2.scatter([], [])</span><br><span class="line">        self.s_scatter2 = self.ax2.scatter([], [], c=<span class="string">&#x27;orange&#x27;</span>, s=<span class="number">100</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 隐藏&quot;下一步&quot;按钮</span></span><br><span class="line">        self.button.ax.set_visible(<span class="literal">False</span>)</span><br><span class="line">        </span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line">        self.get_test_points()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">get_test_points</span>(<span class="params">self</span>):</span><br><span class="line">        root = tk.Tk()</span><br><span class="line">        root.withdraw()  <span class="comment"># 隐藏主窗口</span></span><br><span class="line"></span><br><span class="line">        n_test = simpledialog.askinteger(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入测试点的数量:&quot;</span>, parent=root, minvalue=<span class="number">1</span>, maxvalue=<span class="number">1000</span>)</span><br><span class="line">        x_range = simpledialog.askstring(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入x坐标范围 (min max):&quot;</span>, parent=root)</span><br><span class="line">        y_range = simpledialog.askstring(<span class="string">&quot;输入&quot;</span>, <span class="string">&quot;请输入y坐标范围 (min max):&quot;</span>, parent=root)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> n_test <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> x_range <span class="keyword">is</span> <span class="literal">None</span> <span class="keyword">or</span> y_range <span class="keyword">is</span> <span class="literal">None</span>:</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line"></span><br><span class="line">        x_min, x_max = <span class="built_in">map</span>(<span class="built_in">float</span>, x_range.split())</span><br><span class="line">        y_min, y_max = <span class="built_in">map</span>(<span class="built_in">float</span>, y_range.split())</span><br><span class="line"></span><br><span class="line">        x_range = <span class="built_in">max</span>(<span class="built_in">abs</span>(x_min), <span class="built_in">abs</span>(x_max), <span class="number">6</span>)</span><br><span class="line">        y_range = <span class="built_in">max</span>(<span class="built_in">abs</span>(y_min), <span class="built_in">abs</span>(y_max), <span class="number">6</span>)</span><br><span class="line"></span><br><span class="line">        self.ax2.set_xlim(-x_range, x_range)</span><br><span class="line">        self.ax2.set_ylim(-y_range, y_range)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># 更新sin(x)函数的显示范围</span></span><br><span class="line">        x = np.linspace(-x_range, x_range, <span class="number">1000</span>)</span><br><span class="line">        self.sine2.set_data(x, np.sin(x))</span><br><span class="line"></span><br><span class="line">        self.X_test = np.random.uniform(low=[x_min, y_min], high=[x_max, y_max], size=(n_test, <span class="number">2</span>))</span><br><span class="line">        self.update_test_classification()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">update_test_classification</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="comment"># 显示原始数据</span></span><br><span class="line">        self.scatter2.set_offsets(self.X)</span><br><span class="line">        self.scatter2.set_facecolors(np.where(self.y, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>))</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 显示S集合的点</span></span><br><span class="line">        s_points = self.X[<span class="built_in">list</span>(self.S)]</span><br><span class="line">        self.s_scatter2.set_offsets(s_points)</span><br><span class="line">        </span><br><span class="line">        <span class="comment"># 显示并分类测试点</span></span><br><span class="line">        predictions = np.array([self.nearest_neighbors(x, self.k) <span class="keyword">for</span> x <span class="keyword">in</span> self.X_test])</span><br><span class="line">        colors = np.where(predictions, <span class="string">&#x27;red&#x27;</span>, <span class="string">&#x27;blue&#x27;</span>)</span><br><span class="line">        test_scatter = self.ax2.scatter(self.X_test[:, <span class="number">0</span>], self.X_test[:, <span class="number">1</span>], c=colors, marker=<span class="string">&#x27;s&#x27;</span>)</span><br><span class="line">        </span><br><span class="line">        self.ax2.set_title(<span class="string">f&#x27;测试分类 (K=<span class="subst">&#123;self.k&#125;</span>)&#x27;</span>)</span><br><span class="line">        self.fig.canvas.draw_idle()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">run</span>(<span class="params">self</span>):</span><br><span class="line">        plt.show()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 创建并运行可视化器</span></span><br><span class="line">visualizer = ClassifierVisualizer()</span><br><span class="line">visualizer.run()</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
-          
-          <category> Vmware合集 </category>
-          
+        <category>机器学习</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Vmware </tag>
-            
-            <tag> Vmware tools </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo图片显示问题</title>
-      <link href="/2022/12/27/Hexo%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
-      <url>/2022/12/27/Hexo%E5%9B%BE%E7%89%87%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
-      
-        <content type="html"><![CDATA[<p>在Hexo搭建的时候遇到了奇葩的问题，网上的hexo-asset-image也下载了，用Markdown原生的图片引用方式引用，发现主页的预览界面可以正常显示，但是点进文章里面就显示不了了。</p><p>而在用了asset文件夹的方式之后，（在页面同目录下创建一个同名文件夹放图片），结果令人哭笑不得————变成了页面内正常显示，主页无法显示了。</p><span id="more"></span><h2 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h2><p>笔者对Hexo了解不深，如果有类似经历的或者懂得hexo主页和文章渲染时具体原理的大佬可以在评论区交流一下</p><h2 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h2><p>首先还是需要安装hexo-asset-image插件的，在hexo博客的根目录文件夹打开<strong>git bash</strong>，输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save</span><br></pre></td></tr></table></figure><p>或者</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure><p>在<a href="https://blog.csdn.net/Aelous_dp/article/details/107643344">Hexo图片相关 - 文章显示、主页显示、修改fancybox</a>一文中，作者提到自带的asset-image有bug，可以尝试在根目录中找到node_modules下的hexo-asset-image文件夹，修改index.js如下：</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&quot;use strict&quot;</span>;</span><br><span class="line"><span class="keyword">var</span> cheerio = <span class="built_in">require</span>(<span class="string">&quot;cheerio&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// http://stackoverflow.com/questions/14480345/how-to-get-the-nth-occurrence-in-a-string</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getPosition</span>(<span class="params">str, m, i</span>) &#123;</span><br><span class="line"><span class="keyword">return</span> str.<span class="title function_">split</span>(m, i).<span class="title function_">join</span>(m).<span class="property">length</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> version = <span class="title class_">String</span>(hexo.<span class="property">version</span>).<span class="title function_">split</span>(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">hexo.<span class="property">extend</span>.<span class="property">filter</span>.<span class="title function_">register</span>(<span class="string">&quot;after_post_render&quot;</span>, <span class="keyword">function</span> (<span class="params">data</span>) &#123;</span><br><span class="line"><span class="keyword">var</span> config = hexo.<span class="property">config</span>;</span><br><span class="line"><span class="keyword">if</span> (config.<span class="property">post_asset_folder</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> link = data.<span class="property">permalink</span>;</span><br><span class="line">    <span class="keyword">if</span> (version.<span class="property">length</span> &gt; <span class="number">0</span> &amp;&amp; <span class="title class_">Number</span>(version[<span class="number">0</span>]) == <span class="number">3</span>)</span><br><span class="line">    <span class="keyword">var</span> beginPos = <span class="title function_">getPosition</span>(link, <span class="string">&quot;/&quot;</span>, <span class="number">1</span>) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span> <span class="keyword">var</span> beginPos = <span class="title function_">getPosition</span>(link, <span class="string">&quot;/&quot;</span>, <span class="number">3</span>) + <span class="number">1</span>;</span><br><span class="line">    <span class="comment">// In hexo 3.1.1, the permalink of &quot;about&quot; page is like &quot;.../about/index.html&quot;.</span></span><br><span class="line">    <span class="keyword">var</span> endPos = link.<span class="title function_">lastIndexOf</span>(<span class="string">&quot;/&quot;</span>) + <span class="number">1</span>;</span><br><span class="line">    link = link.<span class="title function_">substring</span>(beginPos, endPos);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> toprocess = [<span class="string">&quot;excerpt&quot;</span>, <span class="string">&quot;more&quot;</span>, <span class="string">&quot;content&quot;</span>];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; toprocess.<span class="property">length</span>; i++) &#123;</span><br><span class="line">    <span class="keyword">var</span> key = toprocess[i];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> $ = cheerio.<span class="title function_">load</span>(data[key], &#123;</span><br><span class="line">        <span class="attr">ignoreWhitespace</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">xmlMode</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">lowerCaseTags</span>: <span class="literal">false</span>,</span><br><span class="line">        <span class="attr">decodeEntities</span>: <span class="literal">false</span>,</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    $(<span class="string">&quot;img&quot;</span>).<span class="title function_">each</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> ($(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&quot;src&quot;</span>)) &#123;</span><br><span class="line">        <span class="comment">// For windows style path, we replace &#x27;\&#x27; to &#x27;/&#x27;.</span></span><br><span class="line">        <span class="keyword">var</span> src = $(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&quot;src&quot;</span>).<span class="title function_">replace</span>(<span class="string">&quot;\\&quot;</span>, <span class="string">&quot;/&quot;</span>);</span><br><span class="line">        <span class="keyword">if</span> (!<span class="regexp">/http[s]*.*|\/\/.*/</span>.<span class="title function_">test</span>(src) &amp;&amp; !<span class="regexp">/^\s*\//</span>.<span class="title function_">test</span>(src)) &#123;</span><br><span class="line">            <span class="comment">// For &quot;about&quot; page, the first part of &quot;src&quot; can&#x27;t be removed.</span></span><br><span class="line">            <span class="comment">// In addition, to support multi-level local directory.</span></span><br><span class="line">            <span class="keyword">var</span> linkArray = link.<span class="title function_">split</span>(<span class="string">&quot;/&quot;</span>).<span class="title function_">filter</span>(<span class="keyword">function</span> (<span class="params">elem</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> elem != <span class="string">&quot;&quot;</span>;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="keyword">var</span> srcArray = src.<span class="title function_">split</span>(<span class="string">&quot;/&quot;</span>).<span class="title function_">filter</span>(<span class="keyword">function</span> (<span class="params">elem</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> elem != <span class="string">&quot;&quot;</span> &amp;&amp; elem != <span class="string">&quot;.&quot;</span>;</span><br><span class="line">            &#125;);</span><br><span class="line">            <span class="keyword">if</span> (srcArray.<span class="property">length</span> &gt; <span class="number">1</span>) srcArray.<span class="title function_">shift</span>();</span><br><span class="line">            src = srcArray.<span class="title function_">join</span>(<span class="string">&quot;/&quot;</span>);</span><br><span class="line">            $(<span class="variable language_">this</span>).<span class="title function_">attr</span>(<span class="string">&quot;src&quot;</span>, config.<span class="property">root</span> + link + src);</span><br><span class="line">            <span class="variable language_">console</span>.<span class="property">info</span> &amp;&amp;</span><br><span class="line">            <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;update link as:--&gt;&quot;</span> + config.<span class="property">root</span> + link + src);</span><br><span class="line">        &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="property">info</span> &amp;&amp; <span class="variable language_">console</span>.<span class="title function_">info</span>(<span class="string">&quot;no src attr, skipped...&quot;</span>);</span><br><span class="line">        <span class="variable language_">console</span>.<span class="property">info</span> &amp;&amp; <span class="variable language_">console</span>.<span class="title function_">info</span>($(<span class="variable language_">this</span>));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    data[key] = $.<span class="title function_">html</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure><p>在hexo的_config.yml中将post_asset_folder设置为true，以后使用hexo new命令来创建网页的时候就能在source&#x2F;.post文件夹下（与网页的index文件在一起）看见一个同名的文件夹，将需要的图片全部放到这个文件夹中。</p><p>（像我一样半路才开始打开post_asset_folder的也可以选择自己创建一个同名文件夹）</p><p>之后在网页文件中使用</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img 只用修改这里.jpg %&#125;</span><br></pre></td></tr></table></figure><p>方式来引用即可实现主页和文章部分均能成功显示图片。</p>]]></content>
-      
-      
+      <tags>
+        <tag>Python</tag>
+        <tag>模式识别</tag>
+        <tag>机器学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用Shim实现在命令行中快捷启动应用程序</title>
+    <url>/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="使用Shim工具快捷启动应用程序"><a href="#使用Shim工具快捷启动应用程序" class="headerlink" title="使用Shim工具快捷启动应用程序"></a>使用Shim工具快捷启动应用程序</h1><p>想要使用命令行来快捷启动应用程序？但是又不想一个一个把每个软件的安装目录添加进Path，并且还要记住程序原本的名称，非常麻烦。把程序的快捷方式都放到一个统一的Path中注册的文件夹的方法？确实可以使用命令行启动，也可以自定义名字，但每次启动还需要加上<code>.lnk</code>的后缀才可以识别，依然非常鸡肋。</p>
+<p>今天要介绍的是一种更为简便的方法，只需要使用一款Scoop的配套小工具——<strong>Shim</strong>。</p>
+<span id="more"></span>
+
+<p>如果你还不知道什么是Scoop，可以参考这篇文章：<a href="https://blog.csdn.net/qq_43741794/article/details/113079959">Scoop介绍与初体验</a>。不过那不是这篇文章的重点。</p>
+<p>Shim的GitHub仓库地址是<a href="https://github.com/ScoopInstaller/Shim">https://github.com/ScoopInstaller/Shim</a>，但这个地址的最新版本是1.1.0，实际上Scoop配套版本的shim组件已经是3.1.1版本，功能更加完善。这里放一个最新版本的下载链接：<a href="https://wwo.lanzouj.com/iSlsA23150mj">Shim 3.1.1 下载链接 密码：b3v9</a>.</p>
+<h2 id="如何使用Shim创建应用程序的“快捷方式”"><a href="#如何使用Shim创建应用程序的“快捷方式”" class="headerlink" title="如何使用Shim创建应用程序的“快捷方式”"></a>如何使用Shim创建应用程序的“快捷方式”</h2><p>之所以用引号标注“快捷方式”，是因为这里创建的是一个<code>.exe</code>的可执行文件，而不是<code>.lnk</code>的快捷方式。</p>
+<h3 id="创建步骤："><a href="#创建步骤：" class="headerlink" title="创建步骤："></a>创建步骤：</h3><ol>
+<li><p><strong>创建一个shim文件</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">New-Item</span> <span class="literal">-Path</span> ./XXX.shim <span class="literal">-Value</span> <span class="string">&#x27;path = &quot;C:\PATH\TO\EXE\XXX.exe&quot;&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<p>这行命令创建一个shim文件，里面存放要打开的应用程序的地址。请将<code>PATH\TO\EXE</code>部分替换为实际应用程序的路径，将<code>XXX</code>替换为应用程序的名称。</p>
+</li>
+<li><p><strong>将shim程序复制到当前目录并重命名</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line"><span class="built_in">Copy-Item</span> <span class="literal">-Path</span> .\PATH\TO\SHIM\shim.exe <span class="literal">-Destination</span> .\XXX.exe</span><br></pre></td></tr></table></figure>
+
+<p>这行命令将shim程序复制过来放在当前目录下，并修改名称为<code>XXX.exe</code>。请将<code>PATH\TO\SHIM</code>部分替换为实际shim程序的路径。</p>
+</li>
+<li><p><strong>运行应用程序</strong></p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">.\XXX.exe</span><br></pre></td></tr></table></figure>
+
+<p>执行这行命令就可以启动应用程序了。</p>
+</li>
+</ol>
+<h3 id="随时使用命令行打开这些程序"><a href="#随时使用命令行打开这些程序" class="headerlink" title="随时使用命令行打开这些程序"></a>随时使用命令行打开这些程序</h3><p>如果你希望随时可以通过命令行打开应用程序，可以将当前文件夹添加至Path，这样就可以全局识别这些应用程序的名称了。</p>
+<p>实际上，这个程序的原理也很简单，感兴趣的朋友可以自己实现着玩一下。</p>
+]]></content>
       <categories>
-          
-          <category> Hexo遇到的问题 </category>
-          
+        <category>玩机技巧</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 图片 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇博客</title>
-      <link href="/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-      <url>/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-      
-        <content type="html"><![CDATA[<img src="/2022/12/27/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/OIP-C.jpg" class><span id="more"></span><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;bits/stdc++&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;Hello World!&quot;</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>Shim</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Win10/Win11字体静止时模糊，鼠标移动到字体上后或者移动字体时恢复正常的问题</title>
+    <url>/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>最近一段时间，在某些应用程序中会出现字体显示不正常，窗口内界面显示有残影等奇怪问题。虽然问题出现了很久，但是一直没有着手解决，直到今天实在无法忍受遂寻求解决方法。</p>
+<span id="more"></span>
+
+<h2 id="详细筛查过程（赶时间的朋友可以直接到最后一节）"><a href="#详细筛查过程（赶时间的朋友可以直接到最后一节）" class="headerlink" title="详细筛查过程（赶时间的朋友可以直接到最后一节）"></a>详细筛查过程（赶时间的朋友可以直接到最后一节）</h2><p>首先检查了系统的显示设置，调整了<strong>缩放值设置</strong>。但是我的缩放一直是系统推荐的150%，所以没有更改此处。</p>
+<p>然后突然想起自己之前曾经使用过<strong>Macwiz</strong>调整过电脑的字体渲染方式，于是又去检查了一下Macwiz的设置。但实际上由于显示效果不好，我只是简单尝试了一下这款应用之后便关闭了相应服务。不过还是重新到<strong>设置-个性化-字体-相关设置-调整ClearType文本</strong>中尝试重新调整一下渲染细节，但是没有什么效果。</p>
+<p>然后便是想到自己之前为了游戏显示性能曾经胡乱调整过<strong>Nvidia Control Panel</strong>里面<strong>管理3D设置</strong>选项卡中的设置：</p>
+<img src="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/nvidia.png" class>
+
+<p><strong>尝试重置了里面的相关设置，并重启。</strong></p>
+<p>再打开后，问题成功解决！</p>
+<h2 id="简要总结……"><a href="#简要总结……" class="headerlink" title="简要总结……"></a>简要总结……</h2><ul>
+<li>首先检查<strong>显示设置-缩放值设置</strong>，将其和<strong>分辨率</strong>调整到合适状态（大部分情况下是废话）</li>
+<li>然后想想自己有没有开启某些字体渲染有关的插件或者应用，有的话，去看看里面的设置是否可能会引起兼容性问题</li>
+<li>尝试调整<strong>设置-个性化-字体-相关设置-调整ClearType文本</strong>，看看调整字体渲染细节后会不会有什么变化</li>
+<li>最后尝试调整自己显卡相关的设置（本人用的是N卡，所以就去找<strong>Nvidia Contorl Panel</strong>里面的<strong>管理3D设置</strong>）</li>
+<li>最后，重启！（推荐把上面的步骤挨个做一下之后重启）</li>
+</ul>
+<p>祝你成功解决！</p>
+]]></content>
       <categories>
-          
-          <category> 闲谈/随记 </category>
-          
+        <category>疑难杂症</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> test </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>Windows</tag>
+        <tag>Nvidia</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Selenium使用时报错Chrome not reachable问题</title>
+    <url>/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<p>最近在写一个爬虫小工具，但是在第一步就遇到了问题。</p>
+<span id="more"></span>
+
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> selenium <span class="keyword">import</span> webdriver</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.common.by <span class="keyword">import</span> By</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.edge.options <span class="keyword">import</span> Options</span><br><span class="line"><span class="keyword">from</span> selenium.webdriver.chrome.service <span class="keyword">import</span> Service</span><br><span class="line"></span><br><span class="line">options = webdriver.ChromeOptions()</span><br><span class="line">options.add_argument(<span class="string">&#x27;--headless&#x27;</span>)</span><br><span class="line">options.add_argument(<span class="string">&#x27;--no-sandbox&#x27;</span>)</span><br><span class="line">options.add_argument(<span class="string">&#x27;--disable-dev-shm-usage&#x27;</span>)</span><br><span class="line">options.add_argument(<span class="string">&#x27;--remote-debugging-port=9222&#x27;</span>)</span><br><span class="line">options.binary_location = <span class="string">r&quot;C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe&quot;</span>;</span><br><span class="line">options.add_argument(<span class="string">&#x27;user-data-dir=C:\\Users\\Jackie_Li\\AppData\\Local\\Microsoft\\Edge\\User Data&#x27;</span>)</span><br><span class="line"></span><br><span class="line">service = Service(<span class="string">r&#x27;E:\Webdrivers\chromedriver.exe&#x27;</span>)</span><br><span class="line"></span><br><span class="line">driver = webdriver.Chrome(options=options,service=service)</span><br></pre></td></tr></table></figure>
+
+<p>报错信息为：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File <span class="string">&quot;c:\Users\Jackie_Li\Desktop\爬虫.py&quot;</span>, line 19, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">    driver = webdriver.Chrome(options=options,service=service)</span><br><span class="line">  File <span class="string">&quot;C:\Users\Jackie_Li\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\chrome\webdriver.py&quot;</span>, line 45, <span class="keyword">in</span> __init__</span><br><span class="line">    super().__init__(</span><br><span class="line">  File <span class="string">&quot;C:\Users\Jackie_Li\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\chromium\webdriver.py&quot;</span>, line 66, <span class="keyword">in</span> __init__</span><br><span class="line">    super().__init__(command_executor=executor, options=options)</span><br><span class="line">  File <span class="string">&quot;C:\Users\Jackie_Li\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py&quot;</span>, line 212, <span class="keyword">in</span> __init__</span><br><span class="line">    self.start_session(capabilities)</span><br><span class="line">  File <span class="string">&quot;C:\Users\Jackie_Li\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py&quot;</span>, line 299, <span class="keyword">in</span> start_session</span><br><span class="line">    response = self.execute(Command.NEW_SESSION, caps)[<span class="string">&quot;value&quot;</span>]</span><br><span class="line">  File <span class="string">&quot;C:\Users\Jackie_Li\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py&quot;</span>, line 354, <span class="keyword">in</span> execute</span><br><span class="line">    self.error_handler.check_response(response)</span><br><span class="line">  File <span class="string">&quot;C:\Users\Jackie_Li\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py&quot;</span>, line 229, <span class="keyword">in</span> check_response</span><br><span class="line">    raise exception_class(message, screen, stacktrace)</span><br><span class="line">selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: crashed.</span><br><span class="line">  (chrome not reachable)</span><br><span class="line">  (The process started from chrome location C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)</span><br></pre></td></tr></table></figure>
+
+<p>在解决问题之前，我已经将所有在论坛上找到的可能的解决办法加入到了上面那段代码中，其中包括：</p>
+<ul>
+<li>添加参数<code>--headless</code>,<code>--no-sandbox</code>,<code>--disable-dev-shm-usage</code>,<code>--remote-debugging-port=&lt;port&gt;</code></li>
+<li>添加chrome浏览器的可执行文件路径</li>
+<li>添加用户信息路径</li>
+<li>使用管理员&#x2F;非管理员权限执行代码</li>
+</ul>
+<p>但是这些方法都没有解决问题。</p>
+<p>直到搜索到了知乎上的一篇文章：<a href="https://zhuanlan.zhihu.com/p/591601994">chrome not reachable ——使用undetected_chromedriver出现以上错误如何解决？ - 知乎 (zhihu.com)</a></p>
+<p>这篇文章的作者也遇到了同样的问题，而github上的一个开源项目作者MattWaller认为有可能是有可能是上面的用户信息路径中的某些文件在相关的进程关闭的时候被加了锁导致现在新开的ChromeDriver没法正常使用这些文件（但是MattWaller也没有指出具体的文件）。但是作者认为可以尝试更换一个新的用户信息路径，并且尝试在每次退出的时候运行：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">driver.quit()</span><br><span class="line">driver.close()</span><br></pre></td></tr></table></figure>
+
+<p>这个方法很管用！我们直接将用户信息更换为全新的路径即可：</p>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line">options.add_argument(<span class="string">&quot;profile-directory=Profile 1&quot;</span>);</span><br><span class="line">options.add_argument(<span class="string">&#x27;--user-data-dir=C:\\Users\\Jackie_Li\\PythonCreeper\\Profile 1&#x27;</span>);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>疑难杂症</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+        <tag>Selenium</tag>
+      </tags>
+  </entry>
 </search>
