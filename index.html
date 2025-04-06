@@ -216,7 +216,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@types/codemirror/README/">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -230,7 +230,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@types/codemirror/README/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">解决Selenium使用时报错Chrome not reachable问题</a>
         </h2>
 
         <div class="post-meta">
@@ -239,19 +239,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
+              <time title="创建时间：2024-09-18 15:59:00 / 修改时间：16:37:11" itemprop="dateCreated datePublished" datetime="2024-09-18T15:59:00+08:00">2024-09-18</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/" itemprop="url" rel="index"><span itemprop="name">疑难杂症</span></a>
+                </span>
+            </span>
 
           
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@types/codemirror/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+            <span id="/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/" class="post-meta-item leancloud_visitors" data-flag-title="解决Selenium使用时报错Chrome not reachable问题" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -266,8 +269,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@types/codemirror/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@types/codemirror/README/" itemprop="commentCount"></span>
+    <a title="valine" href="/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -277,7 +280,123 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>502</span>
+              <span>3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>3 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近在写一个爬虫小工具，但是在第一步就遇到了问题。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/09/18/%E8%A7%A3%E5%86%B3Selenium%E4%BD%BF%E7%94%A8%E6%97%B6%E6%8A%A5%E9%94%99Chrome%20not%20reachable%E9%97%AE%E9%A2%98/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">解决Win10/Win11字体静止时模糊，鼠标移动到字体上后或者移动字体时恢复正常的问题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-08-10 12:44:25" itemprop="dateCreated datePublished" datetime="2024-08-10T12:44:25+08:00">2024-08-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-09-03 11:26:32" itemprop="dateModified" datetime="2024-09-03T11:26:32+08:00">2024-09-03</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%96%91%E9%9A%BE%E6%9D%82%E7%97%87/" itemprop="url" rel="index"><span itemprop="name">疑难杂症</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/" class="post-meta-item leancloud_visitors" data-flag-title="解决Win10/Win11字体静止时模糊，鼠标移动到字体上后或者移动字体时恢复正常的问题" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>628</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -296,17 +415,364 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h1><blockquote>
-<p><code>npm install --save @types/codemirror</code></p>
-</blockquote>
-<h1 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h1><p>This package contains type definitions for codemirror (<a target="_blank" rel="noopener" href="https://github.com/codemirror/CodeMirror">https://github.com/codemirror/CodeMirror</a>).</p>
-<h1 id="Details"><a href="#Details" class="headerlink" title="Details"></a>Details</h1><p>Files were exported from <a target="_blank" rel="noopener" href="https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/codemirror">https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/codemirror</a>.</p>
-<h3 id="Additional-Details"><a href="#Additional-Details" class="headerlink" title="Additional Details"></a>Additional Details</h3><ul>
-<li>Last updated: Tue, 06 Jun 2023 01:03:06 GMT</li>
-<li>Dependencies: <a target="_blank" rel="noopener" href="https://npmjs.com/package/@types/tern">@types&#x2F;tern</a></li>
-<li>Global values: <code>CodeMirror</code></li>
-</ul>
-<h1 id="Credits"><a href="#Credits" class="headerlink" title="Credits"></a>Credits</h1><p>These definitions were written by <a target="_blank" rel="noopener" href="https://github.com/mihailik">mihailik</a>, <a target="_blank" rel="noopener" href="https://github.com/nrbernard">nrbernard</a>, <a target="_blank" rel="noopener" href="https://github.com/Pr1st0n">Pr1st0n</a>, <a target="_blank" rel="noopener" href="https://github.com/rileymiller">rileymiller</a>, <a target="_blank" rel="noopener" href="https://github.com/toddself">toddself</a>, <a target="_blank" rel="noopener" href="https://github.com/ysulyma">ysulyma</a>, <a target="_blank" rel="noopener" href="https://github.com/azoson">azoson</a>, <a target="_blank" rel="noopener" href="https://github.com/kylesferrazza">kylesferrazza</a>, <a target="_blank" rel="noopener" href="https://github.com/fityocsaba96">fityocsaba96</a>, <a target="_blank" rel="noopener" href="https://github.com/koddsson">koddsson</a>, and <a target="_blank" rel="noopener" href="https://github.com/ficristo">ficristo</a>.</p>
+          <p>最近一段时间，在某些应用程序中会出现字体显示不正常，窗口内界面显示有残影等奇怪问题。虽然问题出现了很久，但是一直没有着手解决，直到今天实在无法忍受遂寻求解决方法。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/08/10/%E8%A7%A3%E5%86%B3Win10%E3%80%81Win11%E5%AD%97%E4%BD%93%E9%9D%99%E6%AD%A2%E6%97%B6%E6%A8%A1%E7%B3%8A%EF%BC%8C%E9%BC%A0%E6%A0%87%E7%A7%BB%E5%8A%A8%E5%88%B0%E5%AD%97%E4%BD%93%E4%B8%8A%E5%90%8E%E6%88%96%E8%80%85%E7%A7%BB%E5%8A%A8%E5%AD%97%E4%BD%93%E6%97%B6%E6%81%A2%E5%A4%8D%E6%AD%A3%E5%B8%B8%E7%9A%84%E9%97%AE%E9%A2%98/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" class="post-title-link" itemprop="url">使用Shim实现在命令行中快捷启动应用程序</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-06-29 15:50:00" itemprop="dateCreated datePublished" datetime="2024-06-29T15:50:00+08:00">2024-06-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-08-10 12:58:01" itemprop="dateModified" datetime="2024-08-10T12:58:01+08:00">2024-08-10</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%8E%A9%E6%9C%BA%E6%8A%80%E5%B7%A7/" itemprop="url" rel="index"><span itemprop="name">玩机技巧</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" class="post-meta-item leancloud_visitors" data-flag-title="使用Shim实现在命令行中快捷启动应用程序" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>920</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="使用Shim工具快捷启动应用程序"><a href="#使用Shim工具快捷启动应用程序" class="headerlink" title="使用Shim工具快捷启动应用程序"></a>使用Shim工具快捷启动应用程序</h1><p>想要使用命令行来快捷启动应用程序？但是又不想一个一个把每个软件的安装目录添加进Path，并且还要记住程序原本的名称，非常麻烦。把程序的快捷方式都放到一个统一的Path中注册的文件夹的方法？确实可以使用命令行启动，也可以自定义名字，但每次启动还需要加上<code>.lnk</code>的后缀才可以识别，依然非常鸡肋。</p>
+<p>今天要介绍的是一种更为简便的方法，只需要使用一款Scoop的配套小工具——<strong>Shim</strong>。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/06/29/%E4%BD%BF%E7%94%A8Shim%E5%AE%9E%E7%8E%B0%E5%9C%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%BF%AB%E6%8D%B7%E5%90%AF%E5%8A%A8%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" class="post-title-link" itemprop="url">压缩近邻法的可视化Python实现</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-06-29 11:00:00" itemprop="dateCreated datePublished" datetime="2024-06-29T11:00:00+08:00">2024-06-29</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-09-18 16:01:21" itemprop="dateModified" datetime="2024-09-18T16:01:21+08:00">2024-09-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" class="post-meta-item leancloud_visitors" data-flag-title="压缩近邻法的可视化Python实现" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>5.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>5 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>最近学习模式识别的时候看到压缩近邻法，然后对其进行了Python实现。这里分享一下代码。</p>
+<p>压缩近邻法是为了降低近邻法的计算复杂度，其通过将数据集进行压缩，然后再进行近邻法的计算。这样可以大大降低计算复杂度。</p>
+<p>本程序功能：</p>
+<ol>
+<li>生成一个二维的数据集，以 $y&#x3D;sinx$ 函数作非线性分割。</li>
+<li>使用压缩近邻法构建比原数据集小的分类点集。并可视化了构建过程。</li>
+<li>可以添加测试数据集并观察使用筛选后的分类点集在K-近邻法中对于不同K取值的分类效果。</li>
+</ol>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2024/06/29/%E5%8E%8B%E7%BC%A9%E8%BF%91%E9%82%BB%E6%B3%95%E7%9A%84%E5%8F%AF%E8%A7%86%E5%8C%96Python%E5%AE%9E%E7%8E%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/" class="post-title-link" itemprop="url">Ubuntu键盘错位（@变成“”，~波浪线打不出来）</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-10-04 14:36:48" itemprop="dateCreated datePublished" datetime="2023-10-04T14:36:48+08:00">2023-10-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-03-14 01:06:55" itemprop="dateModified" datetime="2024-03-14T01:06:55+08:00">2024-03-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Ubuntu%E5%90%88%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">Ubuntu合集</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/" class="post-meta-item leancloud_visitors" data-flag-title="Ubuntu键盘错位（@变成“”，~波浪线打不出来）" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/10/04/Ubuntu%E9%94%AE%E7%9B%98%E9%94%99%E4%BD%8D%EF%BC%88@%E5%8F%98%E6%88%90%E2%80%9C%E2%80%9D%EF%BC%8C~%E6%B3%A2%E6%B5%AA%E7%BA%BF%E6%89%93%E4%B8%8D%E5%87%BA%E6%9D%A5%EF%BC%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>98</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在安装了搜狗输入法后出现了键盘布局错位的问题，@号和“”号位置互换，波浪线无法打出来。解决方法如下：</p>
+<p>只需要打开fcitx配置工具，然后在输入法设置中将英文键盘布局放到搜狗输入法的键盘布局下面即可。</p>
 
       
     </div>
@@ -326,7 +792,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.walk/README/">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -340,7 +806,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.walk/README/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/" class="post-title-link" itemprop="url">关于防止gazebo 134崩溃（针对VMware环境下）</a>
         </h2>
 
         <div class="post-meta">
@@ -350,18 +816,27 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
+              <time title="创建时间：2023-10-04 14:36:48" itemprop="dateCreated datePublished" datetime="2023-10-04T14:36:48+08:00">2023-10-04</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
+                <time title="修改时间：2023-10-05 15:17:28" itemprop="dateModified" datetime="2023-10-05T15:17:28+08:00">2023-10-05</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ROS%E5%90%88%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">ROS合集</span></a>
+                </span>
+            </span>
 
           
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.walk/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+            <span id="/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/" class="post-meta-item leancloud_visitors" data-flag-title="关于防止gazebo 134崩溃（针对VMware环境下）" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -376,8 +851,239 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.walk/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.walk/README/" itemprop="commentCount"></span>
+    <a title="valine" href="/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/10/04/%E5%85%B3%E4%BA%8E%E9%98%B2%E6%AD%A2gazebo%20134%E5%B4%A9%E6%BA%83%EF%BC%88%E9%92%88%E5%AF%B9VMware%E7%8E%AF%E5%A2%83%E4%B8%8B%EF%BC%89/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>228</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>在跑gazebo的时候出现了报134错误代码崩溃的情况，上网搜索了很多方法，最终来整理一下管用的：</p>
+<p>第一个办法就是将虚拟机的加速3D图形关掉，这个方法可以，但是gazebo会变的贼慢。。。故不推荐。</p>
+<p>第二个办法就是在执行roslaunch之前先执行</p>
+<pre><code class="bash">export SVGA_VGPU10=0
+</code></pre>
+<p>引用这个代码会告诉系统尝试合适的OpenGL版本。但是至于对于问题有没有合适的版本，这个就要看情况，不过一般来说都是有合适的版本。</p>
+<p>总之，本人测试的结果是使用这个方法丝滑解决。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/" class="post-title-link" itemprop="url">NerfStudio安装说明</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-05-27 22:09:52" itemprop="dateCreated datePublished" datetime="2023-05-27T22:09:52+08:00">2023-05-27</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-10-29 22:01:11" itemprop="dateModified" datetime="2024-10-29T22:01:11+08:00">2024-10-29</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">安装教程</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/" class="post-meta-item leancloud_visitors" data-flag-title="NerfStudio安装说明" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>集合了各方信息和安装经验总结如下：</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/" class="post-title-link" itemprop="url">Ros报错汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2023-04-19 16:53:00" itemprop="dateCreated datePublished" datetime="2023-04-19T16:53:00+08:00">2023-04-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2023-04-23 19:31:06" itemprop="dateModified" datetime="2023-04-23T19:31:06+08:00">2023-04-23</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/ROS%E5%90%88%E9%9B%86/" itemprop="url" rel="index"><span itemprop="name">ROS合集</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/" class="post-meta-item leancloud_visitors" data-flag-title="Ros报错汇总" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -406,125 +1112,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="nodelib-x2F-fs-walk"><a href="#nodelib-x2F-fs-walk" class="headerlink" title="@nodelib&#x2F;fs.walk"></a>@nodelib&#x2F;fs.walk</h1><blockquote>
-<p>A library for efficiently walking a directory recursively.</p>
-</blockquote>
-<h2 id="bulb-Highlights"><a href="#bulb-Highlights" class="headerlink" title=":bulb: Highlights"></a>:bulb: Highlights</h2><ul>
-<li>:moneybag: Returns useful information: <code>name</code>, <code>path</code>, <code>dirent</code> and <code>stats</code> (optional).</li>
-<li>:rocket: On Node.js 10.10+ uses the mechanism without additional calls to determine the entry type for performance reasons. See <a target="_blank" rel="noopener" href="https://github.com/nodelib/nodelib/blob/master/packages/fs/fs.scandir/README.md#old-and-modern-mode"><code>old</code> and <code>modern</code> mode</a>.</li>
-<li>:gear: Built-in directories&#x2F;files and error filtering system.</li>
-<li>:link: Can safely work with broken symbolic links.</li>
-</ul>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @nodelib/fs.walk</span><br></pre></td></tr></table></figure>
-
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> fsWalk <span class="keyword">from</span> <span class="string">&#x27;@nodelib/fs.walk&#x27;</span>;</span><br><span class="line"></span><br><span class="line">fsWalk.<span class="title function_">walk</span>(<span class="string">&#x27;path&#x27;</span>, <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="walk-path-optionsOrSettings-callback"><a href="#walk-path-optionsOrSettings-callback" class="headerlink" title=".walk(path, [optionsOrSettings], callback)"></a>.walk(path, [optionsOrSettings], callback)</h3><p>Reads the directory recursively and asynchronously. Requires a callback function.</p>
-<blockquote>
-<p>:book: If you want to use the Promise API, use <code>util.promisify</code>.</p>
-</blockquote>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fsWalk.<span class="title function_">walk</span>(<span class="string">&#x27;path&#x27;</span>, <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br><span class="line">fsWalk.<span class="title function_">walk</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;, <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br><span class="line">fsWalk.<span class="title function_">walk</span>(<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsWalk.<span class="title class_">Settings</span>(), <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="walkStream-path-optionsOrSettings"><a href="#walkStream-path-optionsOrSettings" class="headerlink" title=".walkStream(path, [optionsOrSettings])"></a>.walkStream(path, [optionsOrSettings])</h3><p>Reads the directory recursively and asynchronously. <a target="_blank" rel="noopener" href="https://nodejs.org/dist/latest-v12.x/docs/api/stream.html#stream_readable_streams">Readable Stream</a> is used as a provider.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> stream = fsWalk.<span class="title function_">walkStream</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> stream = fsWalk.<span class="title function_">walkStream</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;);</span><br><span class="line"><span class="keyword">const</span> stream = fsWalk.<span class="title function_">walkStream</span>(<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsWalk.<span class="title class_">Settings</span>());</span><br></pre></td></tr></table></figure>
-
-<h3 id="walkSync-path-optionsOrSettings"><a href="#walkSync-path-optionsOrSettings" class="headerlink" title=".walkSync(path, [optionsOrSettings])"></a>.walkSync(path, [optionsOrSettings])</h3><p>Reads the directory recursively and synchronously. Returns an array of entries.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> entries = fsWalk.<span class="title function_">walkSync</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> entries = fsWalk.<span class="title function_">walkSync</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;);</span><br><span class="line"><span class="keyword">const</span> entries = fsWalk.<span class="title function_">walkSync</span>(<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsWalk.<span class="title class_">Settings</span>());</span><br></pre></td></tr></table></figure>
-
-<h4 id="path"><a href="#path" class="headerlink" title="path"></a>path</h4><ul>
-<li>Required: <code>true</code></li>
-<li>Type: <code>string | Buffer | URL</code></li>
-</ul>
-<p>A path to a file. If a URL is provided, it must use the <code>file:</code> protocol.</p>
-<h4 id="optionsOrSettings"><a href="#optionsOrSettings" class="headerlink" title="optionsOrSettings"></a>optionsOrSettings</h4><ul>
-<li>Required: <code>false</code></li>
-<li>Type: <code>Options | Settings</code></li>
-<li>Default: An instance of <code>Settings</code> class</li>
-</ul>
-<p>An <a href="#options"><code>Options</code></a> object or an instance of <a href="#settings"><code>Settings</code></a> class.</p>
-<blockquote>
-<p>:book: When you pass a plain object, an instance of the <code>Settings</code> class will be created automatically. If you plan to call the method frequently, use a pre-created instance of the <code>Settings</code> class.</p>
-</blockquote>
-<h3 id="Settings-options"><a href="#Settings-options" class="headerlink" title="Settings([options])"></a>Settings([options])</h3><p>A class of full settings of the package.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> settings = <span class="keyword">new</span> fsWalk.<span class="title class_">Settings</span>(&#123; <span class="attr">followSymbolicLinks</span>: <span class="literal">true</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> entries = fsWalk.<span class="title function_">walkSync</span>(<span class="string">&#x27;path&#x27;</span>, settings);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Entry"><a href="#Entry" class="headerlink" title="Entry"></a>Entry</h2><ul>
-<li><code>name</code> — The name of the entry (<code>unknown.txt</code>).</li>
-<li><code>path</code> — The path of the entry relative to call directory (<code>root/unknown.txt</code>).</li>
-<li><code>dirent</code> — An instance of <a href="./src/types/index.ts"><code>fs.Dirent</code></a> class.</li>
-<li>[<code>stats</code>] — An instance of <code>fs.Stats</code> class.</li>
-</ul>
-<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><h3 id="basePath"><a href="#basePath" class="headerlink" title="basePath"></a>basePath</h3><ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>undefined</code></li>
-</ul>
-<p>By default, all paths are built relative to the root path. You can use this option to set custom root path.</p>
-<p>In the example below we read the files from the <code>root</code> directory, but in the results the root path will be <code>custom</code>.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fsWalk.<span class="title function_">walkSync</span>(<span class="string">&#x27;root&#x27;</span>); <span class="comment">// → [&#x27;root/file.txt&#x27;]</span></span><br><span class="line">fsWalk.<span class="title function_">walkSync</span>(<span class="string">&#x27;root&#x27;</span>, &#123; <span class="attr">basePath</span>: <span class="string">&#x27;custom&#x27;</span> &#125;); <span class="comment">// → [&#x27;custom/file.txt&#x27;]</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="concurrency"><a href="#concurrency" class="headerlink" title="concurrency"></a>concurrency</h3><ul>
-<li>Type: <code>number</code></li>
-<li>Default: <code>Infinity</code></li>
-</ul>
-<p>The maximum number of concurrent calls to <code>fs.readdir</code>.</p>
-<blockquote>
-<p>:book: The higher the number, the higher performance and the load on the File System. If you want to read in quiet mode, set the value to <code>4 * os.cpus().length</code> (4 is default size of <a target="_blank" rel="noopener" href="http://docs.libuv.org/en/v1.x/threadpool.html#thread-pool-work-scheduling">thread pool work scheduling</a>).</p>
-</blockquote>
-<h3 id="deepFilter"><a href="#deepFilter" class="headerlink" title="deepFilter"></a>deepFilter</h3><ul>
-<li>Type: <a href="./src/settings.ts"><code>DeepFilterFunction</code></a></li>
-<li>Default: <code>undefined</code></li>
-</ul>
-<p>A function that indicates whether the directory will be read deep or not.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Skip all directories that starts with `node_modules`</span></span><br><span class="line"><span class="keyword">const</span> <span class="attr">filter</span>: <span class="title class_">DeepFilterFunction</span> = <span class="function">(<span class="params">entry</span>) =&gt;</span> !entry.<span class="property">path</span>.<span class="title function_">startsWith</span>(<span class="string">&#x27;node_modules&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="entryFilter"><a href="#entryFilter" class="headerlink" title="entryFilter"></a>entryFilter</h3><ul>
-<li>Type: <a href="./src/settings.ts"><code>EntryFilterFunction</code></a></li>
-<li>Default: <code>undefined</code></li>
-</ul>
-<p>A function that indicates whether the entry will be included to results or not.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Exclude all `.js` files from results</span></span><br><span class="line"><span class="keyword">const</span> <span class="attr">filter</span>: <span class="title class_">EntryFilterFunction</span> = <span class="function">(<span class="params">entry</span>) =&gt;</span> !entry.<span class="property">name</span>.<span class="title function_">endsWith</span>(<span class="string">&#x27;.js&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="errorFilter"><a href="#errorFilter" class="headerlink" title="errorFilter"></a>errorFilter</h3><ul>
-<li>Type: <a href="./src/settings.ts"><code>ErrorFilterFunction</code></a></li>
-<li>Default: <code>undefined</code></li>
-</ul>
-<p>A function that allows you to skip errors that occur when reading directories.</p>
-<p>For example, you can skip <code>ENOENT</code> errors if required:</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Skip all ENOENT errors</span></span><br><span class="line"><span class="keyword">const</span> <span class="attr">filter</span>: <span class="title class_">ErrorFilterFunction</span> = <span class="function">(<span class="params">error</span>) =&gt;</span> error.<span class="property">code</span> == <span class="string">&#x27;ENOENT&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<h3 id="stats"><a href="#stats" class="headerlink" title="stats"></a>stats</h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Adds an instance of <code>fs.Stats</code> class to the <a href="#entry"><code>Entry</code></a>.</p>
-<blockquote>
-<p>:book: Always use <code>fs.readdir</code> with additional <code>fs.lstat/fs.stat</code> calls to determine the entry type.</p>
-</blockquote>
-<h3 id="followSymbolicLinks"><a href="#followSymbolicLinks" class="headerlink" title="followSymbolicLinks"></a>followSymbolicLinks</h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Follow symbolic links or not. Call <code>fs.stat</code> on symbolic link if <code>true</code>.</p>
-<h3 id="throwErrorOnBrokenSymbolicLink"><a href="#throwErrorOnBrokenSymbolicLink" class="headerlink" title="throwErrorOnBrokenSymbolicLink"></a><code>throwErrorOnBrokenSymbolicLink</code></h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Throw an error when symbolic link is broken if <code>true</code> or safely return <code>lstat</code> call if <code>false</code>.</p>
-<h3 id="pathSegmentSeparator"><a href="#pathSegmentSeparator" class="headerlink" title="pathSegmentSeparator"></a><code>pathSegmentSeparator</code></h3><ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>path.sep</code></li>
-</ul>
-<p>By default, this package uses the correct path separator for your OS (<code>\</code> on Windows, <code>/</code> on Unix-like systems). But you can set this option to any separator character(s) that you want to use instead.</p>
-<h3 id="fs"><a href="#fs" class="headerlink" title="fs"></a><code>fs</code></h3><ul>
-<li>Type: <code>FileSystemAdapter</code></li>
-<li>Default: A default FS methods</li>
-</ul>
-<p>By default, the built-in Node.js module (<code>fs</code>) is used to work with the file system. You can replace any method with your own.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">FileSystemAdapter</span> &#123;</span><br><span class="line">	<span class="attr">lstat</span>: <span class="keyword">typeof</span> fs.<span class="property">lstat</span>;</span><br><span class="line">	<span class="attr">stat</span>: <span class="keyword">typeof</span> fs.<span class="property">stat</span>;</span><br><span class="line">	<span class="attr">lstatSync</span>: <span class="keyword">typeof</span> fs.<span class="property">lstatSync</span>;</span><br><span class="line">	<span class="attr">statSync</span>: <span class="keyword">typeof</span> fs.<span class="property">statSync</span>;</span><br><span class="line">	<span class="attr">readdir</span>: <span class="keyword">typeof</span> fs.<span class="property">readdir</span>;</span><br><span class="line">	<span class="attr">readdirSync</span>: <span class="keyword">typeof</span> fs.<span class="property">readdirSync</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> settings = <span class="keyword">new</span> fsWalk.<span class="title class_">Settings</span>(&#123;</span><br><span class="line">	<span class="attr">fs</span>: &#123; <span class="attr">lstat</span>: fakeLstat &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><p>See the <a target="_blank" rel="noopener" href="https://github.com/nodelib/nodelib/releases">Releases section of our GitHub project</a> for changelog for each release version.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>This software is released under the terms of the MIT license.</p>
-
+          <h2 id="写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）"><a href="#写入操作权限问题（Permission-denied-‘-x2F-home-x2F-louisli-x2F-ros-x2F-roscore-11311-pid）" class="headerlink" title="写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）"></a>写入操作权限问题（Permission denied: ‘&#x2F;home&#x2F;louisli&#x2F;.ros&#x2F;roscore-11311.pid）</h2><p>在搭建ROS的时候，各种工作都安装好了，兴致冲冲地运行roscore，结果出现了以下报错：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Traceback (most recent call last):</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 290, in main</span><br><span class="line">    write_pid_file(options.pid_fn, options.core, options.port)</span><br><span class="line">  File &quot;/opt/ros/melodic/lib/python2.7/dist-packages/roslaunch/__init__.py&quot;, line 112, in write_pid_file</span><br><span class="line">    with open(pid_fn, &quot;w&quot;) as f:</span><br><span class="line">IOError: [Errno 13] Permission denied: &#x27;/home/louisli/.ros/roscore-11311.pid&#x27;</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/04/19/Ros%E6%8A%A5%E9%94%99%E6%B1%87%E6%80%BB/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -543,7 +1140,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.stat/README/">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -557,7 +1154,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.stat/README/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/" class="post-title-link" itemprop="url">2023/1/3 随笔</a>
         </h2>
 
         <div class="post-meta">
@@ -566,19 +1163,22 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
+              <time title="创建时间：2023-01-03 22:03:36 / 修改时间：22:12:00" itemprop="dateCreated datePublished" datetime="2023-01-03T22:03:36+08:00">2023-01-03</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E9%9A%8F%E7%AC%94/" itemprop="url" rel="index"><span itemprop="name">随笔</span></a>
+                </span>
+            </span>
 
           
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.stat/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+            <span id="/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/" class="post-meta-item leancloud_visitors" data-flag-title="2023/1/3 随笔" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -593,8 +1193,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.stat/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.stat/README/" itemprop="commentCount"></span>
+    <a title="valine" href="/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2023/01/03/2023-1-3-%E9%9A%8F%E7%AC%94/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -604,498 +1204,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>2.5k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="nodelib-x2F-fs-stat"><a href="#nodelib-x2F-fs-stat" class="headerlink" title="@nodelib&#x2F;fs.stat"></a>@nodelib&#x2F;fs.stat</h1><blockquote>
-<p>Get the status of a file with some features.</p>
-</blockquote>
-<h2 id="bulb-Highlights"><a href="#bulb-Highlights" class="headerlink" title=":bulb: Highlights"></a>:bulb: Highlights</h2><p>Wrapper around standard method <code>fs.lstat</code> and <code>fs.stat</code> with some features.</p>
-<ul>
-<li>:beginner: Normally follows symbolic link.</li>
-<li>:gear: Can safely work with broken symbolic link.</li>
-</ul>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @nodelib/fs.stat</span><br></pre></td></tr></table></figure>
-
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> fsStat <span class="keyword">from</span> <span class="string">&#x27;@nodelib/fs.stat&#x27;</span>;</span><br><span class="line"></span><br><span class="line">fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, <span class="function">(<span class="params">error, stats</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="stat-path-optionsOrSettings-callback"><a href="#stat-path-optionsOrSettings-callback" class="headerlink" title=".stat(path, [optionsOrSettings], callback)"></a>.stat(path, [optionsOrSettings], callback)</h3><p>Returns an instance of <code>fs.Stats</code> class for provided path with standard callback-style.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, <span class="function">(<span class="params">error, stats</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br><span class="line">fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;, <span class="function">(<span class="params">error, stats</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br><span class="line">fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsStat.<span class="title class_">Settings</span>(), <span class="function">(<span class="params">error, stats</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="statSync-path-optionsOrSettings"><a href="#statSync-path-optionsOrSettings" class="headerlink" title=".statSync(path, [optionsOrSettings])"></a>.statSync(path, [optionsOrSettings])</h3><p>Returns an instance of <code>fs.Stats</code> class for provided path.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> stats = fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> stats = fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;);</span><br><span class="line"><span class="keyword">const</span> stats = fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsStat.<span class="title class_">Settings</span>());</span><br></pre></td></tr></table></figure>
-
-<h4 id="path"><a href="#path" class="headerlink" title="path"></a>path</h4><ul>
-<li>Required: <code>true</code></li>
-<li>Type: <code>string | Buffer | URL</code></li>
-</ul>
-<p>A path to a file. If a URL is provided, it must use the <code>file:</code> protocol.</p>
-<h4 id="optionsOrSettings"><a href="#optionsOrSettings" class="headerlink" title="optionsOrSettings"></a>optionsOrSettings</h4><ul>
-<li>Required: <code>false</code></li>
-<li>Type: <code>Options | Settings</code></li>
-<li>Default: An instance of <code>Settings</code> class</li>
-</ul>
-<p>An <a href="#options"><code>Options</code></a> object or an instance of <a href="#settings"><code>Settings</code></a> class.</p>
-<blockquote>
-<p>:book: When you pass a plain object, an instance of the <code>Settings</code> class will be created automatically. If you plan to call the method frequently, use a pre-created instance of the <code>Settings</code> class.</p>
-</blockquote>
-<h3 id="Settings-options"><a href="#Settings-options" class="headerlink" title="Settings([options])"></a>Settings([options])</h3><p>A class of full settings of the package.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> settings = <span class="keyword">new</span> fsStat.<span class="title class_">Settings</span>(&#123; <span class="attr">followSymbolicLink</span>: <span class="literal">false</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> stats = fsStat.<span class="title function_">stat</span>(<span class="string">&#x27;path&#x27;</span>, settings);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><h3 id="followSymbolicLink"><a href="#followSymbolicLink" class="headerlink" title="followSymbolicLink"></a><code>followSymbolicLink</code></h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Follow symbolic link or not. Call <code>fs.stat</code> on symbolic link if <code>true</code>.</p>
-<h3 id="markSymbolicLink"><a href="#markSymbolicLink" class="headerlink" title="markSymbolicLink"></a><code>markSymbolicLink</code></h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Mark symbolic link by setting the return value of <code>isSymbolicLink</code> function to always <code>true</code> (even after <code>fs.stat</code>).</p>
-<blockquote>
-<p>:book: Can be used if you want to know what is hidden behind a symbolic link, but still continue to know that it is a symbolic link.</p>
-</blockquote>
-<h3 id="throwErrorOnBrokenSymbolicLink"><a href="#throwErrorOnBrokenSymbolicLink" class="headerlink" title="throwErrorOnBrokenSymbolicLink"></a><code>throwErrorOnBrokenSymbolicLink</code></h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Throw an error when symbolic link is broken if <code>true</code> or safely return <code>lstat</code> call if <code>false</code>.</p>
-<h3 id="fs"><a href="#fs" class="headerlink" title="fs"></a><code>fs</code></h3><ul>
-<li>Type: <a href="./src/adapters/fs.ts"><code>FileSystemAdapter</code></a></li>
-<li>Default: A default FS methods</li>
-</ul>
-<p>By default, the built-in Node.js module (<code>fs</code>) is used to work with the file system. You can replace any method with your own.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">FileSystemAdapter</span> &#123;</span><br><span class="line">	lstat?: <span class="keyword">typeof</span> fs.<span class="property">lstat</span>;</span><br><span class="line">	stat?: <span class="keyword">typeof</span> fs.<span class="property">stat</span>;</span><br><span class="line">	lstatSync?: <span class="keyword">typeof</span> fs.<span class="property">lstatSync</span>;</span><br><span class="line">	statSync?: <span class="keyword">typeof</span> fs.<span class="property">statSync</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> settings = <span class="keyword">new</span> fsStat.<span class="title class_">Settings</span>(&#123;</span><br><span class="line">	<span class="attr">fs</span>: &#123; <span class="attr">lstat</span>: fakeLstat &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><p>See the <a target="_blank" rel="noopener" href="https://github.com/nodelib/nodelib/releases">Releases section of our GitHub project</a> for changelog for each release version.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>This software is released under the terms of the MIT license.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.scandir/README/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.scandir/README/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
-              </span>
-
-          
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.scandir/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.scandir/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@nodelib/fs.scandir/README/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="nodelib-x2F-fs-scandir"><a href="#nodelib-x2F-fs-scandir" class="headerlink" title="@nodelib&#x2F;fs.scandir"></a>@nodelib&#x2F;fs.scandir</h1><blockquote>
-<p>List files and directories inside the specified directory.</p>
-</blockquote>
-<h2 id="bulb-Highlights"><a href="#bulb-Highlights" class="headerlink" title=":bulb: Highlights"></a>:bulb: Highlights</h2><p>The package is aimed at obtaining information about entries in the directory.</p>
-<ul>
-<li>:moneybag: Returns useful information: <code>name</code>, <code>path</code>, <code>dirent</code> and <code>stats</code> (optional).</li>
-<li>:gear: On Node.js 10.10+ uses the mechanism without additional calls to determine the entry type. See <a href="#old-and-modern-mode"><code>old</code> and <code>modern</code> mode</a>.</li>
-<li>:link: Can safely work with broken symbolic links.</li>
-</ul>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @nodelib/fs.scandir</span><br></pre></td></tr></table></figure>
-
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> fsScandir <span class="keyword">from</span> <span class="string">&#x27;@nodelib/fs.scandir&#x27;</span>;</span><br><span class="line"></span><br><span class="line">fsScandir.<span class="title function_">scandir</span>(<span class="string">&#x27;path&#x27;</span>, <span class="function">(<span class="params">error, stats</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><h3 id="scandir-path-optionsOrSettings-callback"><a href="#scandir-path-optionsOrSettings-callback" class="headerlink" title=".scandir(path, [optionsOrSettings], callback)"></a>.scandir(path, [optionsOrSettings], callback)</h3><p>Returns an array of plain objects (<a href="#entry"><code>Entry</code></a>) with information about entry for provided path with standard callback-style.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">fsScandir.<span class="title function_">scandir</span>(<span class="string">&#x27;path&#x27;</span>, <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br><span class="line">fsScandir.<span class="title function_">scandir</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;, <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br><span class="line">fsScandir.<span class="title function_">scandir</span>(<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsScandir.<span class="title class_">Settings</span>(), <span class="function">(<span class="params">error, entries</span>) =&gt;</span> &#123; <span class="comment">/* … */</span> &#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="scandirSync-path-optionsOrSettings"><a href="#scandirSync-path-optionsOrSettings" class="headerlink" title=".scandirSync(path, [optionsOrSettings])"></a>.scandirSync(path, [optionsOrSettings])</h3><p>Returns an array of plain objects (<a href="#entry"><code>Entry</code></a>) with information about entry for provided path.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> entries = fsScandir.<span class="title function_">scandirSync</span>(<span class="string">&#x27;path&#x27;</span>);</span><br><span class="line"><span class="keyword">const</span> entries = fsScandir.<span class="title function_">scandirSync</span>(<span class="string">&#x27;path&#x27;</span>, &#123;&#125;);</span><br><span class="line"><span class="keyword">const</span> entries = fsScandir.<span class="title function_">scandirSync</span>((<span class="string">&#x27;path&#x27;</span>, <span class="keyword">new</span> fsScandir.<span class="title class_">Settings</span>());</span><br></pre></td></tr></table></figure>
-
-<h4 id="path"><a href="#path" class="headerlink" title="path"></a>path</h4><ul>
-<li>Required: <code>true</code></li>
-<li>Type: <code>string | Buffer | URL</code></li>
-</ul>
-<p>A path to a file. If a URL is provided, it must use the <code>file:</code> protocol.</p>
-<h4 id="optionsOrSettings"><a href="#optionsOrSettings" class="headerlink" title="optionsOrSettings"></a>optionsOrSettings</h4><ul>
-<li>Required: <code>false</code></li>
-<li>Type: <code>Options | Settings</code></li>
-<li>Default: An instance of <code>Settings</code> class</li>
-</ul>
-<p>An <a href="#options"><code>Options</code></a> object or an instance of <a href="#settingsoptions"><code>Settings</code></a> class.</p>
-<blockquote>
-<p>:book: When you pass a plain object, an instance of the <code>Settings</code> class will be created automatically. If you plan to call the method frequently, use a pre-created instance of the <code>Settings</code> class.</p>
-</blockquote>
-<h3 id="Settings-options"><a href="#Settings-options" class="headerlink" title="Settings([options])"></a>Settings([options])</h3><p>A class of full settings of the package.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> settings = <span class="keyword">new</span> fsScandir.<span class="title class_">Settings</span>(&#123; <span class="attr">followSymbolicLinks</span>: <span class="literal">false</span> &#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> entries = fsScandir.<span class="title function_">scandirSync</span>(<span class="string">&#x27;path&#x27;</span>, settings);</span><br></pre></td></tr></table></figure>
-
-<h2 id="Entry"><a href="#Entry" class="headerlink" title="Entry"></a>Entry</h2><ul>
-<li><code>name</code> — The name of the entry (<code>unknown.txt</code>).</li>
-<li><code>path</code> — The path of the entry relative to call directory (<code>root/unknown.txt</code>).</li>
-<li><code>dirent</code> — An instance of <a href="./src/types/index.ts"><code>fs.Dirent</code></a> class. On Node.js below 10.10 will be emulated by <a href="./src/utils/fs.ts"><code>DirentFromStats</code></a> class.</li>
-<li><code>stats</code> (optional) — An instance of <code>fs.Stats</code> class.</li>
-</ul>
-<p>For example, the <code>scandir</code> call for <code>tools</code> directory with one directory inside:</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">dirent</span>: <span class="title class_">Dirent</span> &#123; <span class="attr">name</span>: <span class="string">&#x27;typedoc&#x27;</span>, <span class="comment">/* … */</span> &#125;,</span><br><span class="line">	<span class="attr">name</span>: <span class="string">&#x27;typedoc&#x27;</span>,</span><br><span class="line">	<span class="attr">path</span>: <span class="string">&#x27;tools/typedoc&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Options"><a href="#Options" class="headerlink" title="Options"></a>Options</h2><h3 id="stats"><a href="#stats" class="headerlink" title="stats"></a>stats</h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Adds an instance of <code>fs.Stats</code> class to the <a href="#entry"><code>Entry</code></a>.</p>
-<blockquote>
-<p>:book: Always use <code>fs.readdir</code> without the <code>withFileTypes</code> option. ??TODO??</p>
-</blockquote>
-<h3 id="followSymbolicLinks"><a href="#followSymbolicLinks" class="headerlink" title="followSymbolicLinks"></a>followSymbolicLinks</h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>false</code></li>
-</ul>
-<p>Follow symbolic links or not. Call <code>fs.stat</code> on symbolic link if <code>true</code>.</p>
-<h3 id="throwErrorOnBrokenSymbolicLink"><a href="#throwErrorOnBrokenSymbolicLink" class="headerlink" title="throwErrorOnBrokenSymbolicLink"></a><code>throwErrorOnBrokenSymbolicLink</code></h3><ul>
-<li>Type: <code>boolean</code></li>
-<li>Default: <code>true</code></li>
-</ul>
-<p>Throw an error when symbolic link is broken if <code>true</code> or safely use <code>lstat</code> call if <code>false</code>.</p>
-<h3 id="pathSegmentSeparator"><a href="#pathSegmentSeparator" class="headerlink" title="pathSegmentSeparator"></a><code>pathSegmentSeparator</code></h3><ul>
-<li>Type: <code>string</code></li>
-<li>Default: <code>path.sep</code></li>
-</ul>
-<p>By default, this package uses the correct path separator for your OS (<code>\</code> on Windows, <code>/</code> on Unix-like systems). But you can set this option to any separator character(s) that you want to use instead.</p>
-<h3 id="fs"><a href="#fs" class="headerlink" title="fs"></a><code>fs</code></h3><ul>
-<li>Type: <a href="./src/adapters/fs.ts"><code>FileSystemAdapter</code></a></li>
-<li>Default: A default FS methods</li>
-</ul>
-<p>By default, the built-in Node.js module (<code>fs</code>) is used to work with the file system. You can replace any method with your own.</p>
-<figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">interface</span> <span class="title class_">FileSystemAdapter</span> &#123;</span><br><span class="line">	lstat?: <span class="keyword">typeof</span> fs.<span class="property">lstat</span>;</span><br><span class="line">	stat?: <span class="keyword">typeof</span> fs.<span class="property">stat</span>;</span><br><span class="line">	lstatSync?: <span class="keyword">typeof</span> fs.<span class="property">lstatSync</span>;</span><br><span class="line">	statSync?: <span class="keyword">typeof</span> fs.<span class="property">statSync</span>;</span><br><span class="line">	readdir?: <span class="keyword">typeof</span> fs.<span class="property">readdir</span>;</span><br><span class="line">	readdirSync?: <span class="keyword">typeof</span> fs.<span class="property">readdirSync</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> settings = <span class="keyword">new</span> fsScandir.<span class="title class_">Settings</span>(&#123;</span><br><span class="line">	<span class="attr">fs</span>: &#123; <span class="attr">lstat</span>: fakeLstat &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h2 id="old-and-modern-mode"><a href="#old-and-modern-mode" class="headerlink" title="old and modern mode"></a><code>old</code> and <code>modern</code> mode</h2><p>This package has two modes that are used depending on the environment and parameters of use.</p>
-<h3 id="old"><a href="#old" class="headerlink" title="old"></a>old</h3><ul>
-<li>Node.js below <code>10.10</code> or when the <code>stats</code> option is enabled</li>
-</ul>
-<p>When working in the old mode, the directory is read first (<code>fs.readdir</code>), then the type of entries is determined (<code>fs.lstat</code> and&#x2F;or <code>fs.stat</code> for symbolic links).</p>
-<h3 id="modern"><a href="#modern" class="headerlink" title="modern"></a>modern</h3><ul>
-<li>Node.js 10.10+ and the <code>stats</code> option is disabled</li>
-</ul>
-<p>In the modern mode, reading the directory (<code>fs.readdir</code> with the <code>withFileTypes</code> option) is combined with obtaining information about its entries. An additional call for symbolic links (<code>fs.stat</code>) is still present.</p>
-<p>This mode makes fewer calls to the file system. It’s faster.</p>
-<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><p>See the <a target="_blank" rel="noopener" href="https://github.com/nodelib/nodelib/releases">Releases section of our GitHub project</a> for changelog for each release version.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>This software is released under the terms of the MIT license.</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/README/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/README/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
-              </span>
-
-          
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/README/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>4.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>4 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="JavaScript-ObjectSchema-Package"><a href="#JavaScript-ObjectSchema-Package" class="headerlink" title="JavaScript ObjectSchema Package"></a>JavaScript ObjectSchema Package</h1><p>by <a target="_blank" rel="noopener" href="https://humanwhocodes.com/">Nicholas C. Zakas</a></p>
-<p>If you find this useful, please consider supporting my work with a <a target="_blank" rel="noopener" href="https://humanwhocodes.com/donate">donation</a>.</p>
-<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>A JavaScript object merge&#x2F;validation utility where you can define a different merge and validation strategy for each key. This is helpful when you need to validate complex data structures and then merge them in a way that is more complex than <code>Object.assign()</code>.</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>You can install using either npm:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install @humanwhocodes/object-schema</span><br></pre></td></tr></table></figure>
-
-<p>Or Yarn:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add @humanwhocodes/object-schema</span><br></pre></td></tr></table></figure>
-
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>Use CommonJS to get access to the <code>ObjectSchema</code> constructor:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> &#123; <span class="title class_">ObjectSchema</span> &#125; = <span class="built_in">require</span>(<span class="string">&quot;@humanwhocodes/object-schema&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>(&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// define a definition for the &quot;downloads&quot; key</span></span><br><span class="line">    <span class="attr">downloads</span>: &#123;</span><br><span class="line">        <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="title function_">merge</span>(<span class="params">value1, value2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> value1 + value2;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params">value</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">typeof</span> value !== <span class="string">&quot;number&quot;</span>) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&quot;Expected downloads to be a number.&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// define a strategy for the &quot;versions&quot; key</span></span><br><span class="line">    <span class="attr">version</span>: &#123;</span><br><span class="line">        <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="title function_">merge</span>(<span class="params">value1, value2</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> value1.<span class="title function_">concat</span>(value2);</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params">value</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!<span class="title class_">Array</span>.<span class="title function_">isArray</span>(value)) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Error</span>(<span class="string">&quot;Expected versions to be an array.&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> record1 = &#123;</span><br><span class="line">    <span class="attr">downloads</span>: <span class="number">25</span>,</span><br><span class="line">    <span class="attr">versions</span>: [</span><br><span class="line">        <span class="string">&quot;v1.0.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v1.1.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v1.2.0&quot;</span></span><br><span class="line">    ]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> record2 = &#123;</span><br><span class="line">    <span class="attr">downloads</span>: <span class="number">125</span>,</span><br><span class="line">    <span class="attr">versions</span>: [</span><br><span class="line">        <span class="string">&quot;v2.0.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v2.1.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v3.0.0&quot;</span></span><br><span class="line">    ]</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// make sure the records are valid</span></span><br><span class="line">schema.<span class="title function_">validate</span>(record1);</span><br><span class="line">schema.<span class="title function_">validate</span>(record2);</span><br><span class="line"></span><br><span class="line"><span class="comment">// merge together (schema.merge() accepts any number of objects)</span></span><br><span class="line"><span class="keyword">const</span> result = schema.<span class="title function_">merge</span>(record1, record2);</span><br><span class="line"></span><br><span class="line"><span class="comment">// result looks like this:</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = &#123;</span><br><span class="line">    <span class="attr">downloads</span>: <span class="number">75</span>,</span><br><span class="line">    <span class="attr">versions</span>: [</span><br><span class="line">        <span class="string">&quot;v1.0.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v1.1.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v1.2.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v2.0.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v2.1.0&quot;</span>,</span><br><span class="line">        <span class="string">&quot;v3.0.0&quot;</span></span><br><span class="line">    ]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Tips-and-Tricks"><a href="#Tips-and-Tricks" class="headerlink" title="Tips and Tricks"></a>Tips and Tricks</h2><h3 id="Named-merge-strategies"><a href="#Named-merge-strategies" class="headerlink" title="Named merge strategies"></a>Named merge strategies</h3><p>Instead of specifying a <code>merge()</code> method, you can specify one of the following strings to use a default merge strategy:</p>
-<ul>
-<li><code>&quot;assign&quot;</code> - use <code>Object.assign()</code> to merge the two values into one object.</li>
-<li><code>&quot;overwrite&quot;</code> - the second value always replaces the first.</li>
-<li><code>&quot;replace&quot;</code> - the second value replaces the first if the second is not <code>undefined</code>.</li>
-</ul>
-<p>For example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: &#123;</span><br><span class="line">        <span class="attr">merge</span>: <span class="string">&quot;replace&quot;</span>,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params"></span>) &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="Named-validation-strategies"><a href="#Named-validation-strategies" class="headerlink" title="Named validation strategies"></a>Named validation strategies</h3><p>Instead of specifying a <code>validate()</code> method, you can specify one of the following strings to use a default validation strategy:</p>
-<ul>
-<li><code>&quot;array&quot;</code> - value must be an array.</li>
-<li><code>&quot;boolean&quot;</code> - value must be a boolean.</li>
-<li><code>&quot;number&quot;</code> - value must be a number.</li>
-<li><code>&quot;object&quot;</code> - value must be an object.</li>
-<li><code>&quot;object?&quot;</code> - value must be an object or null.</li>
-<li><code>&quot;string&quot;</code> - value must be a string.</li>
-<li><code>&quot;string!&quot;</code> - value must be a non-empty string.</li>
-</ul>
-<p>For example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: &#123;</span><br><span class="line">        <span class="attr">merge</span>: <span class="string">&quot;replace&quot;</span>,</span><br><span class="line">        <span class="attr">validate</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="Subschemas"><a href="#Subschemas" class="headerlink" title="Subschemas"></a>Subschemas</h3><p>If you are defining a key that is, itself, an object, you can simplify the process by using a subschema. Instead of defining <code>merge()</code> and <code>validate()</code>, assign a <code>schema</code> key that contains a schema definition, like this:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: &#123;</span><br><span class="line">        <span class="attr">schema</span>: &#123;</span><br><span class="line">            <span class="attr">first</span>: &#123;</span><br><span class="line">                <span class="attr">merge</span>: <span class="string">&quot;replace&quot;</span>,</span><br><span class="line">                <span class="attr">validate</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">            &#125;,</span><br><span class="line">            <span class="attr">last</span>: &#123;</span><br><span class="line">                <span class="attr">merge</span>: <span class="string">&quot;replace&quot;</span>,</span><br><span class="line">                <span class="attr">validate</span>: <span class="string">&quot;string&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">schema.<span class="title function_">validate</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: &#123;</span><br><span class="line">        <span class="attr">first</span>: <span class="string">&quot;n&quot;</span>,</span><br><span class="line">        <span class="attr">last</span>: <span class="string">&quot;z&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="Remove-Keys-During-Merge"><a href="#Remove-Keys-During-Merge" class="headerlink" title="Remove Keys During Merge"></a>Remove Keys During Merge</h3><p>If the merge strategy for a key returns <code>undefined</code>, then the key will not appear in the final object. For example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>(&#123;</span><br><span class="line">    <span class="attr">date</span>: &#123;</span><br><span class="line">        <span class="title function_">merge</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">undefined</span>;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params">value</span>) &#123;</span><br><span class="line">            <span class="title class_">Date</span>.<span class="title function_">parse</span>(value);  <span class="comment">// throws an error when invalid</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> object1 = &#123; <span class="attr">date</span>: <span class="string">&quot;5/5/2005&quot;</span> &#125;;</span><br><span class="line"><span class="keyword">const</span> object2 = &#123; <span class="attr">date</span>: <span class="string">&quot;6/6/2006&quot;</span> &#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> result = schema.<span class="title function_">merge</span>(object1, object2);</span><br><span class="line"></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;date&quot;</span> <span class="keyword">in</span> result);  <span class="comment">// false</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Requiring-Another-Key-Be-Present"><a href="#Requiring-Another-Key-Be-Present" class="headerlink" title="Requiring Another Key Be Present"></a>Requiring Another Key Be Present</h3><p>If you’d like the presence of one key to require the presence of another key, you can use the <code>requires</code> property to specify an array of other properties that any key requires. For example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> schema = <span class="keyword">new</span> <span class="title class_">ObjectSchema</span>(&#123;</span><br><span class="line">    <span class="attr">date</span>: &#123;</span><br><span class="line">        <span class="title function_">merge</span>(<span class="params"></span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">undefined</span>;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params">value</span>) &#123;</span><br><span class="line">            <span class="title class_">Date</span>.<span class="title function_">parse</span>(value);  <span class="comment">// throws an error when invalid</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="attr">time</span>: &#123;</span><br><span class="line">        <span class="attr">requires</span>: [<span class="string">&quot;date&quot;</span>],</span><br><span class="line">        <span class="title function_">merge</span>(<span class="params">first, second</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> second;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params">value</span>) &#123;</span><br><span class="line">            <span class="comment">// ...</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// throws error: Key &quot;time&quot; requires keys &quot;date&quot;</span></span><br><span class="line">schema.<span class="title function_">validate</span>(&#123;</span><br><span class="line">    <span class="attr">time</span>: <span class="string">&quot;13:45&quot;</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>In this example, even though <code>date</code> is an optional key, it is required to be present whenever <code>time</code> is present.</p>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>BSD 3-Clause</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/CHANGELOG/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/CHANGELOG/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
-              </span>
-
-          
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/CHANGELOG/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/CHANGELOG/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/object-schema/CHANGELOG/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>439</span>
+              <span>680</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1114,24 +1223,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><h2 id="2-0-3-2024-04-01"><a href="#2-0-3-2024-04-01" class="headerlink" title="2.0.3 (2024-04-01)"></a><a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/compare/v2.0.2...v2.0.3">2.0.3</a> (2024-04-01)</h2><h3 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h3><ul>
-<li>Ensure test files are not including in package (<a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/commit/6eeb32cc76a3e37d76b2990bd603d72061c816e0">6eeb32c</a>), closes <a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/issues/19">#19</a></li>
-</ul>
-<h2 id="2-0-2-2024-01-10"><a href="#2-0-2-2024-01-10" class="headerlink" title="2.0.2 (2024-01-10)"></a><a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/compare/v2.0.1...v2.0.2">2.0.2</a> (2024-01-10)</h2><h3 id="Bug-Fixes-1"><a href="#Bug-Fixes-1" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h3><ul>
-<li>WrapperError should be an actual error (<a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/commit/2523f014168167e5a40bb63e0cc03231b2c0f1bf">2523f01</a>)</li>
-</ul>
-<h2 id="2-0-1-2023-10-20"><a href="#2-0-1-2023-10-20" class="headerlink" title="2.0.1 (2023-10-20)"></a><a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/compare/v2.0.0...v2.0.1">2.0.1</a> (2023-10-20)</h2><h3 id="Bug-Fixes-2"><a href="#Bug-Fixes-2" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h3><ul>
-<li>Custom properties should be available on thrown errors (<a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/commit/6ca80b001a4ffb678b9b5544fc53322117374376">6ca80b0</a>)</li>
-</ul>
-<h2 id="2-0-0-2023-10-18"><a href="#2-0-0-2023-10-18" class="headerlink" title="2.0.0 (2023-10-18)"></a><a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/compare/v1.2.1...v2.0.0">2.0.0</a> (2023-10-18)</h2><h3 id="⚠-BREAKING-CHANGES"><a href="#⚠-BREAKING-CHANGES" class="headerlink" title="⚠ BREAKING CHANGES"></a>⚠ BREAKING CHANGES</h3><ul>
-<li>Throw custom errors instead of generics.</li>
-</ul>
-<h3 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h3><ul>
-<li>Throw custom errors instead of generics. (<a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/object-schema/commit/c6c01d71eb354bf7b1fb3e883c40f7bd9b61647c">c6c01d7</a>)</li>
-</ul>
-<h3 id="1-2-1-2021-11-02"><a href="#1-2-1-2021-11-02" class="headerlink" title="1.2.1 (2021-11-02)"></a><a target="_blank" rel="noopener" href="https://www.github.com/humanwhocodes/object-schema/compare/v1.2.0...v1.2.1">1.2.1</a> (2021-11-02)</h3><h3 id="Bug-Fixes-3"><a href="#Bug-Fixes-3" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h3><ul>
-<li>Never return original object from individual config (<a target="_blank" rel="noopener" href="https://www.github.com/humanwhocodes/object-schema/commit/5463c5c6d2cb35a7b7948dffc37c899a41d1775f">5463c5c</a>)</li>
-</ul>
+          <p>突然觉得艺术是一个十分伟大而又曼妙的东西。</p>
+<p>一个艺术作品的伟大，体现在它的不同：不同的人来看，体会到的感觉不尽相同，不同的一群人也是一样；即使是相同的一个人或一群人，在不同时候、不同心情、不同天气、不同地点，也许体会到的感觉都不尽相同。或许是为了一个应景的天气，或许是为了一个一闪而过的念头，或许是为了一种心情、一个人、一首歌、一幅画面，不同的人在不同的时间来体会前人创作出的作品，这些作品本身好像蕴含着无穷无尽的能量，只要汲取便会涌现。</p>
+<p>与此同时，一个艺术作品的伟大，也体现在它的相同：一个精神的内核，作者想要告诉读者的、读者想要分享给其他读者的；一些细节，作者有意无意安排的、读者有意无意接收到的；一些文化的编码，跨越不同时间、不同地点、不同国家、不同文明。人们在自己的体验和他人分享的体验中不断比较，不断品味，最终找到最能符合自己的观念，在这个过程中，作者完成了自己的任务，而读者的心境也在这过程中不断发生着变化，变得更加丰富和成熟。</p>
+<p>当这种变化达到一定程度的时候，读者的心就会确实地发生一些变化，不同于观看时的灵光一现、一句心血来潮的赞叹和评价，而是能够使用自己的观念来理解这个世界的各种事情，而这种观念更进一步地交流、变化、发展、融合，最终演变成这个社会，这个世界的样子，不知道是否正确，但如果真的是这样或者是有道理的，我认为艺术的伟大或许还是包括但不限于此的吧。</p>
+<p>不过更有可能这也只是我作为一个读者的片面之谈、所谓“心血来潮”、“灵光一现”之谈，大家也权当是我乱写一气，以满足自己的“一闪而过的念头”、“一种心情”、“一首歌”、“一幅画面”、“一个人”吧。</p>
 
       
     </div>
@@ -1151,7 +1247,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/README/">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -1165,7 +1261,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/README/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/" class="post-title-link" itemprop="url">hexo目录详解（用到就补）</a>
         </h2>
 
         <div class="post-meta">
@@ -1175,18 +1271,27 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
+              <time title="创建时间：2022-12-28 14:55:41" itemprop="dateCreated datePublished" datetime="2022-12-28T14:55:41+08:00">2022-12-28</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
+                <time title="修改时间：2022-12-29 13:05:12" itemprop="dateModified" datetime="2022-12-29T13:05:12+08:00">2022-12-29</time>
               </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="url" rel="index"><span itemprop="name">Hexo遇到的问题</span></a>
+                </span>
+            </span>
 
           
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+            <span id="/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/" class="post-meta-item leancloud_visitors" data-flag-title="hexo目录详解（用到就补）" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -1201,8 +1306,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/README/" itemprop="commentCount"></span>
+    <a title="valine" href="/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -1212,133 +1317,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>2 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="ModuleImporter"><a href="#ModuleImporter" class="headerlink" title="ModuleImporter"></a>ModuleImporter</h1><p>by <a target="_blank" rel="noopener" href="https://humanwhocodes.com/">Nicholas C. Zakas</a></p>
-<p>If you find this useful, please consider supporting my work with a <a target="_blank" rel="noopener" href="https://humanwhocodes.com/donate">donation</a>.</p>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>A utility for seamlessly importing modules in Node.js regardless if they are CommonJS or ESM format. Under the hood, this uses <code>import()</code> and relies on Node.js’s CommonJS compatibility to work correctly. This ensures that the correct locations and formats are used for CommonJS so you can call one method and not worry about any compatibility issues.</p>
-<p>The problem with the default <code>import()</code> is that it always resolves relative to the file location in which it is called. If you want to resolve from a different location, you need to jump through a few hoops to achieve that. This package makes it easy to both resolve and import modules from any directory.</p>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>Install using <a target="_blank" rel="noopener" href="https://npmjs.com/">npm</a> or <a target="_blank" rel="noopener" href="https://yarnpkg.com/">yarn</a>:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install @humanwhocodes/module-importer</span><br><span class="line"></span><br><span class="line"># or</span><br><span class="line"></span><br><span class="line">yarn add @humanwhocodes/module-importer</span><br></pre></td></tr></table></figure>
-
-<p>Import into your Node.js project:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// CommonJS</span></span><br><span class="line"><span class="keyword">const</span> &#123; <span class="title class_">ModuleImporter</span> &#125; = <span class="built_in">require</span>(<span class="string">&quot;@humanwhocodes/module-importer&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// ESM</span></span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">ModuleImporter</span> &#125; <span class="keyword">from</span> <span class="string">&quot;@humanwhocodes/module-importer&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Bun"><a href="#Bun" class="headerlink" title="Bun"></a>Bun</h3><p>Install using this command:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bun add @humanwhocodes/module-importer</span><br></pre></td></tr></table></figure>
-
-<p>Import into your Bun project:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">ModuleImporter</span> &#125; <span class="keyword">from</span> <span class="string">&quot;@humanwhocodes/module-importer&quot;</span>;</span><br></pre></td></tr></table></figure>
-
-<h2 id="API"><a href="#API" class="headerlink" title="API"></a>API</h2><p>After importing, create a new instance of <code>ModuleImporter</code> to start emitting events:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// cwd can be omitted to use process.cwd()</span></span><br><span class="line"><span class="keyword">const</span> importer = <span class="keyword">new</span> <span class="title class_">ModuleImporter</span>(cwd);</span><br><span class="line"></span><br><span class="line"><span class="comment">// you can resolve the location of any package</span></span><br><span class="line"><span class="keyword">const</span> location = importer.<span class="title function_">resolve</span>(<span class="string">&quot;./some-file.cjs&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// you can also import directly</span></span><br><span class="line"><span class="keyword">const</span> <span class="variable language_">module</span> = importer.<span class="keyword">import</span>(<span class="string">&quot;./some-file.cjs&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>For both <code>resolve()</code> and <code>import()</code>, you can pass in package names and filenames.</p>
-<h2 id="Developer-Setup"><a href="#Developer-Setup" class="headerlink" title="Developer Setup"></a>Developer Setup</h2><ol>
-<li>Fork the repository</li>
-<li>Clone your fork</li>
-<li>Run <code>npm install</code> to setup dependencies</li>
-<li>Run <code>npm test</code> to run tests</li>
-</ol>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Apache 2.0</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/CHANGELOG/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/CHANGELOG/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
-              </span>
-
-          
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/CHANGELOG/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/CHANGELOG/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/module-importer/CHANGELOG/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>142</span>
+              <span>429</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -1357,452 +1336,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h1><h2 id="1-0-1-2022-08-18"><a href="#1-0-1-2022-08-18" class="headerlink" title="1.0.1 (2022-08-18)"></a><a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/module-importer/compare/v1.0.0...v1.0.1">1.0.1</a> (2022-08-18)</h2><h3 id="Bug-Fixes"><a href="#Bug-Fixes" class="headerlink" title="Bug Fixes"></a>Bug Fixes</h3><ul>
-<li>Ensure CommonJS mode works correctly. (<a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/module-importer/commit/cf54a0b998085066fbe1776dd0b4cacd808cc192">cf54a0b</a>), closes <a target="_blank" rel="noopener" href="https://github.com/humanwhocodes/module-importer/issues/6">#6</a></li>
-</ul>
-<h2 id="1-0-0-2022-08-17"><a href="#1-0-0-2022-08-17" class="headerlink" title="1.0.0 (2022-08-17)"></a>1.0.0 (2022-08-17)</h2><h3 id="Features"><a href="#Features" class="headerlink" title="Features"></a>Features</h3><ul>
-<li>Implement ModuleImporter (<a target="_blank" rel="noopener" href="https://www.github.com/humanwhocodes/module-importer/commit/3ce4e820c30c114e787bfed00a0966ac4772f563">3ce4e82</a>)</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/config-array/README/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/config-array/README/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
-              </span>
-
-          
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/config-array/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/config-array/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@humanwhocodes/config-array/README/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>12k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>11 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="Config-Array"><a href="#Config-Array" class="headerlink" title="Config Array"></a>Config Array</h1><p>by <a target="_blank" rel="noopener" href="https://humanwhocodes.com/">Nicholas C. Zakas</a></p>
-<p>If you find this useful, please consider supporting my work with a <a target="_blank" rel="noopener" href="https://humanwhocodes.com/donate">donation</a>.</p>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>A config array is a way of managing configurations that are based on glob pattern matching of filenames. Each config array contains the information needed to determine the correct configuration for any file based on the filename. </p>
-<h2 id="Background"><a href="#Background" class="headerlink" title="Background"></a>Background</h2><p>In 2019, I submitted an <a target="_blank" rel="noopener" href="https://github.com/eslint/rfcs/pull/9">ESLint RFC</a> proposing a new way of configuring ESLint. The goal was to streamline what had become an increasingly complicated configuration process. Over several iterations, this proposal was eventually born.</p>
-<p>The basic idea is that all configuration, including overrides, can be represented by a single array where each item in the array is a config object. Config objects appearing later in the array override config objects appearing earlier in the array. You can calculate a config for a given file by traversing all config objects in the array to find the ones that match the filename. Matching is done by specifying glob patterns in <code>files</code> and <code>ignores</code> properties on each config object. Here’s an example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</span><br><span class="line"></span><br><span class="line">    <span class="comment">// match all JSON files</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;JSON Handler&quot;</span>,</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;**/*.json&quot;</span>],</span><br><span class="line">        <span class="attr">handler</span>: jsonHandler</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// match only package.json</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;package.json Handler&quot;</span>,</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;package.json&quot;</span>],</span><br><span class="line">        <span class="attr">handler</span>: packageJsonHandler</span><br><span class="line">    &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<p>In this example, there are two config objects: the first matches all JSON files in all directories and the second matches just <code>package.json</code> in the base path directory (all the globs are evaluated as relative to a base path that can be specified). When you retrieve a configuration for <code>foo.json</code>, only the first config object matches so <code>handler</code> is equal to <code>jsonHandler</code>; when you retrieve a configuration for <code>package.json</code>, <code>handler</code> is equal to <code>packageJsonHandler</code> (because both config objects match, the second one wins).</p>
-<h2 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h2><p>You can install the package using npm or Yarn:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">npm install @humanwhocodes/config-array --save</span><br><span class="line"></span><br><span class="line"><span class="comment"># or</span></span><br><span class="line"></span><br><span class="line">yarn add @humanwhocodes/config-array</span><br></pre></td></tr></table></figure>
-
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>First, import the <code>ConfigArray</code> constructor:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">ConfigArray</span> &#125; <span class="keyword">from</span> <span class="string">&quot;@humanwhocodes/config-array&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// or using CommonJS</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> &#123; <span class="title class_">ConfigArray</span> &#125; = <span class="built_in">require</span>(<span class="string">&quot;@humanwhocodes/config-array&quot;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>When you create a new instance of <code>ConfigArray</code>, you must pass in two arguments: an array of configs and an options object. The array of configs is most likely read in from a configuration file, so here’s a typical example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> configFilename = path.<span class="title function_">resolve</span>(process.<span class="title function_">cwd</span>(), <span class="string">&quot;my.config.js&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">default</span>: rawConfigs &#125; = <span class="keyword">await</span> <span class="keyword">import</span>(configFilename);</span><br><span class="line"><span class="keyword">const</span> configs = <span class="keyword">new</span> <span class="title class_">ConfigArray</span>(rawConfigs, &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// the path to match filenames from</span></span><br><span class="line">    <span class="attr">basePath</span>: process.<span class="title function_">cwd</span>(),</span><br><span class="line"></span><br><span class="line">    <span class="comment">// additional items in each config</span></span><br><span class="line">    <span class="attr">schema</span>: mySchema</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>This example reads in an object or array from <code>my.config.js</code> and passes it into the <code>ConfigArray</code> constructor as the first argument. The second argument is an object specifying the <code>basePath</code> (the directory in which <code>my.config.js</code> is found) and a <code>schema</code> to define the additional properties of a config object beyond <code>files</code>, <code>ignores</code>, and <code>name</code>.</p>
-<h3 id="Specifying-a-Schema"><a href="#Specifying-a-Schema" class="headerlink" title="Specifying a Schema"></a>Specifying a Schema</h3><p>The <code>schema</code> option is required for you to use additional properties in config objects. The schema is an object that follows the format of an <a target="_blank" rel="noopener" href="https://npmjs.com/package/@humanwhocodes/object-schema"><code>ObjectSchema</code></a>. The schema specifies both validation and merge rules that the <code>ConfigArray</code> instance needs to combine configs when there are multiple matches. Here’s an example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> configFilename = path.<span class="title function_">resolve</span>(process.<span class="title function_">cwd</span>(), <span class="string">&quot;my.config.js&quot;</span>);</span><br><span class="line"><span class="keyword">const</span> &#123; <span class="attr">default</span>: rawConfigs &#125; = <span class="keyword">await</span> <span class="keyword">import</span>(configFilename);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> mySchema = &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// define the handler key in configs</span></span><br><span class="line">    <span class="attr">handler</span>: &#123;</span><br><span class="line">        <span class="attr">required</span>: <span class="literal">true</span>,</span><br><span class="line">        <span class="title function_">merge</span>(<span class="params">a, b</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (!b) <span class="keyword">return</span> a;</span><br><span class="line">            <span class="keyword">if</span> (!a) <span class="keyword">return</span> b;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="title function_">validate</span>(<span class="params">value</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">typeof</span> value !== <span class="string">&quot;function&quot;</span>) &#123;</span><br><span class="line">                <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">TypeError</span>(<span class="string">&quot;Function expected.&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> configs = <span class="keyword">new</span> <span class="title class_">ConfigArray</span>(rawConfigs, &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// the path to match filenames from</span></span><br><span class="line">    <span class="attr">basePath</span>: process.<span class="title function_">cwd</span>(),</span><br><span class="line"></span><br><span class="line">    <span class="comment">// additional item schemas in each config</span></span><br><span class="line">    <span class="attr">schema</span>: mySchema,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// additional config types supported (default: [])</span></span><br><span class="line">    <span class="attr">extraConfigTypes</span>: [<span class="string">&quot;array&quot;</span>, <span class="string">&quot;function&quot;</span>];</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<h3 id="Config-Arrays"><a href="#Config-Arrays" class="headerlink" title="Config Arrays"></a>Config Arrays</h3><p>Config arrays can be multidimensional, so it’s possible for a config array to contain another config array when <code>extraConfigTypes</code> contains <code>&quot;array&quot;</code>, such as:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// JS config</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;**/*.js&quot;</span>],</span><br><span class="line">        <span class="attr">handler</span>: jsHandler</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// JSON configs</span></span><br><span class="line">    [</span><br><span class="line"></span><br><span class="line">        <span class="comment">// match all JSON files</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&quot;JSON Handler&quot;</span>,</span><br><span class="line">            <span class="attr">files</span>: [<span class="string">&quot;**/*.json&quot;</span>],</span><br><span class="line">            <span class="attr">handler</span>: jsonHandler</span><br><span class="line">        &#125;,</span><br><span class="line"></span><br><span class="line">        <span class="comment">// match only package.json</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="attr">name</span>: <span class="string">&quot;package.json Handler&quot;</span>,</span><br><span class="line">            <span class="attr">files</span>: [<span class="string">&quot;package.json&quot;</span>],</span><br><span class="line">            <span class="attr">handler</span>: packageJsonHandler</span><br><span class="line">        &#125;</span><br><span class="line">    ],</span><br><span class="line"></span><br><span class="line">    <span class="comment">// filename must match function</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">files</span>: [ <span class="function"><span class="params">filePath</span> =&gt;</span> filePath.<span class="title function_">endsWith</span>(<span class="string">&quot;.md&quot;</span>) ],</span><br><span class="line">        <span class="attr">handler</span>: markdownHandler</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// filename must match all patterns in subarray</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">files</span>: [ [<span class="string">&quot;*.test.*&quot;</span>, <span class="string">&quot;*.js&quot;</span>] ],</span><br><span class="line">        <span class="attr">handler</span>: jsTestHandler</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// filename must not match patterns beginning with !</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">name</span>: <span class="string">&quot;Non-JS files&quot;</span>,</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;!*.js&quot;</span>],</span><br><span class="line">        <span class="attr">settings</span>: &#123;</span><br><span class="line">            <span class="attr">js</span>: <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<p>In this example, the array contains both config objects and a config array. When a config array is normalized (see details below), it is flattened so only config objects remain. However, the order of evaluation remains the same.</p>
-<p>If the <code>files</code> array contains a function, then that function is called with the absolute path of the file and is expected to return <code>true</code> if there is a match and <code>false</code> if not. (The <code>ignores</code> array can also contain functions.)</p>
-<p>If the <code>files</code> array contains an item that is an array of strings and functions, then all patterns must match in order for the config to match. In the preceding examples, both <code>*.test.*</code> and <code>*.js</code> must match in order for the config object to be used.</p>
-<p>If a pattern in the files array begins with <code>!</code> then it excludes that pattern. In the preceding example, any filename that doesn’t end with <code>.js</code> will automatically get a <code>settings.js</code> property set to <code>false</code>.</p>
-<p>You can also specify an <code>ignores</code> key that will force files matching those patterns to not be included. If the <code>ignores</code> key is in a config object without any other keys, then those ignores will always be applied; otherwise those ignores act as exclusions. Here’s an example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Always ignored</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">ignores</span>: [<span class="string">&quot;**/.git/**&quot;</span>, <span class="string">&quot;**/node_modules/**&quot;</span>]</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// .eslintrc.js file is ignored only when .js file matches</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;**/*.js&quot;</span>],</span><br><span class="line">        <span class="attr">ignores</span>: [<span class="string">&quot;.eslintrc.js&quot;</span>]</span><br><span class="line">        <span class="attr">handler</span>: jsHandler</span><br><span class="line">    &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<p>You can use negated patterns in <code>ignores</code> to exclude a file that was already ignored, such as:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// Ignore all JSON files except tsconfig.json</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;**/*&quot;</span>],</span><br><span class="line">        <span class="attr">ignores</span>: [<span class="string">&quot;**/*.json&quot;</span>, <span class="string">&quot;!tsconfig.json&quot;</span>]</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<h3 id="Config-Functions"><a href="#Config-Functions" class="headerlink" title="Config Functions"></a>Config Functions</h3><p>Config arrays can also include config functions when <code>extraConfigTypes</code> contains <code>&quot;function&quot;</code>. A config function accepts a single parameter, <code>context</code> (defined by you), and must return either a config object or a config array (it cannot return another function). Config functions allow end users to execute code in the creation of appropriate config objects. Here’s an example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> [</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// JS config</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">files</span>: [<span class="string">&quot;**/*.js&quot;</span>],</span><br><span class="line">        <span class="attr">handler</span>: jsHandler</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="comment">// JSON configs</span></span><br><span class="line">    <span class="keyword">function</span> (<span class="params">context</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> [</span><br><span class="line"></span><br><span class="line">            <span class="comment">// match all JSON files</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">name</span>: context.<span class="property">name</span> + <span class="string">&quot; JSON Handler&quot;</span>,</span><br><span class="line">                <span class="attr">files</span>: [<span class="string">&quot;**/*.json&quot;</span>],</span><br><span class="line">                <span class="attr">handler</span>: jsonHandler</span><br><span class="line">            &#125;,</span><br><span class="line"></span><br><span class="line">            <span class="comment">// match only package.json</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">name</span>: context.<span class="property">name</span> + <span class="string">&quot; package.json Handler&quot;</span>,</span><br><span class="line">                <span class="attr">files</span>: [<span class="string">&quot;package.json&quot;</span>],</span><br><span class="line">                <span class="attr">handler</span>: packageJsonHandler</span><br><span class="line">            &#125;</span><br><span class="line">        ];</span><br><span class="line">    &#125;</span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-
-<p>When a config array is normalized, each function is executed and replaced in the config array with the return value.</p>
-<p><strong>Note:</strong> Config functions can also be async.</p>
-<h3 id="Normalizing-Config-Arrays"><a href="#Normalizing-Config-Arrays" class="headerlink" title="Normalizing Config Arrays"></a>Normalizing Config Arrays</h3><p>Once a config array has been created and loaded with all of the raw config data, it must be normalized before it can be used. The normalization process goes through and flattens the config array as well as executing all config functions to get their final values.</p>
-<p>To normalize a config array, call the <code>normalize()</code> method and pass in a context object:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> configs.<span class="title function_">normalize</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;MyApp&quot;</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p>The <code>normalize()</code> method returns a promise, so be sure to use the <code>await</code> operator. The config array instance is normalized in-place, so you don’t need to create a new variable.</p>
-<p>If you want to disallow async config functions, you can call <code>normalizeSync()</code> instead. This method is completely synchronous and does not require using the <code>await</code> operator as it does not return a promise:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">await</span> configs.<span class="title function_">normalizeSync</span>(&#123;</span><br><span class="line">    <span class="attr">name</span>: <span class="string">&quot;MyApp&quot;</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-
-<p><strong>Important:</strong> Once a <code>ConfigArray</code> is normalized, it cannot be changed further. You can, however, create a new <code>ConfigArray</code> and pass in the normalized instance to create an unnormalized copy.</p>
-<h3 id="Getting-Config-for-a-File"><a href="#Getting-Config-for-a-File" class="headerlink" title="Getting Config for a File"></a>Getting Config for a File</h3><p>To get the config for a file, use the <code>getConfig()</code> method on a normalized config array and pass in the filename to get a config for:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// pass in absolute filename</span></span><br><span class="line"><span class="keyword">const</span> fileConfig = configs.<span class="title function_">getConfig</span>(path.<span class="title function_">resolve</span>(process.<span class="title function_">cwd</span>(), <span class="string">&quot;package.json&quot;</span>));</span><br></pre></td></tr></table></figure>
-
-<p>The config array always returns an object, even if there are no configs matching the given filename. You can then inspect the returned config object to determine how to proceed.</p>
-<p>A few things to keep in mind:</p>
-<ul>
-<li>You must pass in the absolute filename to get a config for.</li>
-<li>The returned config object never has <code>files</code>, <code>ignores</code>, or <code>name</code> properties; the only properties on the object will be the other configuration options specified.</li>
-<li>The config array caches configs, so subsequent calls to <code>getConfig()</code> with the same filename will return in a fast lookup rather than another calculation.</li>
-<li>A config will only be generated if the filename matches an entry in a <code>files</code> key. A config will not be generated without matching a <code>files</code> key (configs without a <code>files</code> key are only applied when another config with a <code>files</code> key is applied; configs without <code>files</code> are never applied on their own). Any config with a <code>files</code> key entry ending with <code>/**</code> or <code>/*</code> will only be applied if another entry in the same <code>files</code> key matches or another config matches.</li>
-</ul>
-<h2 id="Determining-Ignored-Paths"><a href="#Determining-Ignored-Paths" class="headerlink" title="Determining Ignored Paths"></a>Determining Ignored Paths</h2><p>You can determine if a file is ignored by using the <code>isFileIgnored()</code> method and passing in the absolute path of any file, as in this example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ignored = configs.<span class="title function_">isFileIgnored</span>(<span class="string">&#x27;/foo/bar/baz.txt&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>A file is considered ignored if any of the following is true:</p>
-<ul>
-<li><strong>It’s parent directory is ignored.</strong> For example, if <code>foo</code> is in <code>ignores</code>, then <code>foo/a.js</code> is considered ignored.</li>
-<li><strong>It has an ancestor directory that is ignored.</strong> For example, if <code>foo</code> is in <code>ignores</code>, then <code>foo/baz/a.js</code> is considered ignored.</li>
-<li><strong>It matches an ignored file pattern.</strong> For example, if <code>**/a.js</code> is in <code>ignores</code>, then <code>foo/a.js</code> and <code>foo/baz/a.js</code> are considered ignored.</li>
-<li><strong>If it matches an entry in <code>files</code> and also in <code>ignores</code>.</strong> For example, if <code>**/*.js</code> is in <code>files</code> and <code>**/a.js</code> is in <code>ignores</code>, then <code>foo/a.js</code> and <code>foo/baz/a.js</code> are considered ignored.</li>
-<li><strong>The file is outside the <code>basePath</code>.</strong> If the <code>basePath</code> is <code>/usr/me</code>, then <code>/foo/a.js</code> is considered ignored.</li>
-</ul>
-<p>For directories, use the <code>isDirectoryIgnored()</code> method and pass in the absolute path of any directory, as in this example:</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ignored = configs.<span class="title function_">isDirectoryIgnored</span>(<span class="string">&#x27;/foo/bar/&#x27;</span>);</span><br></pre></td></tr></table></figure>
-
-<p>A directory is considered ignored if any of the following is true:</p>
-<ul>
-<li><strong>It’s parent directory is ignored.</strong> For example, if <code>foo</code> is in <code>ignores</code>, then <code>foo/baz</code> is considered ignored.</li>
-<li><strong>It has an ancestor directory that is ignored.</strong> For example, if <code>foo</code> is in <code>ignores</code>, then <code>foo/bar/baz/a.js</code> is considered ignored.</li>
-<li><strong>It matches and ignored file pattern.</strong> For example, if <code>**/a.js</code> is in <code>ignores</code>, then <code>foo/a.js</code> and <code>foo/baz/a.js</code> are considered ignored.</li>
-<li><strong>If it matches an entry in <code>files</code> and also in <code>ignores</code>.</strong> For example, if <code>**/*.js</code> is in <code>files</code> and <code>**/a.js</code> is in <code>ignores</code>, then <code>foo/a.js</code> and <code>foo/baz/a.js</code> are considered ignored.</li>
-<li><strong>The file is outside the <code>basePath</code>.</strong> If the <code>basePath</code> is <code>/usr/me</code>, then <code>/foo/a.js</code> is considered ignored.</li>
-</ul>
-<p><strong>Important:</strong> A pattern such as <code>foo/**</code> means that <code>foo</code> and <code>foo/</code> are <em>not</em> ignored whereas <code>foo/bar</code> is ignored. If you want to ignore <code>foo</code> and all of its subdirectories, use the pattern <code>foo</code> or <code>foo/</code> in <code>ignores</code>.</p>
-<h2 id="Caching-Mechanisms"><a href="#Caching-Mechanisms" class="headerlink" title="Caching Mechanisms"></a>Caching Mechanisms</h2><p>Each <code>ConfigArray</code> aggressively caches configuration objects to avoid unnecessary work. This caching occurs in two ways:</p>
-<ol>
-<li><strong>File-based Caching.</strong> For each filename that is passed into a method, the resulting config is cached against that filename so you’re always guaranteed to get the same object returned from <code>getConfig()</code> whenever you pass the same filename in.</li>
-<li><strong>Index-based Caching.</strong> Whenever a config is calculated, the config elements that were used to create the config are also cached. So if a given filename matches elements 1, 5, and 7, the resulting config is cached with a key of <code>1,5,7</code>. That way, if another file is passed that matches the same config elements, the result is already known and doesn’t have to be recalculated. That means two files that match all the same elements will return the same config from <code>getConfig()</code>.</li>
-</ol>
-<h2 id="Acknowledgements"><a href="#Acknowledgements" class="headerlink" title="Acknowledgements"></a>Acknowledgements</h2><p>The design of this project was influenced by feedback on the ESLint RFC, and incorporates ideas from:</p>
-<ul>
-<li>Teddy Katz (@not-an-aardvark)</li>
-<li>Toru Nagashima (@mysticatea)</li>
-<li>Kai Cataldo (@kaicataldo)</li>
-</ul>
-<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Apache 2.0</p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@eslint-community/regexpp/README/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="JackieLi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="JackieLi的小屋">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@eslint-community/regexpp/README/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-04-06 16:20:48" itemprop="dateCreated datePublished" datetime="2025-04-06T16:20:48+08:00">2025-04-06</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2024-09-03 11:23:42" itemprop="dateModified" datetime="2024-09-03T11:23:42+08:00">2024-09-03</time>
-              </span>
-
-          
-            <span id="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@eslint-community/regexpp/README/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@eslint-community/regexpp/README/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2025/04/06/obsidian-smart-completion-plugin-for-hexo/node_modules/@eslint-community/regexpp/README/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>3.7k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="eslint-community-x2F-regexpp"><a href="#eslint-community-x2F-regexpp" class="headerlink" title="@eslint-community&#x2F;regexpp"></a>@eslint-community&#x2F;regexpp</h1><p><a target="_blank" rel="noopener" href="https://www.npmjs.com/package/@eslint-community/regexpp"><img src="https://img.shields.io/npm/v/@eslint-community/regexpp.svg" alt="npm version"></a><br><a target="_blank" rel="noopener" href="http://www.npmtrends.com/@eslint-community/regexpp"><img src="https://img.shields.io/npm/dm/@eslint-community/regexpp.svg" alt="Downloads/month"></a><br><a target="_blank" rel="noopener" href="https://github.com/eslint-community/regexpp/actions"><img src="https://github.com/eslint-community/regexpp/workflows/CI/badge.svg" alt="Build Status"></a><br><a target="_blank" rel="noopener" href="https://codecov.io/gh/eslint-community/regexpp"><img src="https://codecov.io/gh/eslint-community/regexpp/branch/main/graph/badge.svg" alt="codecov"></a></p>
-<p>A regular expression parser for ECMAScript.</p>
-<h2 id="💿-Installation"><a href="#💿-Installation" class="headerlink" title="💿 Installation"></a>💿 Installation</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install @eslint-community/regexpp</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>require Node@^12.0.0 || ^14.0.0 || &gt;&#x3D;16.0.0.</li>
-</ul>
-<h2 id="📖-Usage"><a href="#📖-Usage" class="headerlink" title="📖 Usage"></a>📖 Usage</h2><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;</span><br><span class="line">    <span class="variable constant_">AST</span>,</span><br><span class="line">    <span class="title class_">RegExpParser</span>,</span><br><span class="line">    <span class="title class_">RegExpValidator</span>,</span><br><span class="line">    <span class="title class_">RegExpVisitor</span>,</span><br><span class="line">    parseRegExpLiteral,</span><br><span class="line">    validateRegExpLiteral,</span><br><span class="line">    visitRegExpAST</span><br><span class="line">&#125; <span class="keyword">from</span> <span class="string">&quot;@eslint-community/regexpp&quot;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="parseRegExpLiteral-source-options"><a href="#parseRegExpLiteral-source-options" class="headerlink" title="parseRegExpLiteral(source, options?)"></a>parseRegExpLiteral(source, options?)</h3><p>Parse a given regular expression literal then make AST object.</p>
-<p>This is equivalent to <code>new RegExpParser(options).parseLiteral(source)</code>.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string | RegExp</code>) The source code to parse.</li>
-<li><code>options?</code> (<a href="src/parser.ts#L743"><code>RegExpParser.Options</code></a>) The options to parse.</li>
-</ul>
-</li>
-<li><strong>Return:</strong><ul>
-<li>The AST of the regular expression.</li>
-</ul>
-</li>
-</ul>
-<h3 id="validateRegExpLiteral-source-options"><a href="#validateRegExpLiteral-source-options" class="headerlink" title="validateRegExpLiteral(source, options?)"></a>validateRegExpLiteral(source, options?)</h3><p>Validate a given regular expression literal.</p>
-<p>This is equivalent to <code>new RegExpValidator(options).validateLiteral(source)</code>.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to validate.</li>
-<li><code>options?</code> (<a href="src/validator.ts#L220"><code>RegExpValidator.Options</code></a>) The options to validate.</li>
-</ul>
-</li>
-</ul>
-<h3 id="visitRegExpAST-ast-handlers"><a href="#visitRegExpAST-ast-handlers" class="headerlink" title="visitRegExpAST(ast, handlers)"></a>visitRegExpAST(ast, handlers)</h3><p>Visit each node of a given AST.</p>
-<p>This is equivalent to <code>new RegExpVisitor(handlers).visit(ast)</code>.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>ast</code> (<a href="src/ast.ts#L4"><code>AST.Node</code></a>) The AST to visit.</li>
-<li><code>handlers</code> (<a href="src/visitor.ts#L291"><code>RegExpVisitor.Handlers</code></a>) The callbacks.</li>
-</ul>
-</li>
-</ul>
-<h3 id="RegExpParser"><a href="#RegExpParser" class="headerlink" title="RegExpParser"></a>RegExpParser</h3><h4 id="new-RegExpParser-options"><a href="#new-RegExpParser-options" class="headerlink" title="new RegExpParser(options?)"></a>new RegExpParser(options?)</h4><ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>options?</code> (<a href="src/parser.ts#L743"><code>RegExpParser.Options</code></a>) The options to parse.</li>
-</ul>
-</li>
-</ul>
-<h4 id="parser-parseLiteral-source-start-end"><a href="#parser-parseLiteral-source-start-end" class="headerlink" title="parser.parseLiteral(source, start?, end?)"></a>parser.parseLiteral(source, start?, end?)</h4><p>Parse a regular expression literal.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to parse. E.g. <code>&quot;/abc/g&quot;</code>.</li>
-<li><code>start?</code> (<code>number</code>) The start index in the source code. Default is <code>0</code>.</li>
-<li><code>end?</code> (<code>number</code>) The end index in the source code. Default is <code>source.length</code>.</li>
-</ul>
-</li>
-<li><strong>Return:</strong><ul>
-<li>The AST of the regular expression.</li>
-</ul>
-</li>
-</ul>
-<h4 id="parser-parsePattern-source-start-end-flags"><a href="#parser-parsePattern-source-start-end-flags" class="headerlink" title="parser.parsePattern(source, start?, end?, flags?)"></a>parser.parsePattern(source, start?, end?, flags?)</h4><p>Parse a regular expression pattern.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to parse. E.g. <code>&quot;abc&quot;</code>.</li>
-<li><code>start?</code> (<code>number</code>) The start index in the source code. Default is <code>0</code>.</li>
-<li><code>end?</code> (<code>number</code>) The end index in the source code. Default is <code>source.length</code>.</li>
-<li><code>flags?</code> (<code>&#123; unicode?: boolean, unicodeSets?: boolean &#125;</code>) The flags to enable Unicode mode, and Unicode Set mode.</li>
-</ul>
-</li>
-<li><strong>Return:</strong><ul>
-<li>The AST of the regular expression pattern.</li>
-</ul>
-</li>
-</ul>
-<h4 id="parser-parseFlags-source-start-end"><a href="#parser-parseFlags-source-start-end" class="headerlink" title="parser.parseFlags(source, start?, end?)"></a>parser.parseFlags(source, start?, end?)</h4><p>Parse a regular expression flags.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to parse. E.g. <code>&quot;gim&quot;</code>.</li>
-<li><code>start?</code> (<code>number</code>) The start index in the source code. Default is <code>0</code>.</li>
-<li><code>end?</code> (<code>number</code>) The end index in the source code. Default is <code>source.length</code>.</li>
-</ul>
-</li>
-<li><strong>Return:</strong><ul>
-<li>The AST of the regular expression flags.</li>
-</ul>
-</li>
-</ul>
-<h3 id="RegExpValidator"><a href="#RegExpValidator" class="headerlink" title="RegExpValidator"></a>RegExpValidator</h3><h4 id="new-RegExpValidator-options"><a href="#new-RegExpValidator-options" class="headerlink" title="new RegExpValidator(options)"></a>new RegExpValidator(options)</h4><ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>options</code> (<a href="src/validator.ts#L220"><code>RegExpValidator.Options</code></a>) The options to validate.</li>
-</ul>
-</li>
-</ul>
-<h4 id="validator-validateLiteral-source-start-end"><a href="#validator-validateLiteral-source-start-end" class="headerlink" title="validator.validateLiteral(source, start, end)"></a>validator.validateLiteral(source, start, end)</h4><p>Validate a regular expression literal.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to validate.</li>
-<li><code>start?</code> (<code>number</code>) The start index in the source code. Default is <code>0</code>.</li>
-<li><code>end?</code> (<code>number</code>) The end index in the source code. Default is <code>source.length</code>.</li>
-</ul>
-</li>
-</ul>
-<h4 id="validator-validatePattern-source-start-end-flags"><a href="#validator-validatePattern-source-start-end-flags" class="headerlink" title="validator.validatePattern(source, start, end, flags)"></a>validator.validatePattern(source, start, end, flags)</h4><p>Validate a regular expression pattern.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to validate.</li>
-<li><code>start?</code> (<code>number</code>) The start index in the source code. Default is <code>0</code>.</li>
-<li><code>end?</code> (<code>number</code>) The end index in the source code. Default is <code>source.length</code>.</li>
-<li><code>flags?</code> (<code>&#123; unicode?: boolean, unicodeSets?: boolean &#125;</code>) The flags to enable Unicode mode, and Unicode Set mode.</li>
-</ul>
-</li>
-</ul>
-<h4 id="validator-validateFlags-source-start-end"><a href="#validator-validateFlags-source-start-end" class="headerlink" title="validator.validateFlags(source, start, end)"></a>validator.validateFlags(source, start, end)</h4><p>Validate a regular expression flags.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>source</code> (<code>string</code>) The source code to validate.</li>
-<li><code>start?</code> (<code>number</code>) The start index in the source code. Default is <code>0</code>.</li>
-<li><code>end?</code> (<code>number</code>) The end index in the source code. Default is <code>source.length</code>.</li>
-</ul>
-</li>
-</ul>
-<h3 id="RegExpVisitor"><a href="#RegExpVisitor" class="headerlink" title="RegExpVisitor"></a>RegExpVisitor</h3><h4 id="new-RegExpVisitor-handlers"><a href="#new-RegExpVisitor-handlers" class="headerlink" title="new RegExpVisitor(handlers)"></a>new RegExpVisitor(handlers)</h4><ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>handlers</code> (<a href="src/visitor.ts#L291"><code>RegExpVisitor.Handlers</code></a>) The callbacks.</li>
-</ul>
-</li>
-</ul>
-<h4 id="visitor-visit-ast"><a href="#visitor-visit-ast" class="headerlink" title="visitor.visit(ast)"></a>visitor.visit(ast)</h4><p>Validate a regular expression literal.</p>
-<ul>
-<li><strong>Parameters:</strong><ul>
-<li><code>ast</code> (<a href="src/ast.ts#L4"><code>AST.Node</code></a>) The AST to visit.</li>
-</ul>
-</li>
-</ul>
-<h2 id="📰-Changelog"><a href="#📰-Changelog" class="headerlink" title="📰 Changelog"></a>📰 Changelog</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/eslint-community/regexpp/releases">GitHub Releases</a></li>
-</ul>
-<h2 id="🍻-Contributing"><a href="#🍻-Contributing" class="headerlink" title="🍻 Contributing"></a>🍻 Contributing</h2><p>Welcome contributing!</p>
-<p>Please use GitHub’s Issues&#x2F;PRs.</p>
-<h3 id="Development-Tools"><a href="#Development-Tools" class="headerlink" title="Development Tools"></a>Development Tools</h3><ul>
-<li><code>npm test</code> runs tests and measures coverage.</li>
-<li><code>npm run build</code> compiles TypeScript source code to <code>index.js</code>, <code>index.js.map</code>, and <code>index.d.ts</code>.</li>
-<li><code>npm run clean</code> removes the temporary files which are created by <code>npm test</code> and <code>npm run build</code>.</li>
-<li><code>npm run lint</code> runs ESLint.</li>
-<li><code>npm run update:test</code> updates test fixtures.</li>
-<li><code>npm run update:ids</code> updates <code>src/unicode/ids.ts</code>.</li>
-<li><code>npm run watch</code> runs tests with <code>--watch</code> option.</li>
-</ul>
-
+          <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文为本人在使用Hexo博客Next主题时所用到的博客目录下的文件的解释说明，用于防止遗忘记录，也希望能给后人提供帮助。</p>
+<p>本人博客根目录文件夹名为blog，大家请根据自己的根目录名查找相应的文件。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/12/28/hexo%E7%9B%AE%E5%BD%95%E8%AF%A6%E8%A7%A3%EF%BC%88%E7%94%A8%E5%88%B0%E5%B0%B1%E8%A1%A5%EF%BC%89/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1820,7 +1363,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -1886,7 +1429,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">35</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1945,12 +1488,12 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">121k</span>
+    <span title="站点总字数">24k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:50</span>
+    <span title="站点阅读时长">22 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
   </div><script color="0,0,0" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
