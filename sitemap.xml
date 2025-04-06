@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://jackie-li-0228.github.io/about/index.html</loc>
+    
+    <lastmod>2025-04-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://jackie-li-0228.github.io/2023/05/27/NerfStudio%E5%AE%89%E8%A3%85%E8%AF%B4%E6%98%8E/</loc>
     
     <lastmod>2024-10-29</lastmod>
@@ -165,15 +174,6 @@
   
   <url>
     <loc>http://jackie-li-0228.github.io/tags/index.html</loc>
-    
-    <lastmod>2022-12-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://jackie-li-0228.github.io/about/index.html</loc>
     
     <lastmod>2022-12-27</lastmod>
     
