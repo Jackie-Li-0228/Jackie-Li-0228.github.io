@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+<meta name="baidu-site-verification" content="code-BKQ11PUFAK" />
+<meta name="msvalidate.01" content="4E36CDD054E3AC2D3B7FBC477D77ABFC" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-bounce.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"jackie-li-0228.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":25,"offset":12,"onmobile":true},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":"falsed","scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入密码') !== ''){
+                alert('密码错误');
+                history.back();
+            }
+        }
+    })();
+</script>
+  <meta name="description" content="标题解析$\pi^{3}$ : 最重要是 PI，即 Permutation-Equivariant.Scalable ： 说明这个方法是可以进行 Scale up 的Permutation-Equivariant：说明这个方法是与输入的图片序列的顺序无关的，有点类似 VGGT 里的 Frame Attention 想做的事情？Visual Geometry Learning ：通过视觉信息提取几何">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JackieLi的小屋">
+<meta property="og:url" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/index.html">
+<meta property="og:site_name" content="JackieLi的小屋">
+<meta property="og:description" content="标题解析$\pi^{3}$ : 最重要是 PI，即 Permutation-Equivariant.Scalable ： 说明这个方法是可以进行 Scale up 的Permutation-Equivariant：说明这个方法是与输入的图片序列的顺序无关的，有点类似 VGGT 里的 Frame Attention 想做的事情？Visual Geometry Learning ：通过视觉信息提取几何">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/6837f766eb3278519c09b5cdf01782c479b5215b.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/3e2b8c47b2631f10441dd06f22b8cf43dd5a72ff.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/a50db921a60c4bb9cd33c62161d3444c295650fa.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/ea87b378fbefbe384b652cef3c77e8fa0f916cc5.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/cc9406fb6aaca2be79804cd28a0f9d0e6d2a1ece.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/00e21980b42a86fabfe067c4115741f75e4e1faf.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/d50e31f239c5fc2fb2a1b8f3b51e6a8501cda6bb.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/3774c829dc69dc7c8d94471befdce1567b13a6c1.png">
+<meta property="og:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/9526d85629053f35f0033fa296135a37666d2d82.png">
+<meta property="article:published_time" content="2025-07-25T02:00:45.949Z">
+<meta property="article:modified_time" content="2025-07-25T02:04:18.660Z">
+<meta property="article:author" content="JackieLi">
+<meta property="article:tag" content="Programming Math Others">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/6837f766eb3278519c09b5cdf01782c479b5215b.png">
+
+<link rel="canonical" href="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title> | JackieLi的小屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JackieLi的小屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">进来看看！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-schedule">
+
+    <a href="/schedule/" rel="section"><i class="fa fa-calendar fa-fw"></i>日程表</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+        <li class="menu-item menu-item-commonweal">
+
+    <a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JackieLi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JackieLi的小屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-07-25 10:00:45 / 修改时间：10:04:18" itemprop="dateCreated datePublished" datetime="2025-07-25T10:00:45+08:00">2025-07-25</time>
+            </span>
+
+          
+            <span id="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: true;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>9.4k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>9 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="标题解析"><a href="#标题解析" class="headerlink" title="标题解析"></a>标题解析</h2><p>$\pi^{3}$ : 最重要是 PI，即 Permutation-Equivariant.<br>Scalable ： 说明这个方法是可以进行 Scale up 的<br>Permutation-Equivariant：说明这个方法是与输入的图片序列的顺序无关的，有点类似 VGGT 里的 Frame Attention 想做的事情？<br>Visual Geometry Learning ：通过视觉信息提取几何特征</p>
+<blockquote>
+<p>$\pi^{3}$ 有效地使用<em>前馈</em>方式重建一组 diverse 的 <a href="open-domain" class="wikilink">open-domain</a> 图像，包括室内，室外和鸟瞰等各种场景，以及<em>同时包含了动态和静态内容的 cartoons</em>（这里的 cartoons 应该只是指一个图像序列）</p>
+</blockquote>
+<p><img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/6837f766eb3278519c09b5cdf01782c479b5215b.png" class="wikilink" alt="400"></p>
+<p><em>在多个数据集上的数据集表明，$\pi^{3}$ 方法不仅在文中展示的多个数据集上的表现结果好于 VGGT, FLARE, Fast3R 等最新的前馈性框架，尤其是其在 RealEstate10K 数据集上的表现，远远好于其他模型。</em></p>
+<p>同时文章的另一个重点在于<em>PI</em>特性，即排列无关特性：<br><img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/3e2b8c47b2631f10441dd06f22b8cf43dd5a72ff.png" class="wikilink" alt="650"></p>
+<p><em>可以发现，加入排列无关特性之后，模型的收敛速度得到了提高，并且在相同的参数量下，模型可以获得更大的指标提升（类似于排序无关的特性相当于起到了数据集增强的作用？）；同时右边的图也展示了模型的 scalability</em></p>
+<h2 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h2><blockquote>
+<p>我们介绍 $\pi^{3}$，一种前馈神经网络，<strong>打破了对传统固定参考视图的依赖</strong>。之前的方法通常<strong>将重建锚定在指定的视点之上</strong>，这是一种归纳偏差。如果这种假设对某组数据来说并不是最优的解释方法，那么就会导致模型不稳定甚至重建失败。而 $\pi^{3}$ 采用了一个<strong>排列无关</strong>的架构对 <a href="affine-invariant" class="wikilink">affine-invariant</a> 的相机位姿以及 <a href="affine-invariant" class="wikilink">scale-invariant</a> 的 local点云进行预测，无需任何参考帧。这使得我们的模型对输入顺序有固然的鲁棒性，并且高度 scalable。这些优势使得我们的简单且无偏差的方法可以在各种任务上实现最先进的性能。包括相机姿态估计，单目&#x2F;视频深度估计和密集点图重建。</p>
+</blockquote>
+<p>这里说的”参考帧”是什么？</p>
+<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><blockquote>
+<p>“Learning always beats inductive biases.” — Jonathan T. Barron, Radiance Fields and the Future of Generative Media</p>
+<p>“学习永远比归纳偏差强。”</p>
+</blockquote>
+<ul>
+<li><p>近期，前馈神经网络在三维重建领域有了十分亮眼的进展，传统方法一般采用 BA 。代表的是 DUSt3R。</p>
+</li>
+<li><p>但无论是以往的方法还是新方法，有一个关键的局限性一直存在：对选择一个单一、固定的参考视角的依赖。整个相机的坐标系统都建立在将这个关键帧作为参考的基础上。而这是一个从 SfM 与 MVS 中继承过来的做法。</p>
+<ul>
+<li>我们认为，这种做法引入了<strong>不必要的</strong>归纳偏差，从根本上限制了前馈网络的性能和鲁棒性。</li>
+<li>我们通过实验证明，这种对任意的参考帧的依赖让现有的方法（包括 VGGT）对初始的视角选择高度敏感。如果初始选择较差，重建质量将受到极大影响，这也阻碍着我们实现一个鲁棒和 scalable 的系统。</li>
+</ul>
+</li>
+<li><figure>
+<img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/a50db921a60c4bb9cd33c62161d3444c295650fa.png" class="wikilink" alt="650">
+</figure>
+</li>
+<li><p>为了克服这种局限性，我们引入了 $\pi^{3}$，一种 <em>鲁棒，scalable，排列无关</em>的方法，其可以消除视觉几何学习任务中基于参考视图的偏差。</p>
+<ul>
+<li>$\pi^{3}$ 接受多样的输入：单一图像，视频序列，或者无序图像集（无论是静态场景还是动态场景），<strong>且不需要指定参考视图</strong>。</li>
+<li>我们的模型会对每一帧预测其 <a href="affine-invariant" class="wikilink">affine-invariant</a> 的相机位姿以及 <a href="affine-invariant" class="wikilink">scale-invariant</a> 的 local点云，而基于的都是每帧图像自己本身的相机坐标系。</li>
+<li>通过在设计中避开依赖图像顺序的组件（比如帧 index 位置编码），并采用一个在 view-wise 和全局注意力之前交替的 transformer 架构，$\pi^{3}$ 实现了真正的排列无关。</li>
+<li>这保证了视觉输入和重建的几何之间的一致的一对一映射，使模型在输入顺序上有固有的鲁棒性，并不受参考视图选择问题的影响。</li>
+</ul>
+</li>
+<li><p>这样的设计有显著的优势</p>
+<ul>
+<li>首先，其非常 scalable。</li>
+<li>其次，收敛速度很快。</li>
+<li>最后，更鲁棒。</li>
+<li>与之前的方法比，当参考帧变化的时候，我们的方法性能下降最小，标准差也很低。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Related-Work"><a href="#Related-Work" class="headerlink" title="Related Work"></a>Related Work</h2><h3 id="传统三维重建"><a href="#传统三维重建" class="headerlink" title="传统三维重建"></a>传统三维重建</h3><p>这些方法利用了多视角几何的特性建立图像之间的特征相关性表征，从中估计相机位姿，并生成稠密点云。虽然鲁棒，尤其是在受控环境下；但这些方法需要复杂，多阶段的流程。<br>并且 BA 方法的时间成本很高。</p>
+<h3 id="前馈式三维重建"><a href="#前馈式三维重建" class="headerlink" title="前馈式三维重建"></a>前馈式三维重建</h3><p>单次前馈生成 3D 结构。<br>比如 Dust3R，成对地处理图像并按照第一个相机位姿的坐标系来预测点云。这种方法对于两个视角很有效，但是 scale 到大场景的话需要做全局的对齐，这个对齐就可能又耗时又不稳定。<br>后来的一些工作尝试克服这个局限性，Fast3R 通过同时对数千张照片进行推理，从而消除了对全局对齐阶段的要求。<br>还有一些方法探索将学习问题简化，比如，FLARE 将任务拆分成几段，首先估计对每个图片的相机位姿进行预估，然后将每个相机坐标系下的点云进行预估，最后进行合并。现在的 SOTA 方法 VGGT，利用了多任务学习和大规模数据集得到了很好的准确性和模型表现。<br>这些方法的统一特征是他们依赖于将预测的 3D 结构锚定在指定的参考系中。我们的工作提出了一种完全不同的方法。</p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><h3 id="PI-结构"><a href="#PI-结构" class="headerlink" title="PI 结构"></a>PI 结构</h3><p>为了保证模型的输出是和输入视角的顺序无关的，我们让我们的网络 $\phi$ 具有排列无关性。</p>
+<p>输入 $N$ 张图片，成为一个集合 $S&#x3D;(I_{1},\dots,I_{N})$, 每张图片的尺寸 $I_{i} \in \mathbb{R}^{H \times W \times 3}$, 网络 $\phi$ 将这个序列映射到输出元组上：</p>
+<p>$$\phi(S)&#x3D;((T_{1},\dots,T_{N}),(X_{1},\dots,X_{N}),(C_{1},\dots,C_{N}))$$<br>这里，$T_{i} \in SE(3) \subset \mathbb{R}^{4 \times 4}$ 是相机位姿，$X_{i} \in \mathbb{R}^{H \times W \times 3}$ 是对应的与像素对齐的 3D 点云的空间坐标，在该图片对应相机坐标系中的表示。 $C_{i} \in \mathbb{R}^{H \times W}$ 是 $X_{i}$ 的置信度矩阵。</p>
+<p>对于一种排列 $\pi$，记 $P_{\pi}$ 为排列序列顺序的运算符（可以理解为定义了一个顺序 $\pi$, 然后 $P_{\pi}$ 就是按照这个顺序打乱的操作），网络满足：<br>$$\phi(P_{\pi}(S))&#x3D;P_{\pi}(\phi(S))$$<br>那么我们可以发现，如果对初始的 S 的顺序按 $\pi$ 进行打乱，那么通过模型 $\phi$ 得到的结果，也会是按照 $\pi$ 进行打乱的。<strong>所以这种特性也保证了我们的每个图片输入和对应的输出是一对一映射的关系。</strong> 而这就带来了一些优势。</p>
+<ul>
+<li>首先，重建的质量就与参考视角的选择无关了。</li>
+<li>其次，模型对不确定性或者噪声更加鲁棒了。</li>
+<li>最后，这种架构有很强的 scalability。</li>
+</ul>
+<p><img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/ea87b378fbefbe384b652cef3c77e8fa0f916cc5.png" class="wikilink" alt="Pastedimage20250722110904.png"><br><em>传统的方法都需要在 ViT 的 token 上加上参考视角的 token 或者直接与一个 learnable 的 reference embedding 进行相加（比如 VGGT 中的 camera token），我们的方法由于保证了 PI 特性，所以不需要这些步骤。使用相对监督，就可以自然地对输入视角的顺序鲁棒。</em></p>
+<p><img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/cc9406fb6aaca2be79804cd28a0f9d0e6d2a1ece.png" class="wikilink" alt="Pastedimage20250722162525.png"><br><em>这是 VGGT 的 pipeline 图</em></p>
+<p><strong>为什么 VGGT 里面是这个架构？</strong><br>VGGT 中，首先在进行 transformer 架构之前加入一个随机初始化的 camera token，然后整体的架构就是一个交替的 global attention 和 frame attention 的结构。Global attention 的逻辑很简单，就是为了确保注意力具有全局一致性，而 frame attention 就是 VGGT 的核心亮点之一。<br>以下内容为笔者学习 jianyuan wang 的工作分享视频后的一些心得：<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1UyunzLE4J/?spm_id_from=333.337.search-card.all.click&vd_source=cbf12c9d814bc0e274dd427386a53462">CVPR’25 最佳论文一作亲解 | VGGT：纯前馈Transformer架构，快速3D重建新范式！_哔哩哔哩_bilibili</a></p>
+<p>如果我们直接将输入的图片们直接输入进 transformer 中，那么对于 appearance 非常相似的两个图像，（作者举的例子）模型很有可能将这两个图像看做是一个图像来的。那么一个非常自然的想法就是我们先给图像加上一个 frame index 位置编码，但是这会导致我们推理的时候，可以输入的序列的长度会受到训练集中最长的序列长度的影响，输入长度不灵活。那么这里在经过一次全局注意力的处理之后，我们将来自同一个 frame 的 tokens 自己内部做一个 <a href="Self-Attention" class="wikilink">Self-Attention</a>，那么模型就可以自然地区分开哪些 tokens 来自哪些帧。</p>
+<p>我们的 pipeline 从基于 DINOv2 （和 VGGT 一样的）的 backbone把每个视角 embedding 成一个 patch token 的序列开始，然后这些 token 将会经过一些交替的 view-wise层和全局自注意力层（与 VGGT 一样的），最后经过一个 decoder 就可以得到输出了。</p>
+<h3 id="Scale-invariant-Local-Geometry"><a href="#Scale-invariant-Local-Geometry" class="headerlink" title="Scale-invariant Local Geometry"></a>Scale-invariant Local Geometry</h3><p>对于每个输入图像 $I_{i}$，模型预测一个 pixel-aligned 三维点云 $\hat{X}<em>{i}$ ，每个点云都是基于自己的相机坐标系，所以也叫 local geometry。<br>单目深度估计中固有的问题是 scale ambiguity。为了解决这个问题，我们模型预测点云的过程中，会基于给定场景的 $N$ 张图片学习一个位置且一致的 scale factor。<br>那么，训练的阶段就需要将所有帧预测出来的点云与其对应的 GT 做对齐。也就是对齐 $(\hat{X}</em>{1},\dots,\hat{X}<em>{N})$ 和 $(X</em>{1},\dots,X_{N})$ 。这个对齐的操作可以通过求解一个最佳的 scale factor $\hat{s}$ 来实现。$\hat{s}$ 最小化了整个图像序列中 depth-weighted的 L1 距离：<br>$$s^{*}&#x3D;\underset{x}{argmin}\sum_{i&#x3D;1}^{N}\sum_{j&#x3D;1}^{H \times W} \frac{1}{z_{i,j}}\lvert\lvert s \hat{x}<em>{i,j}-x</em>{i,j} \rvert\rvert <em>{1}$$<br>其中 $\hat{ x}</em>{i,j}$ 是预测出来的第 j 个像素点的三维点云坐标。$x_{i,j}$ 是对应的 GT，$z_{i,j}$ 是对应的 GT 的 depth 值，同时也是 $x_{i,j}$ 的 $z$ 轴坐标（因为平面是和相机平面对齐的）。<br>整个解决的过程使用一个 ROE solver。</p>
+<p>最后可以定义出来 loss：<br>$$\mathcal{L}<em>{points}&#x3D;\sum</em>{i&#x3D;1}^{N}\sum_{j&#x3D;1}^{H \times W} \frac{1}{z_{i,j}}\lvert\lvert \hat{s} \hat{x}<em>{i,j}-x</em>{i,j} \rvert\rvert <em>{1}$$<br>为了鼓励对局部平滑表面的重建，我们引入了法向 loss $\mathcal{L}</em>{normal}$ ，对每个 $\hat{X}<em>{i}$ 中的点，对应的法向量 $\hat{n}</em>{i,j}$ 通过到在图像网格上的邻居点的向量进行叉积计算得到。然后我们只需要最小化 GT 中的法向量与我们估计的法向量的角度差就行了。<br>$$\mathcal{L}<em>{normal}&#x3D;\sum</em>{i&#x3D;1}^{N}\sum_{j&#x3D;1}^{H \times W}arccos(\hat{n}<em>{i,j}\cdot n</em>{i,j})$$<br>置信度矩阵 $C_{i}$ 通过一个二元交叉熵损失计算，每个点标记为 1 还是 0 取决于其 $\frac{1}{z_{i,j}}\lvert \lvert \hat{s}\hat{x}<em>{i,j}-x</em>{i,j} \rvert \rvert_{1}$ 项的值有没有小于一个阈值 $\epsilon$。</p>
+<h3 id="Affine-invariant-Camera-Pose"><a href="#Affine-invariant-Camera-Pose" class="headerlink" title="Affine-invariant Camera Pose"></a>Affine-invariant Camera Pose</h3><p>模型的排列不变性与多视角重建的 scale ambiguity 共同决定了我们输出的相机位姿 $(\hat{T}<em>{1},\dots,\hat{T}</em>{N})$ 与真值之间至少差了一个相似变换 *（我的理解是一个由于只能确定相机之间相对位姿所引起的旋转加平移的差距，以及一个由于 scale ambiguity 引起的 scale 上的差距 <strong>（注意这里的 scale factor 是全局的）</strong>，我们在设计评价标准的时候应该将这一点考虑在内）*<br>为了解决全局参考帧的 ambiguity 问题，我们使用视角之间的相对位姿来进行监督（好像也没有更好的方法）。定义预测的从 j 到 i 视角的相对位姿为 $\hat{T }<em>{i \leftarrow j}$：<br>$$\hat{T}</em>{i \leftarrow j}&#x3D;\hat{T}<em>{i}^{-1}\hat{T}</em>{j}$$<br>每一个 $\hat{T}<em>{i \leftarrow j}$ 都是由一个旋转 $\hat{R}</em>{i \leftarrow j}$ 和一个平移 $\hat{t}<em>{i \leftarrow j }$ 组成的。旋转本身不受到全局变换的影响，但是平移的具体量会受到 global scale factor 的影响。所以我们利用一下上一节中估计的 $\hat{s}$，我们就可以对平移的值有一个矫正了。<br>下面定义 camera loss。Camera loss 由旋转 loss 和平移 loss 加权得到，然后对所有的图像对进行平均:<br>$$\mathcal{L}</em>{cam}&#x3D;\frac{1}{N(N-1)}\sum_{i\neq j}(\mathcal{L}<em>{rot}(i,j),+\lambda\mathcal{L}</em>{trans}(i,j))$$<br>旋转 loss 只需要最小化预测的相对旋转和真值之间的差距:<br>$$\mathcal{L}<em>{rot}(i,j)&#x3D;\arccos(\frac{Tr((R</em>{i \leftarrow j} )^{T}\hat{R}<em>{i \leftarrow j})-1}{2})$$<br><strong>这里详细解释一下为什么要这么写：</strong><br>首先 $Tr((R</em>{i \leftarrow j} )^{T}\hat{R}<em>{i \leftarrow j})$ 是Frobenius product，写出来其实就是逐元素求积再相加。<br>由 Rodrigues 旋转公式，我们可以得到 $R&#x3D;I+\sin(\theta)[v]</em>{\times}+(1-\cos(\theta)[v]<em>{\times})$, 其中 $[v]</em>{\times}$ 是单位旋转轴向量的反对称矩阵。<br>（但是当我推完这 Rodrigues 之后发现这好像用不太上）<br>我们首先想要知道的是，既然 $R$ 和 $\hat{R}$ 都属于 $SO (3)$，那么很自然地我们猜测 $(R_{i \leftarrow j} )^{T}\hat{R}_{i \leftarrow j}$ 也是属于 $SO (3)$ 的。<br>#### <strong>证明 $R^T R’$ 是正交矩阵</strong></p>
+<p>首先，回顾一下正交矩阵的定义：一个矩阵 AA 是正交矩阵，如果满足：<br>$$A^T A &#x3D; I$$<br>其中 $I$ 是单位矩阵。<br>考虑矩阵 $R^T R’$，其中 $R$ 和 $R’$ 都是属于 $SO(3)$ 的旋转矩阵，意味着它们是正交矩阵，因此：</p>
+<p>$$R^T R &#x3D; I \quad \text{和} \quad R’^T R’ &#x3D; I$$</p>
+<p>现在我们来检查 $R^T R’$ 是否满足正交矩阵的条件。我们计算其转置：<br>$$(R^T R’)^T &#x3D; R’^T R$$</p>
+<p>然后，计算其乘积：</p>
+<p>$$(R^T R’)^T (R^T R’) &#x3D; R’^T R R^T R’ &#x3D; R’^T I R’ &#x3D; R’^T R’ &#x3D; I$$</p>
+<p>这表明 $R^T R’$ 是正交矩阵，因为它满足$(R^T R’)^T (R^T R’) &#x3D; I$。</p>
+<h4 id="证明-det-R-T-R’-x3D-1"><a href="#证明-det-R-T-R’-x3D-1" class="headerlink" title="证明 $\det(R^T R’) &#x3D; 1$"></a><strong>证明 $\det(R^T R’) &#x3D; 1$</strong></h4><p>接下来，我们检查 $det(R^T R’)$ 是否等于 1。根据行列式的性质，我们有：<br>$$\det(R^T R’) &#x3D; \det(R^T) \det(R’)$$<br>由于 $R$ 和 $R’$ 都是旋转矩阵，且旋转矩阵的行列式为 1，即：<br>$$\det(R) &#x3D; \det(R’) &#x3D; 1$$<br>所以：<br>$$\det(R^T R’) &#x3D; \det(R^T) \det(R’) &#x3D; 1 \times 1 &#x3D; 1$$</p>
+<p>因此，$\det(R^T R’) &#x3D; 1$，所以我们就验证了 $R^{T}R’$ 矩阵也是属于 $SO (3)$ 的，那么我们观察 $Tr((R_{i \leftarrow j})^{T}\hat{R}<em>{i \leftarrow j})$ 的范围，其实就是看 $Tr (R)$ 的范围。<br>我们知道对于旋转矩阵 $R$，其特征值为 $1,e^{i\theta},e^{-i\theta}$。那么其迹就是特征值之和，即 $1+e^{i\theta}+e^{-i\theta}&#x3D;1+2\cos(\theta)$，那么也就不难解释整个式子为什么设计为：<br>$$\mathcal{L}</em>{rot}(i,j)&#x3D;\arccos(\frac{Tr((R_{i \leftarrow j} )^{T}\hat{R}_{i \leftarrow j})-1}{2})$$</p>
+<p>对于平移 loss，我们将尺度变换过后的预测值与真值的相对平移进行比较，使用 <a href="Huber loss" class="wikilink">Huberloss</a> 来计算，因为其对于离群值非常鲁棒：<br>$$\mathcal{L}<em>{trans}(i,j)&#x3D;\mathcal{H}</em>{\delta}(s^{*}\hat{t}<em>{i\leftarrow j}-t</em>{i\leftarrow j})$$</p>
+<blockquote>
+<p>我们的 <a href="affine-invariant" class="wikilink">affine-invariant</a> 相机模型建立在一个关键点之上：现实世界中，相机的路径是高度结构化的，而不是随机的。<em>（也许这里也会是引入了一个归纳偏差的？）</em> 它们通常位于低维流形上，例如，围绕着物体运行的相机沿着球体移动，而车载相机沿着曲线移动。我们在图 5 中分析了预测的位姿分布的结构，发现我们预测的相机位姿的方差集中在比 VGGT 少得多的主成分上，说明我们的输出是一个低维结构。</p>
+</blockquote>
+<p><img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/00e21980b42a86fabfe067c4115741f75e4e1faf.png" class="wikilink" alt="675"><br><em>从这个图中我们可以看出，我们的模型对于位置来说，在前两个主成分上的特征值明显大于第三个主成分上的特征值，而 VGGT 的则都不明显，说明我们的模型在 position 的输出上具有显著的低维性。同理，rotation 也是一样。</em></p>
+<p><img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/d50e31f239c5fc2fb2a1b8f3b51e6a8501cda6bb.png" class="wikilink" alt="600"><br><em>我们可以看到我们的模型预测的相机位姿，明显有更好的低维特性。</em></p>
+<h3 id="Model-Training"><a href="#Model-Training" class="headerlink" title="Model Training"></a>Model Training</h3><p>我们的总体 loss 是加权处理各个部分的 loss 得到的。为了保证鲁棒性和广泛的适用性，我们在 15 个不同的数据集的大规模聚合上训练我们的模型，数据集涵盖了室内和室外环境，从合成渲染到现实世界捕获的各种场景。</p>
+<h2 id="Experiments"><a href="#Experiments" class="headerlink" title="Experiments"></a>Experiments</h2><p>通过四项任务来评估我们的方法，均达到了 SOTA。</p>
+<h3 id="Camera-Pose-Estimation"><a href="#Camera-Pose-Estimation" class="headerlink" title="Camera Pose Estimation"></a>Camera Pose Estimation</h3><p>我们通过两组指标来评估预测的相机位姿：角度精度和距离误差。</p>
+<h3 id="Point-Map-Estimation"><a href="#Point-Map-Estimation" class="headerlink" title="Point Map Estimation"></a>Point Map Estimation</h3><h3 id="Video-Depth-Estimation"><a href="#Video-Depth-Estimation" class="headerlink" title="Video Depth Estimation"></a>Video Depth Estimation</h3><p>速度快， 57.4FPS (在 KITTI 数据集上)，VGGT 只有 43.2FPS, Aether 只有 6.14FPS。</p>
+<h3 id="Monocular-Depth-Estimation"><a href="#Monocular-Depth-Estimation" class="headerlink" title="Monocular Depth Estimation"></a>Monocular Depth Estimation</h3><p>效果不错，我们单独对每张图片的 scale 做了真值的对齐（无可厚非，这个缺陷是天然的，我们在考虑效果的时候应当弥补这个缺陷）</p>
+<h3 id="Robustness-Evaluation"><a href="#Robustness-Evaluation" class="headerlink" title="Robustness Evaluation"></a>Robustness Evaluation</h3><p>改变输入图像的顺序，方差很小。</p>
+<h3 id="Ablation-Study"><a href="#Ablation-Study" class="headerlink" title="Ablation Study"></a>Ablation Study</h3><blockquote>
+<p>为了进行公平的比较，我们使用 VGGT 的修改版本，禁用了用于 tracking 和 global map heads，作为 baseline（模型 1）。我们依次集成了 scale-invariant 点云和 <a href="affine-invariant" class="wikilink">affine-invariant</a> 相机位姿，分别产生了模型 2,3。模型 1 类似于 VGGT，模型 1,2 都使用附加标记来指定参考系，并且预测坐标系内的相机姿势，而模型 3 是完全排列等效的。所有模型都对 224*224 的图像进行了 80 个 epoch 的训练。所有模型都是从头开始训练的，但编码器除外，是用 DINOv2 权重初始化的。<strong>添加 scale invariant 将</strong>指标从 0.1498 提高到 0.1145，完整模型在加上了 <a href="affine-invariant" class="wikilink">affine-invariant</a> 的相机位姿之后，将指标进一步提高到了 0.0625。这证明我们的两个组件都是必不可少的，并且对我们的架构最终的准确性和稳健性做出了巨大贡献。关于模型 2,3 的细节在附录中。</p>
+</blockquote>
+<h3 id="Scalability-and-Performance-Evaluation"><a href="#Scalability-and-Performance-Evaluation" class="headerlink" title="Scalability and Performance Evaluation"></a>Scalability and Performance Evaluation</h3><p>图二已经说明了</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><blockquote>
+<p>在这项工作中，我们引入了π3，这是一种前馈神经网络，它通过消除对固定参考视图的依赖，为视觉几何重建提供了一种新的范式。通过利用完全排列等变架构，我们的模型本质上对输入排序具有鲁棒性，并且具有高度可扩展性。这种设计选择消除了以前方法中发现的关键感应偏差，使我们简单而强大的方法能够在各种任务上实现最先进的性能，包括相机姿势估计、深度估计和密集重建。π3 表明无参考系统不仅可行，而且可以产生更稳定、更通用的 3D 视觉。</p>
+</blockquote>
+<h2 id="Appendix"><a href="#Appendix" class="headerlink" title="Appendix"></a>Appendix</h2><h3 id="Architecture-Details"><a href="#Architecture-Details" class="headerlink" title="Architecture Details"></a>Architecture Details</h3><p>编码器和交替注意力模块和 VGGT 中的相同，不同之处在于交替注意力层模块仅使用 36 层，而 VGGT 使用 48 层。相机位姿，点云和置信度矩阵的解码器共享相同的结构，<strong>但是</strong>不共享权重。该架构是一个轻量级的 5 层 transformer，专门将自注意力应用于每个单独图像的特征。在解码器之后，输出头因任务而异。点云图和置信度矩阵的 head 由一个简单的 MLP 和一个 pixel shuffle 的操作。对于相机位姿，其 head 来自于 Reloc3r，并且使用 MLP、Average Pooling，和另一个 MLP。旋转一开始使用 9D 的形式预测，然后通过 SVD 正交化转换为 3*3 的旋转矩阵。</p>
+<h3 id="Training-Details"><a href="#Training-Details" class="headerlink" title="Training Details"></a>Training Details</h3><p>我们分两个阶段训练，首先在 224*224 的低分辨率图片上进行训练，然后对总像素数在 100000，以及 255000 的随机分辨率图像进行微调。使用 VGGT 类似的动态 batch 大小调整策略，第一阶段，每个 GPU 进行 64 张图像的采样，第二阶段每个 GPU 进行 48 图像的采样。模型不是从头开始训练的，是从预训练的 VGGT 中初始化编码器和交替注意力模块的权重，并在训练期间保持编码器冻结。对于每个阶段使用 adams 优化器，学习率从 1e-4 开始衰减。在 16 个 A100 上训练第一阶段，在 64 张 A100 上训练第二阶段。</p>
+<h3 id="More-Experiments-on-Scalability-and-Convergence-Speed"><a href="#More-Experiments-on-Scalability-and-Convergence-Speed" class="headerlink" title="More Experiments on Scalability and Convergence Speed"></a>More Experiments on Scalability and Convergence Speed</h3><figure>
+<img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/3774c829dc69dc7c8d94471befdce1567b13a6c1.png" class="wikilink" alt="675">
+</figure>
+
+<h3 id="Limitations"><a href="#Limitations" class="headerlink" title="Limitations"></a>Limitations</h3><ul>
+<li>无法处理透明物体，因为模型没有明确考虑复杂的光传输现象。</li>
+<li>我们重建的集合形状缺乏相同水平的细粒度细节（与基于 Diffusion 的方法比）。</li>
+<li>点云生成依赖于使用具有 pixel shuffle 的 MLP 的简单上采样机制。虽然高效，但是这种设计会引入明显的网格状伪影，特别是在重建不确定性高的区域。<img src="/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/9526d85629053f35f0033fa296135a37666d2d82.png" class="wikilink" alt="650"><ul>
+<li>应该说的是这种</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>JackieLi
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="http://jackie-li-0228.github.io/2025/07/25/Pi3%20Scalable%20Permutation-Equivariant%20Visual%20Geometry%20Learning%20copy/" title="">http://jackie-li-0228.github.io/2025/07/25/Pi3 Scalable Permutation-Equivariant Visual Geometry Learning copy/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+
+        
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2024/10/29/obsidian-smart-completion-plugin-for-hexo/node_modules/@types/codemirror/README/" rel="prev" title="">
+      <i class="fa fa-chevron-left"></i> 
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%87%E9%A2%98%E8%A7%A3%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">标题解析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%91%98%E8%A6%81"><span class="nav-number">2.</span> <span class="nav-text">摘要</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Introduction"><span class="nav-number">3.</span> <span class="nav-text">Introduction</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Related-Work"><span class="nav-number">4.</span> <span class="nav-text">Related Work</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BC%A0%E7%BB%9F%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA"><span class="nav-number">4.1.</span> <span class="nav-text">传统三维重建</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E9%A6%88%E5%BC%8F%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA"><span class="nav-number">4.2.</span> <span class="nav-text">前馈式三维重建</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Method"><span class="nav-number">5.</span> <span class="nav-text">Method</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PI-%E7%BB%93%E6%9E%84"><span class="nav-number">5.1.</span> <span class="nav-text">PI 结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Scale-invariant-Local-Geometry"><span class="nav-number">5.2.</span> <span class="nav-text">Scale-invariant Local Geometry</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Affine-invariant-Camera-Pose"><span class="nav-number">5.3.</span> <span class="nav-text">Affine-invariant Camera Pose</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AF%81%E6%98%8E-det-R-T-R%E2%80%99-x3D-1"><span class="nav-number">5.3.1.</span> <span class="nav-text">证明 $\det(R^T R’) &#x3D; 1$</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Model-Training"><span class="nav-number">5.4.</span> <span class="nav-text">Model Training</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Experiments"><span class="nav-number">6.</span> <span class="nav-text">Experiments</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Camera-Pose-Estimation"><span class="nav-number">6.1.</span> <span class="nav-text">Camera Pose Estimation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Point-Map-Estimation"><span class="nav-number">6.2.</span> <span class="nav-text">Point Map Estimation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Video-Depth-Estimation"><span class="nav-number">6.3.</span> <span class="nav-text">Video Depth Estimation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Monocular-Depth-Estimation"><span class="nav-number">6.4.</span> <span class="nav-text">Monocular Depth Estimation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Robustness-Evaluation"><span class="nav-number">6.5.</span> <span class="nav-text">Robustness Evaluation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Ablation-Study"><span class="nav-number">6.6.</span> <span class="nav-text">Ablation Study</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Scalability-and-Performance-Evaluation"><span class="nav-number">6.7.</span> <span class="nav-text">Scalability and Performance Evaluation</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Conclusion"><span class="nav-number">7.</span> <span class="nav-text">Conclusion</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Appendix"><span class="nav-number">8.</span> <span class="nav-text">Appendix</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Architecture-Details"><span class="nav-number">8.1.</span> <span class="nav-text">Architecture Details</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Training-Details"><span class="nav-number">8.2.</span> <span class="nav-text">Training Details</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#More-Experiments-on-Scalability-and-Convergence-Speed"><span class="nav-number">8.3.</span> <span class="nav-text">More Experiments on Scalability and Convergence Speed</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Limitations"><span class="nav-number">8.4.</span> <span class="nav-text">Limitations</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">JackieLi</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">36</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">23</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+      
+
+      
+
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<div class="copyright">
+  
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">JackieLi</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">131k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:59</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div><script color="0,0,0" opacity="0.5" zIndex="-1" count="99" src="https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js"></script>
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: true;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: true;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='' opacity='0.5' zIndex='-1' count='200' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'S2OKu8IlsXEYdwHHCF4muTBQ-gzGzoHsz',
+      appKey     : 'f9Nyqb7IpFUBg18LaSN1a1V7',
+      placeholder: "浅发一条",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '15' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true}});</script></body>
+</html>
